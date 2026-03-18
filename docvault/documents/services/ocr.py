@@ -95,17 +95,24 @@ for file_path in file_paths:
     print(text)
 
     # definition du type de document
-    if "facture" in text or "total ttc" in text:
+    score_facture = 0
+    score_devis = 0
+
+    if re.search(r"facture", text):
+        score_facture += 3
+    if re.search(r"total\s*ttc", text):
+        score_facture += 2
+
+    if re.search(r"d[eé]v[i1l]s", text):
+        score_devis += 3
+
+    if score_devis > score_facture:
+        document_type ="devis"
+    elif score_facture > 0:
         document_type = "facture"
-
-    elif "devis" in text:
-        document_type = "devis"
-
-    elif "attestation" in text:
-        document_type = "attestation"
-
     else:
         document_type = "inconnu"
+
 
     # stockage
     extracted_data["document_type"] = document_type
