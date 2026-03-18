@@ -10,4 +10,5 @@ urlpatterns = [
     path('gestion/review/<int:batch_id>/approve/', views.admin_approve_batch, name='admin_approve'),
     path('gestion/review/<int:batch_id>/reject/', views.admin_reject_batch, name='admin_reject'),
     path('gestion/upload/', views.admin_upload_view, name='admin_upload'),
+
 ]

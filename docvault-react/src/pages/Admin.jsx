@@ -17,14 +17,14 @@ function RejectModal({ target, onClose, onConfirm }) {
 
   const confirm = async () => {
     setLoading(true)
-    await onConfirm(target.id, reason)
+    await onConfirm(target._id, reason)
     setLoading(false)
   }
 
   return (
     <Modal open={!!target} onClose={onClose} title="Refuser le lot">
       <p style={{ fontSize: '.85rem', color: C.ink2, marginBottom: '1rem' }}>
-        {target?.label || `Lot #${target?.id}`}
+        {target?.label || `Lot #${target?._id}`}
       </p>
       <Textarea
         label="Motif de refus (visible par l'utilisateur)"
@@ -65,7 +65,7 @@ export function AdminDashboard() {
         ) : batches.length > 0 ? (
           <div style={{ padding: '16px 20px' }}>
             {batches.slice(0, 8).map(b => (
-              <BatchCard key={b.id} batch={b} admin onApprove={approve} onReject={setRejectTarget}/>
+              <BatchCard key={b._id} batch={b} admin onApprove={approve} onReject={setRejectTarget}/>
             ))}
           </div>
         ) : (
@@ -115,7 +115,7 @@ export function AdminReview() {
       {loading ? (
         <div style={{ display: 'flex', justifyContent: 'center', padding: '3rem' }}><Spinner size={28}/></div>
       ) : batches.length > 0 ? (
-        batches.map(b => <BatchCard key={b.id} batch={b} admin onApprove={approve} onReject={setRejectTarget}/>)
+        batches.map(b => <BatchCard key={b._id} batch={b} admin onApprove={approve} onReject={setRejectTarget}/>)
       ) : (
         <Card style={{ textAlign: 'center', padding: '3rem', color: C.ink2 }}>
           <p style={{ fontWeight: 600, color: C.ink, marginBottom: 4 }}>Aucun lot trouve</p>
