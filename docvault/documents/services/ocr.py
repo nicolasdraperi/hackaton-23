@@ -354,61 +354,63 @@ for file_path in file_paths:
     #  TVA
 
     if document_type == "facture":
-      tva = re.search(r"\bFR\s?\d{2}\s?\d{9}\b", text, re.IGNORECASE)
+        tva = re.search(r"\bFR\s?\d{2}\s?\d{9}\b", text, re.IGNORECASE)
 
-      tva_value = None
-      tva_conf = None
-      siren_in_tva = None
-      siren_match = None
-      is_valid_tva = False
-      missing = True
+        tva_value = None
+        tva_conf = None
+        siren_in_tva = None
+        siren_match = None
+        is_valid_tva = False
+        missing = True
 
-      if tva:
-          missing = False
-          tva_value = tva.group().replace(" ", "")
+        if tva:
+            missing = False
+            tva_value = tva.group().replace(" ", "")
+            tva_value = tva_value.upper().replace(" ", "")
+            tva_value = tva_value.replace("O", "0")
 
-          scores = []
+            scores = []
 
-          for item in ocr_data:
-              if item["text"] in tva_value:
-                  scores.append(item["confidence"])
+            for item in ocr_data:
+                if item["text"] in tva_value:
+                    scores.append(item["confidence"])
 
-          tva_conf = sum(scores) / len(scores) if scores else None
+            tva_conf = sum(scores) / len(scores) if scores else None
 
-          # EXTRACTION SIREN DE LA TVA
-          match_tva = re.match(r"^FR(\d{2})(\d{9})$", tva_value)
+            # EXTRACTION SIREN DE LA TVA
+            match_tva = re.match(r"^FR(\d{2})(\d{9})$", tva_value)
 
-          if match_tva:
-              tva_key = int(match_tva.group(1))
-              siren_in_tva = match_tva.group(2)
+            if match_tva:
+                tva_key = int(match_tva.group(1))
+                siren_in_tva = match_tva.group(2)
 
-              # VALIDATION CLÉ TVA
-              try:
-                  expected_key = (12 + 3 * (int(siren_in_tva) % 97)) % 97
-                  is_valid_tva = (tva_key == expected_key)
-              except:
-                  is_valid_tva = False
+                # VALIDATION CLÉ TVA
+                try:
+                    expected_key = (12 + 3 * (int(siren_in_tva) % 97)) % 97
+                    is_valid_tva = (tva_key == expected_key)
+                except:
+                    is_valid_tva = False
 
-          # RÉCUP SIREN DE RÉFÉRENCE
-          siren_ref = None
+            # RÉCUP SIREN DE RÉFÉRENCE
+            siren_ref = None
 
-          if "siren" in extracted_data and extracted_data["siren"]["value"]:
-              siren_ref = extracted_data["siren"]["value"]
+            if "siren" in extracted_data and extracted_data["siren"]["value"]:
+                siren_ref = extracted_data["siren"]["value"]
 
-          elif "siret" in extracted_data and extracted_data["siret"]["value"]:
-              siren_ref = extracted_data["siret"]["value"][:9]
+            elif "siret" in extracted_data and extracted_data["siret"]["value"]:
+                siren_ref = extracted_data["siret"]["value"][:9]
 
-          if siren_in_tva and siren_ref:
-              siren_match = (siren_in_tva == siren_ref)
+            if siren_in_tva and siren_ref:
+                siren_match = (siren_in_tva == siren_ref)
 
-      #  TOUJOURS retourner la TVA même si absente ou invalide
-      extracted_data["tva"] = {
-          "value": tva_value,
-          "valid": is_valid_tva,
-          "confidence": tva_conf,
-          "siren_in_tva": siren_in_tva,
-          "siren_match": siren_match
-      }
+        #  TOUJOURS retourner la TVA même si absente ou invalide
+        extracted_data["tva"] = {
+            "value": tva_value,
+            "valid": is_valid_tva,
+            "confidence": tva_conf,
+            "siren_in_tva": siren_in_tva,
+            "siren_match": siren_match
+        }
 
 
     # NOM ENTREPRISE
