@@ -1,5 +1,0 @@
-easyocr
-opencv-python
-pdf2image
-pillow
-numpy
