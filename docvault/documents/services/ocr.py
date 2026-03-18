@@ -533,9 +533,16 @@ for file_path in file_paths:
 
     # MONTANTS (HT / TTC)
 
+    text = text.replace("hi", "ht")  # OCR lit mal HT
+    text = re.sub(r"\s*\.\s*", ".", text)  # corrige les espaces entre les .
+    text = text.replace("O", "0").replace("o", "0")  # OCR chiffres
+
+
     def clean_amount(text):
-        text = text.replace("O", "0").replace("S", "5")
+        text = text.replace("O", "0").replace("o", "0")
+        text = text.replace(",", ".")
         text = text.replace(" ", "")
+        text = text.replace("€", "").replace("EUR", "")
         return text
 
     def extract_amount(pattern, label):
@@ -546,7 +553,13 @@ for file_path in file_paths:
             raw_value = match.group(1)
 
             value = clean_amount(raw_value)
-            is_valid_amount = not value.startswith("-")
+
+            # vérifier si le montant est positif
+            try:
+                numeric_value = float(value)
+                is_valid_amount = numeric_value >= 0
+            except:
+                is_valid_amount = False
 
 
             # confidence
