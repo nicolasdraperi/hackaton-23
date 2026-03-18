@@ -204,20 +204,33 @@ for file_path in file_paths:
         }
 
     # documents détériorés peuvent entrainer une inversion dans les élements du titre, les regex accepte des élements inversés. ex : date paiement/date de paiement/paiement date/paiement date de/paiement
-    extract_date(
-        r"(?:date\s*d['’]?\s*émission|émission\s*date)",
-        "date_emission"
-    )
+    if document_type == "facture":
+        extract_date(
+            r"(?:date\s*d['’]?\s*émission|émission\s*date)",
+            "date_emission"
+        )
 
-    extract_date(
-        r"(?:date\s*(?:de\s*)?(?:la\s*)?facture|facture\s*date)",
-        "date_facture"
-    )
+        extract_date(
+            r"(?:date\s*(?:de\s*)?(?:la\s*)?facture|facture\s*date)",
+            "date_facture"
+        )
 
-    extract_date(
-        r"(?:date\s*(?:de\s*)?paiement|paiement\s*date\s*(?:de\s*)?|paiement)",
-        "date_paiement"
-    )
+        extract_date(
+            r"(?:date\s*(?:de\s*)?paiement|paiement\s*date\s*(?:de\s*)?|paiement)",
+            "date_paiement"
+        )
+
+    if document_type == "devis":
+        extract_date(
+        r"(?:date\s*(?:du\s*)?d[eé]v[i1l]s|d[eé]v[i1l]s\s*date)",
+        "date_devis"
+        )
+
+        extract_date(
+        r"(?:date\s*(?:de\s*)?presta[t7][i1]on|presta[t7][i1]on\s*date)",
+        "date_prestation"
+        )
+
 
     # Vérification date de paiement >= date facture
     date_issues = []
@@ -241,29 +254,30 @@ for file_path in file_paths:
 
     # NUMERO DE FACTURE
 
-    facture_number = re.search(r"\b[A-Z]{2,5}-\d+(?:-\d+)?\b", text, re.IGNORECASE)
+    if document_type == "facture":
+      facture_number = re.search(r"\b[A-Z]{2,5}-\d+(?:-\d+)?\b", text, re.IGNORECASE)
 
-    if facture_number:
-        facture_value = facture_number.group()
-        facture_conf = None
+      if facture_number:
+          facture_value = facture_number.group()
+          facture_conf = None
 
-        for item in ocr_data:
-            if item["text"] == facture_value:
-                facture_conf = item["confidence"]
+          for item in ocr_data:
+              if item["text"] == facture_value:
+                  facture_conf = item["confidence"]
 
-        extracted_data["numero_facture"] = {
-            "value": facture_value,
-            "confidence": facture_conf,
-            "missing": False,
-            "valid": True
-        }
-    else:
-        extracted_data["numero_facture"] = {
-            "value": None,
-            "confidence": None,
-            "missing": True,
-            "valid": False
-        }
+          extracted_data["numero_facture"] = {
+              "value": facture_value,
+              "confidence": facture_conf,
+              "missing": False,
+              "valid": True
+          }
+      else:
+          extracted_data["numero_facture"] = {
+              "value": None,
+              "confidence": None,
+              "missing": True,
+              "valid": False
+          }
 
 
     #  SIRET
@@ -299,102 +313,102 @@ for file_path in file_paths:
         }
 
 
-# TODO CHANGER LA LOGIQUE DE RECUPERATION DU SIREN
     #  SIREN
-
-    siren_value = None
-    siren_conf = None
-    is_valid_siren = False
-
-    siren_match = re.search(r"siren[^0-9]*(\d{6-11})", text, re.IGNORECASE)
-
-    if siren_match:
-        siren_raw = siren_match.group(1)
-        siren_value = clean_digits(siren_raw)
-        is_valid_siren = len(siren_value) == 9
-        missing = False
-    else:
+    if document_type == "attestation":
         siren_value = None
-        is_valid_siren= False
-        missing = True
-        confidence = None
+        siren_conf = None
+        is_valid_siren = False
 
-    if siren_value:
+        siren_match = re.search(r"siren[^0-9]*(\d{6-11})", text, re.IGNORECASE)
 
-        scores = []
+        if siren_match:
+            siren_raw = siren_match.group(1)
+            siren_value = clean_digits(siren_raw)
+            is_valid_siren = len(siren_value) == 9
+            missing = False
+        else:
+            siren_value = None
+            is_valid_siren= False
+            missing = True
+            confidence = None
 
-        for item in ocr_data:
-            if siren_value in item["text"]:
-                scores.append(item["confidence"])
+        if siren_value:
 
-        siren_conf = sum(scores) / len(scores) if scores else None
+            scores = []
 
-        extracted_data["siren"] = {
-            "value": siren_value,
-            "valid": is_valid_siren,
-            "confidence": siren_conf,
-            "missing": missing
-        }
+            for item in ocr_data:
+                if siren_value in item["text"]:
+                    scores.append(item["confidence"])
+
+            siren_conf = sum(scores) / len(scores) if scores else None
+
+            extracted_data["siren"] = {
+                "value": siren_value,
+                "valid": is_valid_siren,
+                "confidence": siren_conf,
+                "missing": missing
+            }
 
 
 
     #  TVA
 
-    tva = re.search(r"\bFR\s?\d{2}\s?\d{9}\b", text, re.IGNORECASE)
+    if document_type == "facture":
+      tva = re.search(r"\bFR\s?\d{2}\s?\d{9}\b", text, re.IGNORECASE)
 
-    tva_value = None
-    tva_conf = None
-    siren_in_tva = None
-    siren_match = None
-    is_valid_tva = False
-    missing = True
+      tva_value = None
+      tva_conf = None
+      siren_in_tva = None
+      siren_match = None
+      is_valid_tva = False
+      missing = True
 
-    if tva:
-        missing = False
-        tva_value = tva.group().replace(" ", "")
+      if tva:
+          missing = False
+          tva_value = tva.group().replace(" ", "")
 
-        scores = []
+          scores = []
 
-        for item in ocr_data:
-            if item["text"] in tva_value:
-                scores.append(item["confidence"])
+          for item in ocr_data:
+              if item["text"] in tva_value:
+                  scores.append(item["confidence"])
 
-        tva_conf = sum(scores) / len(scores) if scores else None
+          tva_conf = sum(scores) / len(scores) if scores else None
 
-        # EXTRACTION SIREN DE LA TVA
-        match_tva = re.match(r"^FR(\d{2})(\d{9})$", tva_value)
+          # EXTRACTION SIREN DE LA TVA
+          match_tva = re.match(r"^FR(\d{2})(\d{9})$", tva_value)
 
-        if match_tva:
-            tva_key = int(match_tva.group(1))
-            siren_in_tva = match_tva.group(2)
+          if match_tva:
+              tva_key = int(match_tva.group(1))
+              siren_in_tva = match_tva.group(2)
 
-            # VALIDATION CLÉ TVA
-            try:
-                expected_key = (12 + 3 * (int(siren_in_tva) % 97)) % 97
-                is_valid_tva = (tva_key == expected_key)
-            except:
-                is_valid_tva = False
+              # VALIDATION CLÉ TVA
+              try:
+                  expected_key = (12 + 3 * (int(siren_in_tva) % 97)) % 97
+                  is_valid_tva = (tva_key == expected_key)
+              except:
+                  is_valid_tva = False
 
-        # RÉCUP SIREN DE RÉFÉRENCE
-        siren_ref = None
+          # RÉCUP SIREN DE RÉFÉRENCE
+          siren_ref = None
 
-        if "siren" in extracted_data and extracted_data["siren"]["value"]:
-            siren_ref = extracted_data["siren"]["value"]
+          if "siren" in extracted_data and extracted_data["siren"]["value"]:
+              siren_ref = extracted_data["siren"]["value"]
 
-        elif "siret" in extracted_data and extracted_data["siret"]["value"]:
-            siren_ref = extracted_data["siret"]["value"][:9]
+          elif "siret" in extracted_data and extracted_data["siret"]["value"]:
+              siren_ref = extracted_data["siret"]["value"][:9]
 
-        if siren_in_tva and siren_ref:
-            siren_match = (siren_in_tva == siren_ref)
+          if siren_in_tva and siren_ref:
+              siren_match = (siren_in_tva == siren_ref)
 
-    #  TOUJOURS retourner la TVA même si absente ou invalide
-    extracted_data["tva"] = {
-        "value": tva_value,
-        "valid": is_valid_tva,
-        "confidence": tva_conf,
-        "siren_in_tva": siren_in_tva,
-        "siren_match": siren_match
-    }
+      #  TOUJOURS retourner la TVA même si absente ou invalide
+      extracted_data["tva"] = {
+          "value": tva_value,
+          "valid": is_valid_tva,
+          "confidence": tva_conf,
+          "siren_in_tva": siren_in_tva,
+          "siren_match": siren_match
+      }
 
 
     # NOM ENTREPRISE
