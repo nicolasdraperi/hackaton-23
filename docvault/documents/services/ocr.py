@@ -15,6 +15,7 @@ import numpy as np
 import os
 
 from datetime import datetime
+from validation import validate_document
 
 # chemin du document à analyser
 file_paths = ["devis/propres/vrais/devis_vrai_002.pdf"]
@@ -490,39 +491,32 @@ for file_path in file_paths:
     "date_paiement"
 ]
 # Affichage des champs manquants
-missing_fields = []
+missing_fields = validate_document(extracted_data)
 
-for field in required_fields:
+extracted_data["missing_fields"] = missing_fields
 
-    if field not in extracted_data or extracted_data[field].get("missing"):
-        missing_fields.append(field)
+# CALCUL CONFIANCE DES CHAMPS EXTRAITS
 
-if missing_fields:
-    extracted_data["missing_fields"] = missing_fields
+field_confidences = []
 
+for field in extracted_data.values():
 
-    # CALCUL CONFIANCE DES CHAMPS EXTRAITS
+    if isinstance(field, dict) and field.get("confidence") is not None:
+        field_confidences.append(field["confidence"])
 
-    field_confidences = []
+if field_confidences:
+    extracted_confidence = sum(field_confidences) / len(field_confidences)
+else:
+    extracted_confidence = None
 
-    for field in extracted_data.values():
-
-        if isinstance(field, dict) and field.get("confidence") is not None:
-            field_confidences.append(field["confidence"])
-
-    if field_confidences:
-        extracted_confidence = sum(field_confidences) / len(field_confidences)
-    else:
-        extracted_confidence = None
-
-    extracted_data["confidence_fields"] = extracted_confidence
+extracted_data["confidence_fields"] = extracted_confidence
 
 
     # RÉSULTAT 
-    all_results.append({
-        "file": file_path,
-        "data": extracted_data
-    })
+all_results.append({
+    "file": file_path,
+    "data": extracted_data
+})
 
 
 #  RÉSULTAT JSON
