@@ -8,7 +8,7 @@ const STATUS_LABEL = { pending: 'En attente', approved: 'Approuve', rejected: 'R
 
 export default function BatchCard({ batch, admin = false, onApprove, onReject }) {
   const [open, setOpen] = useState(batch.status === 'pending' || batch.status === 'rejected')
-  const label = batch.label || `Lot #${batch.id}`
+  const label = batch.label || `Lot #${batch._id}`
   const date  = new Date(batch.created_at).toLocaleDateString('fr-FR', {
     day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit',
   })
@@ -51,15 +51,15 @@ export default function BatchCard({ batch, admin = false, onApprove, onReject })
       {/* Documents list */}
       {open && (
         <div style={{ borderTop: `1px solid ${C.line}` }}>
-          {batch.documents?.map(doc => (
-            <div key={doc.id} style={{ display: 'flex', alignItems: 'center', gap: 9, padding: '9px 18px', borderBottom: `1px solid ${C.line}`, fontSize: '.85rem' }}>
+          {batch.documents?.map((doc, index) => (
+            <div key={index} style={{ display: 'flex', alignItems: 'center', gap: 9, padding: '9px 18px', borderBottom: `1px solid ${C.line}`, fontSize: '.85rem' }}>
               <FilePill name={doc.original_name}/>
               <span style={{ flex: 1, fontWeight: 500, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                 {doc.original_name}
               </span>
               <span style={{ fontSize: '.75rem', color: C.ink2, flexShrink: 0 }}>{doc.file_size_kb} Ko</span>
               <a
-                href={api.viewDoc(doc.id)} target="_blank" rel="noreferrer"
+                href={api.viewDoc(batch._id, index)} target="_blank" rel="noreferrer"
                 style={{ fontSize: '.78rem', color: C.acc, fontWeight: 500, padding: '3px 7px', borderRadius: 4, transition: 'background .12s', flexShrink: 0 }}
                 onMouseEnter={e => e.target.style.background = C.accSoft}
                 onMouseLeave={e => e.target.style.background = 'transparent'}>
@@ -72,7 +72,7 @@ export default function BatchCard({ batch, admin = false, onApprove, onReject })
           {admin && (
             <div style={{ padding: '11px 18px', display: 'flex', gap: 7 }}>
               {batch.status !== 'approved' && (
-                <Btn variant="success" size="sm" onClick={() => onApprove(batch.id)}>Approuver le lot</Btn>
+                <Btn variant="success" size="sm" onClick={() => onApprove(batch._id)}>Approuver le lot</Btn>
               )}
               {batch.status !== 'rejected' && (
                 <Btn variant="danger" size="sm" onClick={() => onReject(batch)}>Refuser le lot</Btn>

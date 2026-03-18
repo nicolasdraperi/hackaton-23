@@ -41,9 +41,9 @@ const api = {
   deleteMe: () => req("DELETE", "/auth/me/"),
 
   // User batches
-  getBatches: (s) => req("GET", `/batches/${s ? "?status=" + s : ""}`),
-  uploadBatch: (fd) => req("POST", "/batches/", fd, true),
-  viewDoc: (id) => `/api/documents/${id}/view/`,
+  getBatches:  (s)      => req('GET', `/batches/${s ? '?status=' + s : ''}`),
+  uploadBatch: (fd)     => req('POST', '/batches/', fd, true),
+  viewDoc: (batchId, index) => `/api/documents/${batchId}/${index}/view/`,
 
   // Admin
   adminBatches: (s, u) => {

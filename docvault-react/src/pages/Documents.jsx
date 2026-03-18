@@ -200,7 +200,7 @@ export function MyDocuments() {
           <Spinner size={28} />
         </div>
       ) : batches.length > 0 ? (
-        batches.map((b) => <BatchCard key={b.id} batch={b} />)
+        batches.map(b => <BatchCard key={b._id} batch={b}/>)
       ) : (
         <Card style={{ textAlign: "center", padding: "3rem" }}>
           <p style={{ fontWeight: 600, color: C.ink, marginBottom: 6 }}>
