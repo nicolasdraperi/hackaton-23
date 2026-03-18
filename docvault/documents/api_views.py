@@ -8,6 +8,7 @@ from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
 from .models import UploadBatch, Document
 from .serializers import UploadBatchSerializer
 from accounts.models import User
+from .services.ocr import run_ocr
 
 
 def _mime(doc):
@@ -110,3 +111,13 @@ class AdminBatchRejectView(APIView):
         batch.reviewed_at = timezone.now()
         batch.save()
         return Response(UploadBatchSerializer(batch).data)
+# OCR 
+class OCRView(APIView):
+    parser_classes = [MultiPartParser, FormParser]
+
+    def post(self, request):
+        file = request.FILES.get('file')
+        if not file:
+            return Response({'detail': 'Aucun fichier fourni.'}, status=400)
+        result = run_ocr(file)
+        return Response(result)
