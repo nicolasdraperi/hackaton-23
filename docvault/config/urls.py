@@ -10,6 +10,8 @@ from documents.api_views import (
     BatchListView, DocumentViewFile,
     AdminBatchListView, AdminBatchApproveView, AdminBatchRejectView,
 )
+from documents.api_views import OCRView
+
 
 api = [
     path('auth/csrf/',              csrf_view),
@@ -26,6 +28,9 @@ api = [
     path('admin/batches/<str:batch_id>/reject/', AdminBatchRejectView.as_view()),
     path('admin/users/',                            AdminUsersView.as_view()),
     path('admin/users/<int:user_id>/',              AdminUserDetailView.as_view()),
+
+    path('documents/ocr/', OCRView.as_view()),
+
 ]
 
 urlpatterns = [

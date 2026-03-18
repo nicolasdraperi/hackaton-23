@@ -13,7 +13,7 @@ from .mongo import documents_collection
 from datetime import datetime
 import os
 from django.conf import settings
-
+from .services.ocr import run_ocr
 
 
 def _mime(doc):
@@ -229,3 +229,14 @@ class AdminBatchRejectView(APIView):
         )
 
         return Response({"message": "rejected"})
+
+# OCR 
+class OCRView(APIView):
+    parser_classes = [MultiPartParser, FormParser]
+
+    def post(self, request):
+        file = request.FILES.get('file')
+        if not file:
+            return Response({'detail': 'Aucun fichier fourni.'}, status=400)
+        result = run_ocr(file)
+        return Response(result)
