@@ -256,7 +256,7 @@ for file_path in file_paths:
 
     def validate_dates(date_devis, date_prestation):
         if not date_devis or not date_prestation:
-            return None  # impossible de vérifier
+            return None 
 
         # différence en jours
         delta = date_prestation - date_devis
@@ -265,8 +265,10 @@ for file_path in file_paths:
         max_delta = timedelta(days=365 * 7)
 
         return timedelta(days=0) <= delta <= max_delta
+
     # vérifie que le delta entre date prestation et date devis inférieur à 7 ans
     is_valid = validate_dates(date_devis, date_prestation)
+
     if is_valid is False:
         date_issues.append("date prestation dépasse de plus de 7 ans la date du devis")
 
@@ -459,12 +461,21 @@ for file_path in file_paths:
 
                     next_line = lines[i + j].strip()
 
+                    # stop si uniquement chiffres
+                    if re.match(r"^\d+$", next_line):
+                        break
+
                     # couper si code postal présent
                     if re.search(r"\b\d{5}\b", next_line):
                         next_line = re.split(r"\b\d{5}\b", next_line)[0]
 
-                    # couper mots parasites
+                    # stop si mots parasites
+                    if next_line.lower() in ["siret", "tva", "rcs"]:
+                        break
+                    
+                    # nettoyage 
                     next_line = re.split(r"\b(SIRET|TVA|RCS)\b", next_line, flags=re.IGNORECASE)[0]
+
 
                     # STOP si adresse détectée
                     if any(word in next_line.lower() for word in ADDRESS_KEYWORDS):
@@ -473,7 +484,7 @@ for file_path in file_paths:
                     # nettoyer
                     next_line = next_line.strip(" ,;")
 
-                    # stop si ligne vide ou mot clé type adresse
+                    # stop si ligne vide 
                     if not next_line:
                         break
 
