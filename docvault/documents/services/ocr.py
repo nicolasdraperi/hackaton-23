@@ -415,17 +415,74 @@ for file_path in file_paths:
 
     # NOM ENTREPRISE
 
-    company = re.search(r"vendeur\s+([A-Z][A-Z\s]+)", text, re.IGNORECASE)
+    # extraction du texte
+    lines = [item["text"] for item in ocr_data]
 
-    if company:
+    company_value = None
 
-        company_value = company.group(1).strip()
-        company_conf = None
+    # récupérer l'élément suivant société ou vendeur
+    ADDRESS_KEYWORDS = [
+    "rue", "avenue", "av", "boulevard", "bd",
+    "route", "chemin", "impasse",
+    "place", "allée", "piste"
+    ]
+    
+    for i, line in enumerate(lines):
+        if "société" in line.lower() or "vendeur" in line.lower():
+
+            company_parts = []
+            for j in range(1, 4):
+                if i + j < len(lines):
+
+                    next_line = lines[i + j].strip()
+
+                    # couper si code postal présent
+                    if re.search(r"\b\d{5}\b", next_line):
+                        next_line = re.split(r"\b\d{5}\b", next_line)[0]
+
+                    # couper mots parasites
+                    next_line = re.split(r"\b(SIRET|TVA|RCS)\b", next_line, flags=re.IGNORECASE)[0]
+
+                    # STOP si adresse détectée
+                    if any(word in next_line.lower() for word in ADDRESS_KEYWORDS):
+                        break
+
+                    # nettoyer
+                    next_line = next_line.strip(" ,;")
+
+                    # stop si ligne vide ou mot clé type adresse
+                    if not next_line:
+                        break
+
+                    company_parts.append(next_line)
+
+            if company_parts:
+                company_value = " ".join(company_parts)
+
+            break
+
+    # fallback regex
+    if not company_value:
+        match = re.search(
+            r"(?:vendeur|soc[i1]e[t7][eé])\s+([a-zA-Z][a-zA-Z\s\-]+)",
+            full_text,
+            re.IGNORECASE
+        )
+        if match:
+            company_value = match.group(1).strip()
+
+    # confiance
+    if company_value:
+
+        scores = []
 
         for item in ocr_data:
-            if item["text"] in company_value:
-                company_conf = item["confidence"]
+            if item["text"].lower() in company_value.lower():
+                scores.append(item["confidence"])
 
+        company_conf = sum(scores) / len(scores) if scores else None
+
+    # extraction des données
         extracted_data["entreprise"] = {
             "value": company_value,
             "confidence": company_conf,
@@ -439,7 +496,6 @@ for file_path in file_paths:
             "valid": False,
             "missing": True
         }
-
 
     # MONTANTS (HT / TTC)
 
