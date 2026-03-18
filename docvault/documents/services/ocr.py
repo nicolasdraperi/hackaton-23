@@ -15,6 +15,7 @@ import numpy as np
 import os
 
 from datetime import datetime
+from datetime import timedelta
 from validation import validate_document
 
 # chemin du document à analyser
@@ -232,7 +233,7 @@ for file_path in file_paths:
         )
 
 
-    # Vérification date de paiement >= date facture
+    # Vérification incohérence de dates
     date_issues = []
 
     def get_date(field):
@@ -242,10 +243,32 @@ for file_path in file_paths:
 
     date_facture = get_date("date_facture")
     date_paiement = get_date("date_paiement")
+    date_devis = get_date("date_devis")
+    date_prestation = get_date("date_prestation")
 
     if date_facture and date_paiement:
         if date_paiement <= date_facture:
             date_issues.append("date paiement antérieure à la date facture")
+
+    if date_prestation and date_devis:
+        if date_prestation < date_devis:
+            date_issues.append("date prestation antérieure à la date devis")
+
+    def validate_dates(date_devis, date_prestation):
+        if not date_devis or not date_prestation:
+            return None  # impossible de vérifier
+
+        # différence en jours
+        delta = date_prestation - date_devis
+
+        # 7 ans ≈ 2555 jours
+        max_delta = timedelta(days=365 * 7)
+
+        return timedelta(days=0) <= delta <= max_delta
+    # vérifie que le delta entre date prestation et date devis inférieur à 7 ans
+    is_valid = validate_dates(date_devis, date_prestation)
+    if is_valid is False:
+        date_issues.append("date prestation dépasse de plus de 7 ans la date du devis")
 
     # stockage de l'erreur de date
     if date_issues:
