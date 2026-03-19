@@ -23,6 +23,45 @@ from .validation import validate_document
 # file_paths = ["devis/propres/vrais/devis_vrai_002.pdf"]
 reader = easyocr.Reader(['fr'], gpu=False)
 
+# gestion du flou 
+
+def is_blurry(image, threshold=100):
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    variance = cv2.Laplacian(gray, cv2.CV_64F).var()
+    print(f"Score de netteté : {variance:.2f} (seuil : {threshold})")
+    return variance < threshold
+
+
+def sharpen_strong(image):
+    kernel = np.array([[-1, -1, -1],
+                       [-1,  9, -1],
+                       [-1, -1, -1]])
+    return cv2.filter2D(image, -1, kernel)
+
+
+def preprocess(image):
+    image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+    blurry = is_blurry(image)
+
+    if blurry:
+        print("Document flou détecté — application du traitement anti-flou")
+        image = sharpen_strong(image)
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        clahe = cv2.createCLAHE(clipLimit=4.0, tileGridSize=(4, 4))
+        gray = clahe.apply(gray)
+        gray = cv2.GaussianBlur(gray, (3, 3), 0)
+        _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        kernel = np.ones((2, 2), np.uint8)
+        thresh = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
+    else:
+        print("Document net — traitement standard")
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+        gray = clahe.apply(gray)
+        gray = cv2.GaussianBlur(gray, (5, 5), 0)
+        _, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
+
+    return thresh
 
 def run_ocr(file_path):
     # updated to handle file upload in Django
@@ -57,22 +96,28 @@ def run_ocr(file_path):
         images_to_process.append(image)
 
     # préparation des images
+
     for i, image in enumerate(images_to_process):
+        thresh = preprocess(image)
+        results = reader.readtext(thresh)
+
+    #old com
+    #for i, image in enumerate(images_to_process):
 
         # agrandir l'image pour améliorer la précision OCR
-        image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+        #image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
 
         # convertir l'image en niveaux de gris
-        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        #gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
         # suppression du bruit
-        gray = cv2.GaussianBlur(gray, (5,5), 0)
+        #gray = cv2.GaussianBlur(gray, (5,5), 0)
 
         # binarisation (texte noir / fond blanc)
-        _, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
+        #_, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
 
         # exécuter l'OCR
-        results = reader.readtext(thresh)
+        #results = reader.readtext(thresh)
 
 
         texts = []

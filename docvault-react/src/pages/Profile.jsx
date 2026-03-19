@@ -97,25 +97,9 @@ export default function Profile() {
               </form>
             </div>
           </Card>
-
-          {/* Danger zone */}
-          <div style={{ border: `1px solid ${C.no}`, borderRadius: C.r, padding: '1.1rem 1.35rem', background: C.noBg, marginTop: '1.5rem' }}>
-            <h3 style={{ color: C.no, fontFamily: C.font, fontSize: '.95rem', marginBottom: 6 }}>Zone dangereuse</h3>
-            <p style={{ fontSize: '.85rem', color: C.no, marginBottom: '1rem' }}>La suppression de votre compte est irreversible.</p>
-            <Btn variant="danger" size="sm" onClick={() => setDeleteOpen(true)}>Supprimer mon compte</Btn>
-          </div>
         </div>
       </div>
 
-      <Modal open={deleteOpen} onClose={() => setDeleteOpen(false)} title="Supprimer mon compte">
-        <p style={{ fontSize: '.875rem', color: C.ink2, marginBottom: '1.5rem', lineHeight: 1.6 }}>
-          Cette action est <strong>irreversible</strong>. Votre compte et tous vos documents seront definitvement supprimes.
-        </p>
-        <div style={{ display: 'flex', gap: 10, justifyContent: 'flex-end' }}>
-          <Btn variant="outline" onClick={() => setDeleteOpen(false)}>Annuler</Btn>
-          <Btn variant="danger" loading={deleting} onClick={handleDelete}>Confirmer la suppression</Btn>
-        </div>
-      </Modal>
     </Page>
   )
 }

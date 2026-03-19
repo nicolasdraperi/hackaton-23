@@ -13,7 +13,7 @@ function AuthWrap({ tab, maxWidth = 400, children }) {
       <div style={{ width: '100%', maxWidth }}>
         <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
           <h1 style={{ fontFamily: C.font, fontWeight: 800, fontSize: '1.9rem', letterSpacing: '-.03em' }}>
-            Deus<span style={{ color: C.acc }}>Vult</span>
+            Doc<span style={{ color: C.acc }}>Vault</span>
           </h1>
           <p style={{ color: C.ink2, fontSize: '.875rem', marginTop: 4 }}>Gestion des documents</p>
         </div>

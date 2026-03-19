@@ -31,7 +31,8 @@ class BatchListView(APIView):
 
 
     def get(self, request):
-        query = {"user_id": request.user.id}
+        #query = {"user_id": request.user.id}
+        query = {"user_id": int(request.user.id)}
         s = request.query_params.get('status', '')
         if s:
             query["status"] = s

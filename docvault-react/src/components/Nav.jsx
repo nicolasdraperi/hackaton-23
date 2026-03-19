@@ -27,7 +27,7 @@ export default function Nav() {
     }}>
       {/* Brand */}
       <NavLink to="/" style={{ fontFamily: C.font, fontWeight: 800, fontSize: '1.1rem', color: '#fff', letterSpacing: '-.02em', flexShrink: 0 }}>
-        Deus<span style={{ color: C.acc }}>Vult</span>
+        Doc<span style={{ color: C.acc }}>Vault</span>
         {adm && (
           <span style={{ background: C.adm, color: '#fff', fontSize: '.65rem', padding: '2px 6px', borderRadius: 4, fontWeight: 600, marginLeft: 8, letterSpacing: '.04em', verticalAlign: 'middle' }}>
             ADMIN
