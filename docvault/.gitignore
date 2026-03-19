@@ -1,5 +1,6 @@
 # Python
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *.sqlite3
 
@@ -11,10 +12,6 @@ venv/
 *.log
 staticfiles/
 media/
-
-# migrations (optionnel)
-**/migrations/*
-!**/migrations/__init__.py
 
 # IDE
 .vscode/
