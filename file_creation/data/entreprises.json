@@ -1,0 +1,5002 @@
+[
+    {
+        "nom_societe": "PASSIONNEMENT GLAMOUR",
+        "adresse_societe": "AVENUE DES THERMES, 04800 GREOUX-LES-BAINS",
+        "id_vendeur": "00545009300033"
+    },
+    {
+        "nom_societe": "LE SYMPA SNACK",
+        "adresse_societe": "PISTE DE L'AIGUILLE, 04260 ALLOS",
+        "id_vendeur": "00554155200039"
+    },
+    {
+        "nom_societe": "BIGMAT",
+        "adresse_societe": "438 RUE ROSA LUXEMBOURG, 80450 CAMON",
+        "id_vendeur": "00562003400032"
+    },
+    {
+        "nom_societe": "DUBOIS",
+        "adresse_societe": "10 RUE DE LA TANNERIE, 80100 ABBEVILLE",
+        "id_vendeur": "00562011700019"
+    },
+    {
+        "nom_societe": "ETABLISSEMENTS DECAYEUX",
+        "adresse_societe": "13 RUE DES INDUSTRIES, 77460 SOUPPES-SUR-LOING",
+        "id_vendeur": "00572078400163"
+    },
+    {
+        "nom_societe": "ENTREPRISE COMBA",
+        "adresse_societe": "PL DE L'EGLISE, 04700 ORAISON",
+        "id_vendeur": "00575038500055"
+    },
+    {
+        "nom_societe": "HOTEL ROYAL THALASSO",
+        "adresse_societe": "6 AVENUE PIERRE LOTI, 44500 LA BAULE-ESCOUBLAC",
+        "id_vendeur": "00578096000026"
+    },
+    {
+        "nom_societe": "LE PONTON",
+        "adresse_societe": "LA PLAGE, 44500 LA BAULE-ESCOUBLAC",
+        "id_vendeur": "00578096000042"
+    },
+    {
+        "nom_societe": "CENTRE DE THALASSOTHERAPIE LA BAULE",
+        "adresse_societe": "AVENUE MARIE-LOUISE, 44500 LA BAULE-ESCOUBLAC",
+        "id_vendeur": "00578096000059"
+    },
+    {
+        "nom_societe": "TENNIS COUNTRY CLUB",
+        "adresse_societe": "113 AVENUE DU MARECHAL DE LATTRE DE TASSIGNY, 44500 LA BAULE-ESCOUBLAC",
+        "id_vendeur": "00578096000067"
+    },
+    {
+        "nom_societe": "CASTEL MARIE-LOUISE",
+        "adresse_societe": "AVENUE HEURTEAU, 44500 LA BAULE-ESCOUBLAC",
+        "id_vendeur": "00578096000075"
+    },
+    {
+        "nom_societe": "GOLF CLUB LA BAULE",
+        "adresse_societe": "DOMAINE DE ST DENAC, 44117 SAINT-ANDRE-DES-EAUX",
+        "id_vendeur": "00578096000083"
+    },
+    {
+        "nom_societe": "CIRO'S LA BAULE",
+        "adresse_societe": "5 ESPLANADE FRANCOIS ANDRE, 44500 LA BAULE-ESCOUBLAC",
+        "id_vendeur": "00578096000109"
+    },
+    {
+        "nom_societe": "HOTEL HERMITAGE",
+        "adresse_societe": "5 ESP LUCIEN BARRIERE, 44500 LA BAULE-ESCOUBLAC",
+        "id_vendeur": "00578096000117"
+    },
+    {
+        "nom_societe": "ACTEMIUM ABBEVILLE",
+        "adresse_societe": "140 RUE DU CHATEAU D'EAU, 80100 ABBEVILLE",
+        "id_vendeur": "00582037800031"
+    },
+    {
+        "nom_societe": "DEMOUSELLE TERTIAIRE",
+        "adresse_societe": "26 RUE RENE DINGEON, 80100 ABBEVILLE",
+        "id_vendeur": "00582037800239"
+    },
+    {
+        "nom_societe": "DEMOUSELLE SOISSONS",
+        "adresse_societe": "LE CHEMIN VERT, 02200 MERCIN ET VAUX",
+        "id_vendeur": "00582037800254"
+    },
+    {
+        "nom_societe": "P.A.M.M.",
+        "adresse_societe": "RTE NATIONALE 1, 80420 FLIXECOURT",
+        "id_vendeur": "00592019400031"
+    },
+    {
+        "nom_societe": "LIBRAIRIE COOP BREIZH",
+        "adresse_societe": "60 RUE DU PORT, 56100 LORIENT",
+        "id_vendeur": "00608017000076"
+    },
+    {
+        "nom_societe": "C.A.D.D.A.C.",
+        "adresse_societe": "2 RUE JACQUES  RIBOUD, 44480 DONGES",
+        "id_vendeur": "00628030900102"
+    },
+    {
+        "nom_societe": "BLANC RENE",
+        "adresse_societe": "IMPASSE DE DOUVILLE, 83390 PUGET-VILLE",
+        "id_vendeur": "00634188700039"
+    },
+    {
+        "nom_societe": "TRANSPORTS MORAND",
+        "adresse_societe": "5 RUE NICOLAS APPERT, 44400 REZE",
+        "id_vendeur": "00648006500025"
+    },
+    {
+        "nom_societe": "POUR ACTIVITE LOCATION TERRAIN GOLF",
+        "adresse_societe": "CHS DE LA BRETESCHE, 44780 MISSILLAC",
+        "id_vendeur": "00658046800012"
+    },
+    {
+        "nom_societe": "SYMARTIN",
+        "adresse_societe": "38 AVENUE LOUIS LAJARRIGE, 44500 LA BAULE-ESCOUBLAC",
+        "id_vendeur": "00668021900018"
+    },
+    {
+        "nom_societe": "SOFOP",
+        "adresse_societe": "3 ROUTE DE LA TORSE, 44550 MONTOIR-DE-BRETAGNE",
+        "id_vendeur": "00678051400037"
+    },
+    {
+        "nom_societe": "OCEANIC",
+        "adresse_societe": "130 RUE HENRI GAUTIER, 44550 MONTOIR-DE-BRETAGNE",
+        "id_vendeur": "00678051400045"
+    },
+    {
+        "nom_societe": "MULTIGRAPHIC",
+        "adresse_societe": "1 RUE D'ESTIENNE D'ORVES, 44260 MALVILLE",
+        "id_vendeur": "00678051400094"
+    },
+    {
+        "nom_societe": "U5 BIS",
+        "adresse_societe": "43 RUE BAPTISTE MARCET, 44570 TRIGNAC",
+        "id_vendeur": "00678051400110"
+    },
+    {
+        "nom_societe": "SALLE DE JEUX JUGY",
+        "adresse_societe": "PRA LOUP, 04400 UVERNET FOURS",
+        "id_vendeur": "00684162100029"
+    },
+    {
+        "nom_societe": "ATELIERS DE LA PROVIDENCE",
+        "adresse_societe": "4 RUE DE L'EUROPE, 44260 MALVILLE",
+        "id_vendeur": "00698023900021"
+    },
+    {
+        "nom_societe": "LA MAISON DU POELE",
+        "adresse_societe": "25 RUE FERDINAND DE LESSEPS, 04000 DIGNE-LES-BAINS",
+        "id_vendeur": "00705012300038"
+    },
+    {
+        "nom_societe": "COOPERATIVE MARITIME",
+        "adresse_societe": "2 RUE DE KER DAVID, 44490 LE CROISIC",
+        "id_vendeur": "00708001300027"
+    },
+    {
+        "nom_societe": "MEGALITHES",
+        "adresse_societe": "22 LE PAQUEBOT, 44600 SAINT-NAZAIRE",
+        "id_vendeur": "00708003900022"
+    },
+    {
+        "nom_societe": "LANG CONSTRUCTION",
+        "adresse_societe": "7 RUE EUGENE CORNET, 44600 SAINT-NAZAIRE",
+        "id_vendeur": "00708019500030"
+    },
+    {
+        "nom_societe": "DOLMEN NANTES",
+        "adresse_societe": "RUE DE LA BELLE ETOILE, 44470 THOUARE-SUR-LOIRE",
+        "id_vendeur": "00708077300158"
+    },
+    {
+        "nom_societe": "DOLMEN RENNES PACE",
+        "adresse_societe": "RUE JEAN HOLLIER, 35740 PACE",
+        "id_vendeur": "00708077300182"
+    },
+    {
+        "nom_societe": "PIERRE DE L'YONNE",
+        "adresse_societe": "LD LES LAVIERES, 89310 MOLAY",
+        "id_vendeur": "00708077300232"
+    },
+    {
+        "nom_societe": "DOLMEN PONT AVEN",
+        "adresse_societe": "KER FUR, 29930 PONT-AVEN",
+        "id_vendeur": "00708077300240"
+    },
+    {
+        "nom_societe": "CARRIERES MEN ARVOR",
+        "adresse_societe": "ZA DE KERVANON, 29610 PLOUIGNEAU",
+        "id_vendeur": "00708077300356"
+    },
+    {
+        "nom_societe": "DOLMEN DINARD",
+        "adresse_societe": "85 RUE DE LA LIBERTE, 35540 MINIAC-MORVAN",
+        "id_vendeur": "00708077300406"
+    },
+    {
+        "nom_societe": "LE SURCOUF",
+        "adresse_societe": "41 RUE DE RICHEBOURG, 44000 NANTES",
+        "id_vendeur": "00717175400026"
+    },
+    {
+        "nom_societe": "ESPACE AUTO PRESQU'ILE",
+        "adresse_societe": "RUE DE LA BRIQUERIE, 44350 GUERANDE",
+        "id_vendeur": "00718053200041"
+    },
+    {
+        "nom_societe": "TRIGNAC AUTO",
+        "adresse_societe": "RUE DE LA ROSELIERE, 44570 TRIGNAC",
+        "id_vendeur": "00718053200066"
+    },
+    {
+        "nom_societe": "VANNERIE DU BOISLE",
+        "adresse_societe": "RUE DE LA BONNE DAME, 80120 QUEND",
+        "id_vendeur": "00722033800037"
+    },
+    {
+        "nom_societe": "HOTEL DES BERGERS",
+        "adresse_societe": "UVERNET, 04400 UVERNET-FOURS",
+        "id_vendeur": "00724204300029"
+    },
+    {
+        "nom_societe": "COUP'COUD SERVICES ARTS ET DECO",
+        "adresse_societe": "10 RUE DU COLONEL ROUX, 05000 GAP",
+        "id_vendeur": "00724229000059"
+    },
+    {
+        "nom_societe": "CHERINGTON MANAGEMENT",
+        "adresse_societe": "7 RUE DE BIZIENNE, 44350 GUERANDE",
+        "id_vendeur": "00727294100027"
+    },
+    {
+        "nom_societe": "SUPER U",
+        "adresse_societe": "54 RUE LEON BOURGEOIS, 44600 SAINT-NAZAIRE",
+        "id_vendeur": "00728037300015"
+    },
+    {
+        "nom_societe": "LE FIACRE",
+        "adresse_societe": "6 RUE DES POMMIERS, 80120 QUEND",
+        "id_vendeur": "00732021100035"
+    },
+    {
+        "nom_societe": "HOTEL RESTAURANT LE PROVENCE",
+        "adresse_societe": "ROUTE DE LA MALINE, 04120 LA PALUD-SUR-VERDON",
+        "id_vendeur": "00734156300034"
+    },
+    {
+        "nom_societe": "GALERIE MODERNE - CATHY FLEURS",
+        "adresse_societe": "8 PLACE DES HEROS DE RESISTANCE, 04210 VALENSOLE",
+        "id_vendeur": "00734175300031"
+    },
+    {
+        "nom_societe": "MINETTO MATERIAUX",
+        "adresse_societe": "100 ROUTE DE GAP, 04200 SISTERON",
+        "id_vendeur": "00735020000072"
+    },
+    {
+        "nom_societe": "ROCHE VILAINE OCEAN",
+        "adresse_societe": "17 RUE DU CLOS RIGNAC, 44350 GUERANDE",
+        "id_vendeur": "00738004100074"
+    },
+    {
+        "nom_societe": "SA CARIANE BOURGOGNE AMCO",
+        "adresse_societe": "21110 ROUVRES-EN-PLAINE",
+        "id_vendeur": "01545059600042"
+    },
+    {
+        "nom_societe": "VILLEO",
+        "adresse_societe": "21 RUE ROUGET DE LISLE, 71300 MONTCEAU-LES-MINES",
+        "id_vendeur": "01545063800075"
+    },
+    {
+        "nom_societe": "LA BRIOCHE DOREE",
+        "adresse_societe": "52 AVENUE DU CANADA, 35200 RENNES",
+        "id_vendeur": "01545121400041"
+    },
+    {
+        "nom_societe": "EIFFAGE CONSTRUCTION COTE D'OR",
+        "adresse_societe": "4 RUE LAVOISIER, 21600 LONGVIC",
+        "id_vendeur": "01545141200025"
+    },
+    {
+        "nom_societe": "EIFFAGE CONSTRUCTION FRANCHE COMTE",
+        "adresse_societe": "10 RUE DU VALLON, 25480 ECOLE-VALENTIN",
+        "id_vendeur": "01545141200058"
+    },
+    {
+        "nom_societe": "EIFFAGE CONSTRUCTION SAONE ET LOIRE",
+        "adresse_societe": "ZA LA TUILERIE, 71640 DRACY-LE-FORT",
+        "id_vendeur": "01545141200074"
+    },
+    {
+        "nom_societe": "EIFFAGE CONSTRUC. BOURGOGNE FRANCHE COMTE SUPPORT",
+        "adresse_societe": "4 RUE LAVOISIER, 21600 LONGVIC",
+        "id_vendeur": "01545141200082"
+    },
+    {
+        "nom_societe": "EIFFAGE CONSTRUCTION BOURGOGNE FRANCHE COMTE AMEL",
+        "adresse_societe": "4 RUE LAVOISIER, 21600 LONGVIC",
+        "id_vendeur": "01545141200090"
+    },
+    {
+        "nom_societe": "LE CINTRA - L'ADAGIO",
+        "adresse_societe": "13 AVENUE MARECHAL FOCH, 21000 DIJON",
+        "id_vendeur": "01555034600017"
+    },
+    {
+        "nom_societe": "LA TRATTORIA",
+        "adresse_societe": "CENTRE COMMERCIAL LA CROISETTE, 73440 LES BELLEVILLE",
+        "id_vendeur": "01555034600025"
+    },
+    {
+        "nom_societe": "FAMILLE CHERON / HERITIERS MISSET CHERON",
+        "adresse_societe": "2459 ROUTE DE VAISON, 84190 VACQUEYRAS",
+        "id_vendeur": "01555065000046"
+    },
+    {
+        "nom_societe": "TERROIRS DE FAMILLE",
+        "adresse_societe": "2459 ROUTE DE VAISON, 84190 VACQUEYRAS",
+        "id_vendeur": "01555065000061"
+    },
+    {
+        "nom_societe": "CHENOVE",
+        "adresse_societe": "9 RUE ANTOINE BECQUEREL, 21300 CHENOVE",
+        "id_vendeur": "01555088200110"
+    },
+    {
+        "nom_societe": "AUTO DISTRIBUTION JULLIEN",
+        "adresse_societe": "ZAC DES PLATIERES, 71000 SANCE",
+        "id_vendeur": "01555088200227"
+    },
+    {
+        "nom_societe": "AUTODISTRIBUTION COLARD",
+        "adresse_societe": "22 AVENUE D'ALTKIRCH, 90000 BELFORT",
+        "id_vendeur": "01555088200284"
+    },
+    {
+        "nom_societe": "AUTODISTRIBUTION COLARD",
+        "adresse_societe": "70000 PUSEY",
+        "id_vendeur": "01555088200292"
+    },
+    {
+        "nom_societe": "AUTODISTRIBUTION COLARD",
+        "adresse_societe": "13 RUE DU DOCTEUR GRENIER, 25300 PONTARLIER",
+        "id_vendeur": "01555088200318"
+    },
+    {
+        "nom_societe": "AUTODISTRIBUTION COLARD",
+        "adresse_societe": "14 BOULEVARD JOHN F. KENNEDY, 25000 BESANCON",
+        "id_vendeur": "01555088200326"
+    },
+    {
+        "nom_societe": "AD COLARD",
+        "adresse_societe": "24 AVENUE JEAN JAURES, 25400 AUDINCOURT",
+        "id_vendeur": "01555088200508"
+    },
+    {
+        "nom_societe": "HERBEMONT, AD, OREXAD.",
+        "adresse_societe": "RUE ST EXUPERY, 55100 VERDUN",
+        "id_vendeur": "01555088200631"
+    },
+    {
+        "nom_societe": "HERBEMONT",
+        "adresse_societe": "17 RUE PAULIN RICHIER, 08000 CHARLEVILLE-MEZIERES",
+        "id_vendeur": "01555088200714"
+    },
+    {
+        "nom_societe": "AUTODISTRIBUTION JULLIEN",
+        "adresse_societe": "GRANDES EPENOTTES, 39100 DOLE",
+        "id_vendeur": "01555088200789"
+    },
+    {
+        "nom_societe": "ASM",
+        "adresse_societe": "20 RUE NICOLAS APPERT, 51430 TINQUEUX",
+        "id_vendeur": "01555088200839"
+    },
+    {
+        "nom_societe": "AUTODISTRIBUTION JULLIEN",
+        "adresse_societe": "9 RUE PAUL SABATIER, 71100 CHALON-SUR-SAONE",
+        "id_vendeur": "01555088200854"
+    },
+    {
+        "nom_societe": "HERBEMONT",
+        "adresse_societe": "2 ROUTE DE REIMS, 55000 FAINS-VEEL",
+        "id_vendeur": "01555088200862"
+    },
+    {
+        "nom_societe": "GADEST",
+        "adresse_societe": "CHE DE VOITRELLE, 51470 SAINT-MEMMIE",
+        "id_vendeur": "01555088200888"
+    },
+    {
+        "nom_societe": "HERBEMONT",
+        "adresse_societe": "AV DU BOIS LEGRAS, 51300 VITRY LE FRANCOIS",
+        "id_vendeur": "01555088200896"
+    },
+    {
+        "nom_societe": "AUTODISTRIBUTION JULLIEN",
+        "adresse_societe": "21 BOULEVARD THIERS, 52000 CHAUMONT",
+        "id_vendeur": "01555088200904"
+    },
+    {
+        "nom_societe": "HERBEMONT",
+        "adresse_societe": "77 AVENUE ALFRED ANATOLE THEVENET, 51530 MAGENTA",
+        "id_vendeur": "01555088200912"
+    },
+    {
+        "nom_societe": "AUTODISTRIBUTION HERBEMONT",
+        "adresse_societe": "67 AVENUE DU GENERAL SARRAIL, 52100 SAINT-DIZIER",
+        "id_vendeur": "01555088200920"
+    },
+    {
+        "nom_societe": "AUTODISTRIBUTION JULLIEN - AUTO PIECES",
+        "adresse_societe": "16 BD DES ABATTOIRS, 71210 TORCY",
+        "id_vendeur": "01555088200938"
+    },
+    {
+        "nom_societe": "AUTODISTRIBUTION HERBEMONT - AUTO PIECES SERVICES",
+        "adresse_societe": "AVENUE DU CHENE SAINT AMAND, 52100 SAINT-DIZIER",
+        "id_vendeur": "01555088200946"
+    },
+    {
+        "nom_societe": "ENT. DE MENUISERIE A. MUGNIER",
+        "adresse_societe": "25 RUE DE L’INGENIEUR BERTIN, 21600 LONGVIC",
+        "id_vendeur": "01555140100035"
+    },
+    {
+        "nom_societe": "FREDERIC MUGNIER",
+        "adresse_societe": "PASSAGE MONTGOLFIER, 21700 NUITS-SAINT-GEORGES",
+        "id_vendeur": "01555145000065"
+    },
+    {
+        "nom_societe": "GROUPE CHOPARD",
+        "adresse_societe": "11 RUE PAUL LANGEVIN, 21300 CHENOVE",
+        "id_vendeur": "01555166600058"
+    },
+    {
+        "nom_societe": "LEJAY LAGOUTE - APERCADI",
+        "adresse_societe": "5 RUE ETIENNE DOLET, 21000 DIJON",
+        "id_vendeur": "01565003900041"
+    },
+    {
+        "nom_societe": "EDMOND BRIOTTET -JULES THEURIET - COMPTOIR DIJONNAIS DU CASSIS",
+        "adresse_societe": "12 RUE BERLIER, 21000 DIJON",
+        "id_vendeur": "01565028600014"
+    },
+    {
+        "nom_societe": "L'ALCOVE",
+        "adresse_societe": "270 RUE DE LA PIECE CORNUE, 21160 MARSANNAY-LA-COTE",
+        "id_vendeur": "01565092200048"
+    },
+    {
+        "nom_societe": "DEMENAGEMENTS D. FRANTZ",
+        "adresse_societe": "RUE AU BOUCHET, 21000 DIJON",
+        "id_vendeur": "01565100300046"
+    },
+    {
+        "nom_societe": "LA CLE DE SOL - LE SHOP DU SON",
+        "adresse_societe": "2 BOULEVARD DU CHAMP AUX METIERS, 21800 QUETIGNY",
+        "id_vendeur": "01565120100038"
+    },
+    {
+        "nom_societe": "HOTEL DARCY DIJON CENTRE",
+        "adresse_societe": "2 RUE DE LA LIBERTE, 21000 DIJON",
+        "id_vendeur": "01565125000019"
+    },
+    {
+        "nom_societe": "COOP HABITAT BOURGOGNE",
+        "adresse_societe": "69 AVENUE BOUCICAUT, 71100 CHALON-SUR-SAONE",
+        "id_vendeur": "01575074800046"
+    },
+    {
+        "nom_societe": "LA TABLE DE PIERRE BOUREE",
+        "adresse_societe": "40 ROUTE DE BEAUNE, 21220 GEVREY-CHAMBERTIN",
+        "id_vendeur": "01575096100037"
+    },
+    {
+        "nom_societe": "NEOTYPO",
+        "adresse_societe": "1 RUE LAVOISIER, 25000 BESANCON",
+        "id_vendeur": "01575111800033"
+    },
+    {
+        "nom_societe": "FABRICE GILLOTTE",
+        "adresse_societe": "21 RUE DU BOURG, 21000 DIJON",
+        "id_vendeur": "01575114200017"
+    },
+    {
+        "nom_societe": "FABRICE GILLOTTE",
+        "adresse_societe": "ZA DE BEAUREGARD LES ROSIERES, 21490 NORGES-LA-VILLE",
+        "id_vendeur": "01575114200033"
+    },
+    {
+        "nom_societe": "FABRICE GILLOTTE CREATEUR CHOCOLATIER",
+        "adresse_societe": "33 RUE CARNOT, 21200 BEAUNE",
+        "id_vendeur": "01575114200041"
+    },
+    {
+        "nom_societe": "FABRICE GILLOTTE",
+        "adresse_societe": "34 RUE DES GRANGES, 25000 BESANCON",
+        "id_vendeur": "01575114200058"
+    },
+    {
+        "nom_societe": "BEURRE NOISETTE",
+        "adresse_societe": "50 RUE DU BOURG, 21000 DIJON",
+        "id_vendeur": "01575114200066"
+    },
+    {
+        "nom_societe": "MULOT ET PETITJEAN",
+        "adresse_societe": "6 BOULEVARD DE L'OUEST, 21000 DIJON",
+        "id_vendeur": "01575153000054"
+    },
+    {
+        "nom_societe": "GODARD",
+        "adresse_societe": "24 RUE ANTOINE BECQUEREL, 21300 CHENOVE",
+        "id_vendeur": "01575266000066"
+    },
+    {
+        "nom_societe": "GRAND HOTEL DE LA CLOCHE",
+        "adresse_societe": "2 AVENUE DE LA 1ERE ARMEE FRANCAISE, 21000 DIJON",
+        "id_vendeur": "01575304900012"
+    },
+    {
+        "nom_societe": "SAEGB",
+        "adresse_societe": "14 RUE DE CLUJ, 21000 DIJON",
+        "id_vendeur": "01575398100016"
+    },
+    {
+        "nom_societe": "MEPHISTO",
+        "adresse_societe": "7 RUE FRANCOIS RUDE, 21000 DIJON",
+        "id_vendeur": "01575462500034"
+    },
+    {
+        "nom_societe": "SIPA",
+        "adresse_societe": "15 RUE DU MOULIN, 21120 MARCILLY-SUR-TILLE",
+        "id_vendeur": "01585028200029"
+    },
+    {
+        "nom_societe": "AGIR TECHNOLOGIES - AGIR TECH - RIVOM - MOUTON - GMA",
+        "adresse_societe": "RUE DE LA JUSTICE, 21220 GEVREY-CHAMBERTIN",
+        "id_vendeur": "01585094400016"
+    },
+    {
+        "nom_societe": "JOLICAPRICE",
+        "adresse_societe": "CENTRE COMMERCIAL LA TOISON D'OR, 21000 DIJON",
+        "id_vendeur": "01585158700061"
+    },
+    {
+        "nom_societe": "JOLICAPRICE",
+        "adresse_societe": "36 RUE DES FORGES, 21000 DIJON",
+        "id_vendeur": "01585158700079"
+    },
+    {
+        "nom_societe": "G. DORAS SERVICES",
+        "adresse_societe": "7 RUE GAY LUSSAC, 21300 CHENOVE",
+        "id_vendeur": "01585179300032"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "19 RUE FRANCOIS MITTERRAND, 21120 IS-SUR-TILLE",
+        "id_vendeur": "01585179300040"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "15 RUE ANTOINE BECQUEREL, 21300 CHENOVE",
+        "id_vendeur": "01585179300057"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "ZI ROUTE DE DIJON, 21500 FAIN-LES-MONTBARD",
+        "id_vendeur": "01585179300065"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "20 RUE DE MAYENCE, 21000 DIJON",
+        "id_vendeur": "01585179300081"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "3 RUE CHARLES ANDRE REMI ARNOULT, 21700 NUITS-SAINT-GEORGES",
+        "id_vendeur": "01585179300131"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "Z I  L'ECHELOTTE, 21170 SAINT-USAGE",
+        "id_vendeur": "01585179300149"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "539 RUE DES ESSARDS, 71000 MACON",
+        "id_vendeur": "01585179300164"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "11 RUE DES GRIOTTONS, 71250 CLUNY",
+        "id_vendeur": "01585179300172"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "6 LA TERRE DES MOTTES, 71130 GUEUGNON",
+        "id_vendeur": "01585179300180"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "78 AVENUE GEORGES CLEMENCEAU, 25000 BESANCON",
+        "id_vendeur": "01585179300206"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "ZI LES MOUILLIERES, 52600 CHALINDREY",
+        "id_vendeur": "01585179300248"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "18 RUE LOUIS PERGAUD, 25300 PONTARLIER",
+        "id_vendeur": "01585179300255"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "16 ROUTE DE VILLENEUVE, 39600 ARBOIS",
+        "id_vendeur": "01585179300271"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "52 ROUTE DE SAINT-LOUP, 70000 VESOUL",
+        "id_vendeur": "01585179300289"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "RUE DE LA COMBE TETE AU LOUP, 21400 SAINTE-COLOMBE-SUR-SEINE",
+        "id_vendeur": "01585179300305"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "9 RUE DU CHAMP DU MOULIN, 25200 BETHONCOURT",
+        "id_vendeur": "01585179300313"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "RTE DE MENETREOL, 18300 SAINT-SATUR",
+        "id_vendeur": "01585179300339"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "47 RUE DES ABATTOIRS, 71200 LE CREUSOT",
+        "id_vendeur": "01585179300347"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "PORT FLUVIAL SUD, 71380 SAINT-MARCEL",
+        "id_vendeur": "01585179300370"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "4 RUE SAINTE ELISABETH, 71300 MONTCEAU-LES-MINES",
+        "id_vendeur": "01585179300396"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "ROUTE DE MOULINS, 58300 DECIZE",
+        "id_vendeur": "01585179300404"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "ROUTE DE CHATILLON, 58290 MOULINS-ENGILBERT",
+        "id_vendeur": "01585179300412"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "AVENUE DU 8 MAI 1945, 58800 CORBIGNY",
+        "id_vendeur": "01585179300420"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "LA SABLIERE, 58000 SAINT ELOI",
+        "id_vendeur": "01585179300438"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "2 ALLEE DES ENTREPRENEURS, 58200 COSNE-COURS-SUR-LOIRE",
+        "id_vendeur": "01585179300453"
+    },
+    {
+        "nom_societe": "DORAS LOCOUTI",
+        "adresse_societe": "6 RUE ANTOINE BECQUEREL, 21300 CHENOVE",
+        "id_vendeur": "01585179300461"
+    },
+    {
+        "nom_societe": "CAREO",
+        "adresse_societe": "7 RUE GAY LUSSAC, 21300 CHENOVE",
+        "id_vendeur": "01585179300511"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "RUE VERNIER ET COLLOT, 52200 LANGRES",
+        "id_vendeur": "01585179300529"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "476 RUE ANDRE MARIE AMPERE, 21200 BEAUNE",
+        "id_vendeur": "01585179300545"
+    },
+    {
+        "nom_societe": "CAREO",
+        "adresse_societe": "41 RUE DES PAQUERETTES, 70300 LUXEUIL-LES-BAINS",
+        "id_vendeur": "01585179300552"
+    },
+    {
+        "nom_societe": "CAREO",
+        "adresse_societe": "6 QUAI DE LA JONCTION, 58000 NEVERS",
+        "id_vendeur": "01585179300560"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "25 FAUBOURG D'EPINAL, 88200 REMIREMONT",
+        "id_vendeur": "01585179300628"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "9 RTE DE BESANCON, 25290 ORNANS",
+        "id_vendeur": "01585179300685"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "PRE LION, 01190 BOZ",
+        "id_vendeur": "01585179300743"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "ZA CHARRIERE, 70190 RIOZ",
+        "id_vendeur": "01585179300826"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "56 RUE DE LA BRETONNIERE, 71350 CIEL",
+        "id_vendeur": "01585179300834"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "RUE BENJAMIN FRANKLIN, 70190 RIOZ",
+        "id_vendeur": "01585179300875"
+    },
+    {
+        "nom_societe": "DORAS BRETHENAY",
+        "adresse_societe": "19 ROUTE DEPARTEMENTALE 200, 52000 BRETHENAY",
+        "id_vendeur": "01585179300883"
+    },
+    {
+        "nom_societe": "DORAS MENEO",
+        "adresse_societe": "28 AVENUE DE MARBOZ, 01000 BOURG-EN-BRESSE",
+        "id_vendeur": "01585179300917"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "2 ZA LA TUILERIE, 71640 DRACY-LE-FORT",
+        "id_vendeur": "01585179300925"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "2 ZA LA TUILERIE, 71640 DRACY-LE-FORT",
+        "id_vendeur": "01585179300933"
+    },
+    {
+        "nom_societe": "CLAUDE MATERIAUX",
+        "adresse_societe": "22 RTE DEPARTEMENTALE 606, 89270 ARCY-SUR-CURE",
+        "id_vendeur": "01585179300958"
+    },
+    {
+        "nom_societe": "MARTIN CARRELAGE",
+        "adresse_societe": "RUE DE L’ECLUSE, 10800 SAINT-THIBAULT",
+        "id_vendeur": "01585179300974"
+    },
+    {
+        "nom_societe": "MPPI",
+        "adresse_societe": "15 RUE ANTOINE BECQUEREL, 21300 CHENOVE",
+        "id_vendeur": "01585179300982"
+    },
+    {
+        "nom_societe": "CAREO",
+        "adresse_societe": "5 RUE DE LA GUERLANDE, 71880 CHATENOY-LE-ROYAL",
+        "id_vendeur": "01585179300990"
+    },
+    {
+        "nom_societe": "MENEO",
+        "adresse_societe": "19 ROUTE DEPARTEMENTALE 200, 52000 BRETHENAY",
+        "id_vendeur": "01585179301006"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "21 RUE MALGRAS, 52100 SAINT-DIZIER",
+        "id_vendeur": "01585179301030"
+    },
+    {
+        "nom_societe": "DORAS",
+        "adresse_societe": "9 RUE DES LIBELLULES, 25110 BAUME-LES-DAMES",
+        "id_vendeur": "01585179301048"
+    },
+    {
+        "nom_societe": "MPPI",
+        "adresse_societe": "42 RUE PASTEUR, 10430 ROSIERES-PRES-TROYES",
+        "id_vendeur": "01585179301105"
+    },
+    {
+        "nom_societe": "MPPI",
+        "adresse_societe": "2 RUE DE LA FOUGERE, 88150 CHAVELOT",
+        "id_vendeur": "01585179301113"
+    },
+    {
+        "nom_societe": "RIDEL SA",
+        "adresse_societe": "38 RUE DE FLANDRE, 76270 NEUFCHATEL-EN-BRAY",
+        "id_vendeur": "01587102300030"
+    },
+    {
+        "nom_societe": "BOURGOGNE HABITAT - LE TOIT BOURGUIGNON",
+        "adresse_societe": "45 AVENUE DU DRAPEAU, 21000 DIJON",
+        "id_vendeur": "01595001700069"
+    },
+    {
+        "nom_societe": "SAS ZAEGEL OENOLOGIE",
+        "adresse_societe": "6 RUE CHARDONNAY, 21190 CHASSAGNE-MONTRACHET",
+        "id_vendeur": "01595064500059"
+    },
+    {
+        "nom_societe": "LA TOUR D'AUXOIS",
+        "adresse_societe": "SQ ALEXANDRE DUMAINE, 21210 SAULIEU",
+        "id_vendeur": "01605002300049"
+    },
+    {
+        "nom_societe": "SONOFEP JARDINERIE",
+        "adresse_societe": "14 RUE BASSE, 21910 SAULON-LA-RUE",
+        "id_vendeur": "01605044500010"
+    },
+    {
+        "nom_societe": "SOCIETE EST METROPOLES",
+        "adresse_societe": "8 RUE MARCEL DASSAULT, 21000 DIJON",
+        "id_vendeur": "01615041900089"
+    },
+    {
+        "nom_societe": "LE BOIS HULIN",
+        "adresse_societe": "AGNIERES, 80290 HESCAMPS",
+        "id_vendeur": "01617092000025"
+    },
+    {
+        "nom_societe": "DIRECTION REGION EXPLOITATION BOURGOGNE",
+        "adresse_societe": "ROUTE DE VERDUN, 21200 BEAUNE",
+        "id_vendeur": "01625002900275"
+    },
+    {
+        "nom_societe": "DISTRICT DE BELFORT",
+        "adresse_societe": "90160 BESSONCOURT",
+        "id_vendeur": "01625002900408"
+    },
+    {
+        "nom_societe": "DIR REG ALSACE FR.COMTE DIST. BESANCON",
+        "adresse_societe": "RUE DE L'IF, 25480 ECOLE-VALENTIN",
+        "id_vendeur": "01625002900572"
+    },
+    {
+        "nom_societe": "DISTRICT DE STE MARIE AUX MINES",
+        "adresse_societe": "88490 LUSSE",
+        "id_vendeur": "01625002900614"
+    },
+    {
+        "nom_societe": "DISTRICT DE DOLE",
+        "adresse_societe": "CHEMIN BLANC, 39100 AUTHUME",
+        "id_vendeur": "01625002900622"
+    },
+    {
+        "nom_societe": "DISTRICT DE VILLEFRANCHE-LIMAS",
+        "adresse_societe": "21 AVENUE EDOUARD HERRIOT, 69400 VILLEFRANCHE-SUR-SAONE",
+        "id_vendeur": "01625002900655"
+    },
+    {
+        "nom_societe": "DISTRICT DE LEVET",
+        "adresse_societe": "CHAMPS DES SABLES, 18340 LEVET",
+        "id_vendeur": "01625002900796"
+    },
+    {
+        "nom_societe": "CENTRE D'ENTRETIEN",
+        "adresse_societe": "10110 MAGNANT",
+        "id_vendeur": "01625002900986"
+    },
+    {
+        "nom_societe": "DISTRICT DE MONTARGIS",
+        "adresse_societe": "LE TOURNEAU, 45700 PANNES",
+        "id_vendeur": "01625002901000"
+    },
+    {
+        "nom_societe": "APRR",
+        "adresse_societe": "11 PLACE DE L’EUROPE, 78140 VELIZY-VILLACOUBLAY",
+        "id_vendeur": "01625002901216"
+    },
+    {
+        "nom_societe": "APRR",
+        "adresse_societe": "RTE DE L'ECLUSE, 03290 DOMPIERRE-SUR-BESBRE",
+        "id_vendeur": "01625002901224"
+    },
+    {
+        "nom_societe": "CHARMY - DOMAINE DE CHARMY - COMTE GAETAN DE CHARMY",
+        "adresse_societe": "11 COUR AU MOTET, 21121 ETAULES",
+        "id_vendeur": "01625008600077"
+    },
+    {
+        "nom_societe": "HAIER FRANCE",
+        "adresse_societe": "53 BOULEVARD ORNANO, 93200 SAINT-DENIS",
+        "id_vendeur": "01625010200163"
+    },
+    {
+        "nom_societe": "MAISON MILLIERE",
+        "adresse_societe": "10 RUE DE LA CHOUETTE, 21000 DIJON",
+        "id_vendeur": "01635031600028"
+    },
+    {
+        "nom_societe": "ETABLISSEMENTS GUERARD",
+        "adresse_societe": "RUE AMPERE, 76550 OFFRANVILLE",
+        "id_vendeur": "01638003200058"
+    },
+    {
+        "nom_societe": "ETABLISSEMENTS GUERARD",
+        "adresse_societe": "76690 LA RUE-SAINT-PIERRE",
+        "id_vendeur": "01638003200066"
+    },
+    {
+        "nom_societe": "JULIEN MACK",
+        "adresse_societe": "5 RUE JEAN MOULIN, 21160 COUCHEY",
+        "id_vendeur": "01645029800019"
+    },
+    {
+        "nom_societe": "BBV BETON DU BEC A VENT",
+        "adresse_societe": "RUE DE CRAMONT, 21400 CHATILLON-SUR-SEINE",
+        "id_vendeur": "01655086500105"
+    },
+    {
+        "nom_societe": "PACOTTE ET MIGNOTTE",
+        "adresse_societe": "RUE METEORE, 25480 MISEREY-SALINES",
+        "id_vendeur": "01665011100103"
+    },
+    {
+        "nom_societe": "A SUPPRIMER : ROTISSERIE DU CHAMBERTIN",
+        "adresse_societe": "RTE DES GRANDS CRUS, 21220 GEVREY-CHAMBERTIN",
+        "id_vendeur": "01665046700018"
+    },
+    {
+        "nom_societe": "FAREVA SPPH",
+        "adresse_societe": "7 IMPASSE DES BOUSSENOTS, 21800 QUETIGNY",
+        "id_vendeur": "01665059000017"
+    },
+    {
+        "nom_societe": "DEMAVIC DEPART DIET",
+        "adresse_societe": "6 RUE DU PROFESSEUR LOUIS NEEL, 21600 LONGVIC",
+        "id_vendeur": "01675050700051"
+    },
+    {
+        "nom_societe": "DEXIS",
+        "adresse_societe": "44 RUE DE LONGVIC, 21300 CHENOVE",
+        "id_vendeur": "01675055600041"
+    },
+    {
+        "nom_societe": "CODIMEC",
+        "adresse_societe": "RUE DES MAURAPANS, 25870 CHATILLON-LE-DUC",
+        "id_vendeur": "01675055600082"
+    },
+    {
+        "nom_societe": "BRIE FGI",
+        "adresse_societe": "RUE SAINT-SAUVEUR DES VIGNES, 89100 SENS",
+        "id_vendeur": "01675055600116"
+    },
+    {
+        "nom_societe": "ACM",
+        "adresse_societe": "8 RUE DES TAILLES, 25770 FRANOIS",
+        "id_vendeur": "01675055600140"
+    },
+    {
+        "nom_societe": "CTB CHOFFEL ELECTRONIQUE",
+        "adresse_societe": "29 RUE DU RANG DE VESEAUX, 88200 SAINT-NABORD",
+        "id_vendeur": "01675055600215"
+    },
+    {
+        "nom_societe": "ETS J. VIRLY",
+        "adresse_societe": "RUE DE MADRID, 89470 MONETEAU",
+        "id_vendeur": "01675069700126"
+    },
+    {
+        "nom_societe": "ACYCLEA - AUTO CASSE",
+        "adresse_societe": "3 CLAIRVOT, 21850 SAINT-APOLLINAIRE",
+        "id_vendeur": "01675077000063"
+    },
+    {
+        "nom_societe": "AGENCE REPUBLIQUE IMMOBILIER",
+        "adresse_societe": "19 RUE FAGON, 21700 NUITS-SAINT-GEORGES",
+        "id_vendeur": "01675092900065"
+    },
+    {
+        "nom_societe": "AGENCE REPUBLIQUE",
+        "adresse_societe": "6 PL DES TROIS SAFFRES, 21121 FONTAINE-LES-DIJON",
+        "id_vendeur": "01675092900073"
+    },
+    {
+        "nom_societe": "AGENCE REPUBLIQUE IMMOBILIER",
+        "adresse_societe": "1 RUE DU DAUPHINE, 21121 FONTAINE-LES-DIJON",
+        "id_vendeur": "01675092900081"
+    },
+    {
+        "nom_societe": "CINEMA OLYMPIA",
+        "adresse_societe": "16 AVENUE MARECHAL FOCH, 21000 DIJON",
+        "id_vendeur": "01695041200029"
+    },
+    {
+        "nom_societe": "RELIURE RETIERE BOCCARD",
+        "adresse_societe": "9 RUE DES ECOLES, 21160 MARSANNAY-LA-COTE",
+        "id_vendeur": "01695082600046"
+    },
+    {
+        "nom_societe": "ORALIA SICOV & OPTIM",
+        "adresse_societe": "3 RUE DE LA POSTE, 21000 DIJON",
+        "id_vendeur": "01695093300065"
+    },
+    {
+        "nom_societe": "LIRELEC",
+        "adresse_societe": "3 RUE DE CLUJ, 21000 DIJON",
+        "id_vendeur": "01705066700298"
+    },
+    {
+        "nom_societe": "BEUVAIN MONTAGE",
+        "adresse_societe": "RUE DES PIERRES, 60000 BEAUVAIS",
+        "id_vendeur": "01708006000027"
+    },
+    {
+        "nom_societe": "PAPETERIES DE DIJON",
+        "adresse_societe": "100 TERRASSE BOIELDIEU, 92800 PUTEAUX",
+        "id_vendeur": "01715028500066"
+    },
+    {
+        "nom_societe": "FAGOT IMMOBILIER",
+        "adresse_societe": "4 RUE DE LA POSTE, 25370 LES HOPITAUX-NEUFS",
+        "id_vendeur": "01715094700046"
+    },
+    {
+        "nom_societe": "ETC",
+        "adresse_societe": "17 RUE JULES RENARD, 58500 CLAMECY",
+        "id_vendeur": "01715120000544"
+    },
+    {
+        "nom_societe": "ECOFIS",
+        "adresse_societe": "2 RUE DES GRANDS JARDINS, 58000 NEVERS",
+        "id_vendeur": "01715120000593"
+    },
+    {
+        "nom_societe": "FIDECA",
+        "adresse_societe": "RUE DE LA MAISON GARNIER, 77130 MONTEREAU-FAULT-YONNE",
+        "id_vendeur": "01715120000601"
+    },
+    {
+        "nom_societe": "LE CENTRE COMPTABLE",
+        "adresse_societe": "25 RUE DU DOCTEUR ROBERT, 21400 CHATILLON-SUR-SEINE",
+        "id_vendeur": "01715120000668"
+    },
+    {
+        "nom_societe": "COMPTA SERVICE",
+        "adresse_societe": "1 PLACE DU CHAMP DE FOIRE, 58300 DECIZE",
+        "id_vendeur": "01715120000676"
+    },
+    {
+        "nom_societe": "AU ROI DES PATES",
+        "adresse_societe": "16 RUE QUENTIN, 21000 DIJON",
+        "id_vendeur": "01724351000025"
+    },
+    {
+        "nom_societe": "ROI DES PATES",
+        "adresse_societe": "AVENUE DU 14 JUILLET, 21300 CHENOVE",
+        "id_vendeur": "01724351000066"
+    },
+    {
+        "nom_societe": "PISCICULTURE DE ROSAY",
+        "adresse_societe": "76680 ROSAY",
+        "id_vendeur": "01728004100025"
+    },
+    {
+        "nom_societe": "PISCICULTURE DE TOUFFREVILLE SUR EU",
+        "adresse_societe": "76910 TOUFFREVILLE-SUR-EU",
+        "id_vendeur": "01728004100033"
+    },
+    {
+        "nom_societe": "POMPES FUNEBRES MEURDRA",
+        "adresse_societe": "18 RUE DE LA REDOUTE, 21850 SAINT-APOLLINAIRE",
+        "id_vendeur": "01735014100036"
+    },
+    {
+        "nom_societe": "AUDIT GESTION CONSEIL",
+        "adresse_societe": "8 RUE JACQUES GERMAIN, 21420 SAVIGNY-LES-BEAUNE",
+        "id_vendeur": "01735137000113"
+    },
+    {
+        "nom_societe": "CTIM CROIX DE MARBRE",
+        "adresse_societe": "27 RUE DE FRANCE, 06000 NICE",
+        "id_vendeur": "01978753000013"
+    },
+    {
+        "nom_societe": "MAINTENANCE INDUSTRIELLE MAHORAISE",
+        "adresse_societe": "LONGONI, 97600 KOUNGOU",
+        "id_vendeur": "02403651900031"
+    },
+    {
+        "nom_societe": "TAXI BARAKA",
+        "adresse_societe": "17 RUE WEMANI, 97600 MAMOUDZOU",
+        "id_vendeur": "02403660000021"
+    },
+    {
+        "nom_societe": "SUD CONSTRUCTION",
+        "adresse_societe": "6 RUE IBRAHIM OILI, 97620 BOUENI",
+        "id_vendeur": "02403701200036"
+    },
+    {
+        "nom_societe": "PRO BATIMENT",
+        "adresse_societe": "13 RUE BANDRAJOU, 97630 MTSAMBORO",
+        "id_vendeur": "02403723600015"
+    },
+    {
+        "nom_societe": "INVEST CONSULTING MAYOTTE REUNION (ICMR)",
+        "adresse_societe": "28 CHEMIN DE LA CITERNE, 97430 LE TAMPON",
+        "id_vendeur": "02403727700035"
+    },
+    {
+        "nom_societe": "MAGASIN MASSOULAHA",
+        "adresse_societe": "PL DU MARCHE COUVERT, 97600 MAMOUDZOU",
+        "id_vendeur": "02403735000014"
+    },
+    {
+        "nom_societe": "CYBER IDEALE",
+        "adresse_societe": "9 RUE TENNIS, 97615 DZAOUDZI",
+        "id_vendeur": "02403753300023"
+    },
+    {
+        "nom_societe": "LA BARQ FRUITEE",
+        "adresse_societe": "137 CHEMIN DES FOUGERES, 97413 CILAOS",
+        "id_vendeur": "02403796200024"
+    },
+    {
+        "nom_societe": "OCCAS'AUTO",
+        "adresse_societe": "RUE DU BOURG BESNIER, 44810 LA CHEVALLERAIS",
+        "id_vendeur": "02403801000021"
+    },
+    {
+        "nom_societe": "GAZONS MAYOTTE SERVICES VERTS",
+        "adresse_societe": "RES LES PORTES DU LAGON 3 PORTE A06, 97600 MAMOUDZOU",
+        "id_vendeur": "02403807700020"
+    },
+    {
+        "nom_societe": "LIGDAMIS FILS",
+        "adresse_societe": "92 BOULEVARD DENIS ROBIN, 97670 OUANGANI",
+        "id_vendeur": "02403808500015"
+    },
+    {
+        "nom_societe": "TRANSPORT CHADHULI",
+        "adresse_societe": "37 RUE DE LA CARRIERE COLAS, 97600 MAMOUDZOU",
+        "id_vendeur": "02403826700027"
+    },
+    {
+        "nom_societe": "CAP MAY",
+        "adresse_societe": "1 IMPASSE DES BANIANS, 97438 SAINTE-MARIE",
+        "id_vendeur": "02403853100026"
+    },
+    {
+        "nom_societe": "HAVANA CAFE",
+        "adresse_societe": "RTE NATIONALE, 97600 MAMOUDZOU",
+        "id_vendeur": "02403950500011"
+    },
+    {
+        "nom_societe": "EDIFICOM",
+        "adresse_societe": "115 RUE BANDARISSALAMA, 97660 BANDRELE",
+        "id_vendeur": "02403981000015"
+    },
+    {
+        "nom_societe": "MISTRA CONSTRUCTION",
+        "adresse_societe": "18 RUE KAKAL CHEZ HAROUNA SAID, 97600 MAMOUDZOU",
+        "id_vendeur": "02404003200021"
+    },
+    {
+        "nom_societe": "ALIZE CONSEIL REUNION",
+        "adresse_societe": "1 CHEMIN DU TRIANGLE AUSTRAL, 97419 LA POSSESSION",
+        "id_vendeur": "02404010700021"
+    },
+    {
+        "nom_societe": "MAGASIN SAYDA BOUTIQUE",
+        "adresse_societe": "24 RTE DE VAHIBE, 97600 MAMOUDZOU",
+        "id_vendeur": "02404014900015"
+    },
+    {
+        "nom_societe": "DALI",
+        "adresse_societe": "RUE DU COLLEGE, 97625 KANI-KELI",
+        "id_vendeur": "02404052900026"
+    },
+    {
+        "nom_societe": "E.D.T.S. 2000",
+        "adresse_societe": "QUA QUARTIER CAVANI, 97670 CHICONI",
+        "id_vendeur": "02404058600018"
+    },
+    {
+        "nom_societe": "M.B.T.G",
+        "adresse_societe": "QUA 100 VILLAS, 97620 CHIRONGUI",
+        "id_vendeur": "02404063600011"
+    },
+    {
+        "nom_societe": "OMAN-SHOP",
+        "adresse_societe": "5 RUE DU STADE, 97615 PAMANDZI",
+        "id_vendeur": "02404076800012"
+    },
+    {
+        "nom_societe": "JOUONGOUNI",
+        "adresse_societe": "70 RTE NATIONALE KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "02404083400020"
+    },
+    {
+        "nom_societe": "C.E.M",
+        "adresse_societe": "ZI KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "02404098200027"
+    },
+    {
+        "nom_societe": "CHAMASSI TRANSPORT",
+        "adresse_societe": "20 IMPASSE BOINOIRIJOU, 97660 BANDRELE",
+        "id_vendeur": "02404135200030"
+    },
+    {
+        "nom_societe": "AGT DISTRIBUTION",
+        "adresse_societe": "16 IMPASSE BABAN ADZOUDZOU, 97620 CHIRONGUI",
+        "id_vendeur": "02404142800012"
+    },
+    {
+        "nom_societe": "HILA CARRELAGE",
+        "adresse_societe": "28 RUE M'ROWAHANDRA, 97600 MAMOUDZOU",
+        "id_vendeur": "02404152700011"
+    },
+    {
+        "nom_societe": "TRANSPORT SALAMA",
+        "adresse_societe": "89 RUE CENTRALE -KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "02404198000012"
+    },
+    {
+        "nom_societe": "LE CHOIZIL",
+        "adresse_societe": "QUA ANFASSIGNI, 97630 MTSAMBORO",
+        "id_vendeur": "02404203800018"
+    },
+    {
+        "nom_societe": "E.M.P.H",
+        "adresse_societe": "HANDREMA, 97650 BANDRABOUA",
+        "id_vendeur": "02404223600018"
+    },
+    {
+        "nom_societe": "ENTREPRISE ALIMENTATION GENERALE",
+        "adresse_societe": "16 LOT SIM, 97680 TSINGONI",
+        "id_vendeur": "02404223600026"
+    },
+    {
+        "nom_societe": "MARCHANDISE RAYISI",
+        "adresse_societe": "16 RUE KALAKATSANI, 97625 KANI-KELI",
+        "id_vendeur": "02404304400023"
+    },
+    {
+        "nom_societe": "LAUDIS",
+        "adresse_societe": "ROUTE DE LA SPPM, 97600 MAMOUDZOU",
+        "id_vendeur": "02404345700027"
+    },
+    {
+        "nom_societe": "EUROLEC.COM",
+        "adresse_societe": "12 RUE MARINDRINI, 97600 MAMOUDZOU",
+        "id_vendeur": "02404377000023"
+    },
+    {
+        "nom_societe": "AYIROUZ DISTRIBUTION",
+        "adresse_societe": "2 RUE SALIMA MDAHOMA, 97625 KANI-KELI",
+        "id_vendeur": "02404385300035"
+    },
+    {
+        "nom_societe": "SONELOC",
+        "adresse_societe": "34 RUE DES JARDINS, 97615 PAMANDZI",
+        "id_vendeur": "02404391100015"
+    },
+    {
+        "nom_societe": "S.CHAR",
+        "adresse_societe": "3 RUE BEAU REGARD, 97620 BOUENI",
+        "id_vendeur": "02404397800030"
+    },
+    {
+        "nom_societe": "SAINDOU SAINDOU IBRAHIM ET FILS",
+        "adresse_societe": "CHIRONGUI, 97620 CHIRONGUI",
+        "id_vendeur": "02404397800048"
+    },
+    {
+        "nom_societe": "TRANSIT DES ILES",
+        "adresse_societe": "13 RUE WASTOI, 97600 MAMOUDZOU",
+        "id_vendeur": "02404461200026"
+    },
+    {
+        "nom_societe": "BOULANGERIE BARAKA M'FILAOUNI",
+        "adresse_societe": "COMBANI, 97680 TSINGONI",
+        "id_vendeur": "02404494300025"
+    },
+    {
+        "nom_societe": "MAGASIN DES ILES",
+        "adresse_societe": "05 RUE MOSQUEE NGUIZI, 97600 MAMOUDZOU",
+        "id_vendeur": "02404569200035"
+    },
+    {
+        "nom_societe": "BELAY ARC EN CIEL MAYOTTE EIRL",
+        "adresse_societe": "9 RUE FAF BANDRAHARI, 97615 PAMANDZI",
+        "id_vendeur": "02404673200020"
+    },
+    {
+        "nom_societe": "TSARA BOUTIQUE",
+        "adresse_societe": "24 RUE SOULAIMANA GAU, 97625 KANI-KELI",
+        "id_vendeur": "02404687200024"
+    },
+    {
+        "nom_societe": "CAR CENTRE",
+        "adresse_societe": "RTE NATIONALE MTSAPERE, 97600 MAMOUDZOU",
+        "id_vendeur": "02404706000058"
+    },
+    {
+        "nom_societe": "BABE FAMILY'S MULTI BUSINESS",
+        "adresse_societe": "99 ESCALIER BICHIDA, 97630 MTSAMBORO",
+        "id_vendeur": "02404741700019"
+    },
+    {
+        "nom_societe": "LE PETIT MOYA",
+        "adresse_societe": "10 RUE DECASE, 97615 PAMANDZI",
+        "id_vendeur": "02404781300019"
+    },
+    {
+        "nom_societe": "SAIFA",
+        "adresse_societe": "5 LOT BONOVO, 97600 MAMOUDZOU",
+        "id_vendeur": "02404792000020"
+    },
+    {
+        "nom_societe": "HANUMAN INDUSTRIE",
+        "adresse_societe": "58 IMPASSE MAMALE, 97600 KOUNGOU",
+        "id_vendeur": "02404800100028"
+    },
+    {
+        "nom_societe": "ATIMAMIED",
+        "adresse_societe": "58 RUE DE LA MAIRIE, 97615 PAMANDZI",
+        "id_vendeur": "02404836500035"
+    },
+    {
+        "nom_societe": "MAECHA CONSTRUCTION",
+        "adresse_societe": "10 LOT COTE PLAGE, 97660 DEMBENI",
+        "id_vendeur": "02404876100035"
+    },
+    {
+        "nom_societe": "DOUKA BE",
+        "adresse_societe": "QUARTIER MARINDRINI GNAMBOTITI, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400027"
+    },
+    {
+        "nom_societe": "DOUKA BE MANGROVE KAWENI",
+        "adresse_societe": "RTE NATIONALE, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400035"
+    },
+    {
+        "nom_societe": "DOUKA BE PLACE DU MARCHE",
+        "adresse_societe": "PL DU MARCHE, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400050"
+    },
+    {
+        "nom_societe": "CARREFOUR MARKET PETITE-TERRE",
+        "adresse_societe": "RTE DES BADAMIERS, 97615 PAMANDZI",
+        "id_vendeur": "02404912400068"
+    },
+    {
+        "nom_societe": "DOUKA BE COMBANI",
+        "adresse_societe": "COMBANI, 97680 TSINGONI",
+        "id_vendeur": "02404912400076"
+    },
+    {
+        "nom_societe": "DOUKA BE",
+        "adresse_societe": "20 RUE PPF, 97650 M'TSANGAMOUJI",
+        "id_vendeur": "02404912400084"
+    },
+    {
+        "nom_societe": "DOUKA BE KANI KELI",
+        "adresse_societe": "RTE DU DISPENSAIRE, 97625 KANI-KELI",
+        "id_vendeur": "02404912400092"
+    },
+    {
+        "nom_societe": "DOUKA BE BANDRELE",
+        "adresse_societe": "QUARTIER KARDJAVINZA, 97660 BANDRELE",
+        "id_vendeur": "02404912400100"
+    },
+    {
+        "nom_societe": "DOUKA BE LABATTOIR",
+        "adresse_societe": "29 RUE DU COMMERCE, 97615 DZAOUDZI",
+        "id_vendeur": "02404912400118"
+    },
+    {
+        "nom_societe": "SNIE",
+        "adresse_societe": "97600 MAMOUDZOU",
+        "id_vendeur": "02404912400126"
+    },
+    {
+        "nom_societe": "ENTREPOT PRODUITS FRAIS",
+        "adresse_societe": "97600 MAMOUDZOU",
+        "id_vendeur": "02404912400134"
+    },
+    {
+        "nom_societe": "JUMBO SCORE",
+        "adresse_societe": "RN1 HAMAHA, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400142"
+    },
+    {
+        "nom_societe": "DOUKA BE ILONI",
+        "adresse_societe": "RUELLE DU DISPENSAIRE, 97660 DEMBENI",
+        "id_vendeur": "02404912400159"
+    },
+    {
+        "nom_societe": "DOUKA BE CHIRONGUI",
+        "adresse_societe": "RTE NATIONALE 3, 97620 CHIRONGUI",
+        "id_vendeur": "02404912400167"
+    },
+    {
+        "nom_societe": "DOUKA BE TSOUNDZOU 2",
+        "adresse_societe": "ROUTE NATIONALE 2, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400175"
+    },
+    {
+        "nom_societe": "DOUKA BE MTSAPERE",
+        "adresse_societe": "17 RUE MOSQUEE ANJOUANAISE, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400183"
+    },
+    {
+        "nom_societe": "DOUKA BE MZOUAZIA",
+        "adresse_societe": "RUE DU DISPENSAIRE, 97620 BOUENI",
+        "id_vendeur": "02404912400191"
+    },
+    {
+        "nom_societe": "DOUKA BE ACOUA",
+        "adresse_societe": "RUE DU PLATEAU POLYVALENT, 97630 ACOUA",
+        "id_vendeur": "02404912400209"
+    },
+    {
+        "nom_societe": "DOUKA BE KOUNGOU",
+        "adresse_societe": "15 RUE BUREAU CADI, 97600 KOUNGOU",
+        "id_vendeur": "02404912400217"
+    },
+    {
+        "nom_societe": "DOUKA BE TSINGONI",
+        "adresse_societe": "RUE DE LA MAIRIE, 97680 TSINGONI",
+        "id_vendeur": "02404912400225"
+    },
+    {
+        "nom_societe": "DOUKA BE MTSANGAMBOU",
+        "adresse_societe": "263 RUE DE L’AVENIR, 97650 BANDRABOUA",
+        "id_vendeur": "02404912400233"
+    },
+    {
+        "nom_societe": "DOUKA BE BOUENI",
+        "adresse_societe": "17 BOULEVARD DES TORTUES, 97620 BOUENI",
+        "id_vendeur": "02404912400241"
+    },
+    {
+        "nom_societe": "DOUKA BE LONGONI",
+        "adresse_societe": "RTE NATIONALE 1, 97600 KOUNGOU",
+        "id_vendeur": "02404912400258"
+    },
+    {
+        "nom_societe": "DOUKA BE DE TSARARANO",
+        "adresse_societe": "RUE GENERAL DU CHARLES DE GAULLE, 97660 DEMBENI",
+        "id_vendeur": "02404912400266"
+    },
+    {
+        "nom_societe": "DOUKA BE",
+        "adresse_societe": "2 RUE TERRAIN BASKET, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400274"
+    },
+    {
+        "nom_societe": "DOUKA BE",
+        "adresse_societe": "QUARTIER JIVA AN53 NUM 5588, 97630 MTSAMBORO",
+        "id_vendeur": "02404912400282"
+    },
+    {
+        "nom_societe": "DOUKA BE",
+        "adresse_societe": "QUARTIER HAMOITSIYONI, 97640 SADA",
+        "id_vendeur": "02404912400290"
+    },
+    {
+        "nom_societe": "DOUKA BE MANDZARSOUA",
+        "adresse_societe": "3 RUE MANDZARSOUA, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400316"
+    },
+    {
+        "nom_societe": "DOUKA BE BARAKANI",
+        "adresse_societe": "3 RLE MCHELIBO BARAKANI, 97670 OUANGANI",
+        "id_vendeur": "02404912400324"
+    },
+    {
+        "nom_societe": "DOUKA BE VAHIBE",
+        "adresse_societe": "5 RUE HARONOPHE A VAHIBE, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400332"
+    },
+    {
+        "nom_societe": "DOUKA BE PAMANDZI",
+        "adresse_societe": "14 BOULEVARD MARCEL HENRY, 97615 PAMANDZI",
+        "id_vendeur": "02404912400340"
+    },
+    {
+        "nom_societe": "DOUKA BE HAUTS VALLONS",
+        "adresse_societe": "28 RES LES PORTES DU LAGON, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400357"
+    },
+    {
+        "nom_societe": "DOUKA BE CHICONI",
+        "adresse_societe": "RUE DE LA MAIRIE, 97670 CHICONI",
+        "id_vendeur": "02404912400365"
+    },
+    {
+        "nom_societe": "DOUKA BE CAVANI",
+        "adresse_societe": "RUE DE LA BRIQUETTERIE, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400373"
+    },
+    {
+        "nom_societe": "DOUKA BE POROANI",
+        "adresse_societe": "QUARTIER MAGNASSINI, 97620 CHIRONGUI",
+        "id_vendeur": "02404912400381"
+    },
+    {
+        "nom_societe": "DOUKA BE KAWENI",
+        "adresse_societe": "ROUTE NATIONALE 1, 97600 MAMOUDZOU",
+        "id_vendeur": "02404912400407"
+    },
+    {
+        "nom_societe": "DOUKA BE MTSAHARA",
+        "adresse_societe": "1038 RTE NATIONALE, 97630 MTSAMBORO",
+        "id_vendeur": "02404912400431"
+    },
+    {
+        "nom_societe": "DOUKA BE MTSANGAMOUJI",
+        "adresse_societe": "2 RUE MCOLO MAINTY, 97650 M'TSANGAMOUJI",
+        "id_vendeur": "02404912400449"
+    },
+    {
+        "nom_societe": "DOUKA BE KAHANI",
+        "adresse_societe": "AVENUE MKARAFOUNI, 97670 OUANGANI",
+        "id_vendeur": "02404912400456"
+    },
+    {
+        "nom_societe": "FLEUR D'OR",
+        "adresse_societe": "15 RUE DU DISPENSAIRE, 97615 DZAOUDZI",
+        "id_vendeur": "02404946200021"
+    },
+    {
+        "nom_societe": "MME AHMEDOMAR",
+        "adresse_societe": "138 ROUTE DES BADAMIERS, 97615 DZAOUDZI",
+        "id_vendeur": "02405025400028"
+    },
+    {
+        "nom_societe": "SOPHA COIFFURE",
+        "adresse_societe": "55 RLE MNADZI MOJA, 97600 MAMOUDZOU",
+        "id_vendeur": "02405037900023"
+    },
+    {
+        "nom_societe": "ENTREPRISE GENERALE",
+        "adresse_societe": "2 VEN ISSA AMISSI, 97670 CHICONI",
+        "id_vendeur": "02405048600018"
+    },
+    {
+        "nom_societe": "ANTOU BOUTIQUE",
+        "adresse_societe": "RTE NATIONALE TAHITI PLAGE, 97640 SADA",
+        "id_vendeur": "02405083300029"
+    },
+    {
+        "nom_societe": "SOPREMA",
+        "adresse_societe": "RTE NATIONALE, 97660 DEMBENI",
+        "id_vendeur": "02405111200019"
+    },
+    {
+        "nom_societe": "JO LE TAXI",
+        "adresse_societe": "RUE ABDALLAH TOILIBOU, 97640 SADA",
+        "id_vendeur": "02405115300021"
+    },
+    {
+        "nom_societe": "MLEZI",
+        "adresse_societe": "7 MAJIKAVO KOROPA, 97600 KOUNGOU",
+        "id_vendeur": "02405117900026"
+    },
+    {
+        "nom_societe": "L'ENFANT NOIR",
+        "adresse_societe": "111 ROUTE DE SOHOA, 97670 CHICONI",
+        "id_vendeur": "02405142700011"
+    },
+    {
+        "nom_societe": "E.E.C.F",
+        "adresse_societe": "2 RUE TAHITI BAHONI, 97615 PAMANDZI",
+        "id_vendeur": "02405193000030"
+    },
+    {
+        "nom_societe": "SOLDYS",
+        "adresse_societe": "24 PL MARIAGE, 97600 MAMOUDZOU",
+        "id_vendeur": "02405205200016"
+    },
+    {
+        "nom_societe": "SUD MENUISERIE ET BTP",
+        "adresse_societe": "260 BOULEVARD MARCEL HENRY, 97620 CHIRONGUI",
+        "id_vendeur": "02405244100011"
+    },
+    {
+        "nom_societe": "SUD MENUISERIE ET BTP",
+        "adresse_societe": "LD MALAMANI, 97620 CHIRONGUI",
+        "id_vendeur": "02405244100029"
+    },
+    {
+        "nom_societe": "A2M",
+        "adresse_societe": "9 RUE HAMACHAKA, 97600 KOUNGOU",
+        "id_vendeur": "02405249000018"
+    },
+    {
+        "nom_societe": "MADI ALI RABIANTI",
+        "adresse_societe": "3 IMPASSE MADI BEN ALI, 97620 BOUENI",
+        "id_vendeur": "02405256500017"
+    },
+    {
+        "nom_societe": "DECORAMA",
+        "adresse_societe": "RUE DE LA GRANDE TRAVERSEE, 97600 MAMOUDZOU",
+        "id_vendeur": "02405265600048"
+    },
+    {
+        "nom_societe": "MAYECHA MEMA",
+        "adresse_societe": "54 RUE CHEIK ABDOURAHAMAN, 97620 BOUENI",
+        "id_vendeur": "02405267200011"
+    },
+    {
+        "nom_societe": "SANDAWANA",
+        "adresse_societe": "1 IMPASSE DES BANIANS, 97438 SAINTE-MARIE",
+        "id_vendeur": "02405315900034"
+    },
+    {
+        "nom_societe": "SANDAWANA",
+        "adresse_societe": "1 IMPASSE DES BANIANS, 97438 SAINTE-MARIE",
+        "id_vendeur": "02405315900042"
+    },
+    {
+        "nom_societe": "TAYAR SERVICE",
+        "adresse_societe": "RUE NOUVELLE MOSQUEE LOT TSARARANO, 97660 DEMBENI",
+        "id_vendeur": "02405327400015"
+    },
+    {
+        "nom_societe": "MAYOTTE HYGIENE EXPRESS",
+        "adresse_societe": "3 IMP SODIFRAM, 97600 MAMOUDZOU",
+        "id_vendeur": "02405355500041"
+    },
+    {
+        "nom_societe": "DAILAMI ET FILS",
+        "adresse_societe": "20 BOULEVARD MASTARA, 97620 BOUENI",
+        "id_vendeur": "02405358900016"
+    },
+    {
+        "nom_societe": "MOIDA CHOP",
+        "adresse_societe": "RTE DE L'ECOLE CAVANI GNAMBOTITI, 97660 BANDRELE",
+        "id_vendeur": "02405365400018"
+    },
+    {
+        "nom_societe": "ECOLE PRIMAIRE PRIVEE JADESSIANE",
+        "adresse_societe": "RUE DES BADAMIERS TOTOROSA ABEGA, 97615 PAMANDZI",
+        "id_vendeur": "02405385200018"
+    },
+    {
+        "nom_societe": "JADESSIANE",
+        "adresse_societe": "LABATTOIR BOULEVARD DES AMOUREUX, 97615 PAMANDZI",
+        "id_vendeur": "02405385200026"
+    },
+    {
+        "nom_societe": "STOI",
+        "adresse_societe": "16 AVENUE STANISLAS GIMART, 97490 SAINT-DENIS",
+        "id_vendeur": "02405409000030"
+    },
+    {
+        "nom_societe": "L.E.C LAGON ETANCHEITE COUVERTURE",
+        "adresse_societe": "MAJICAVO LAMIR, 97600 KOUNGOU",
+        "id_vendeur": "02405466000022"
+    },
+    {
+        "nom_societe": "VANNERIE MAHORAISE",
+        "adresse_societe": "13 RUE DE LA CARRIERE, 97615 PAMANDZI",
+        "id_vendeur": "02405476900047"
+    },
+    {
+        "nom_societe": "JUSTE A COTE",
+        "adresse_societe": "11 AV MCHINDRA SAID, 97600 MAMOUDZOU",
+        "id_vendeur": "02405478500027"
+    },
+    {
+        "nom_societe": "ENTREPRISE GOULAMHOUSSEN FIDAHOUSSEN",
+        "adresse_societe": "6 LOT MANGAFOUTE, 97615 PAMANDZI",
+        "id_vendeur": "02405498300010"
+    },
+    {
+        "nom_societe": "MAGASIN ANTU",
+        "adresse_societe": "8 RUE SACO, 97615 DZAOUDZI",
+        "id_vendeur": "02405506300010"
+    },
+    {
+        "nom_societe": "AL MAANROUF",
+        "adresse_societe": "17 RUE CHANDZA BOLE, 97600 MAMOUDZOU",
+        "id_vendeur": "02405512100016"
+    },
+    {
+        "nom_societe": "KALO",
+        "adresse_societe": "ROUTE NATIONALE 1, 97600 MAMOUDZOU",
+        "id_vendeur": "02405535200033"
+    },
+    {
+        "nom_societe": "ALTITUDE",
+        "adresse_societe": "HONGOJOU, 97660 DEMBENI",
+        "id_vendeur": "02405552700022"
+    },
+    {
+        "nom_societe": "MBINGA BOIS",
+        "adresse_societe": "TSINGONI, 97680 TSINGONI",
+        "id_vendeur": "02405651700022"
+    },
+    {
+        "nom_societe": "KASSIMEX",
+        "adresse_societe": "2 RUE MGOMBANI, 97600 MAMOUDZOU",
+        "id_vendeur": "02405693900010"
+    },
+    {
+        "nom_societe": "BANGA PIECES AUTO",
+        "adresse_societe": "4 RUE HACHENOI DERRIERE SODIFRAM, 97680 TSINGONI",
+        "id_vendeur": "02405714300034"
+    },
+    {
+        "nom_societe": "CHAMSIDINE AHAMEDI OILI",
+        "adresse_societe": "43 BOULEVARD DES AMOUREUX, 97615 DZAOUDZI",
+        "id_vendeur": "02405714300042"
+    },
+    {
+        "nom_societe": "DJAMBO MACONNERIE",
+        "adresse_societe": "4 CHEMIN DU JACQUIER, 97660 DEMBENI",
+        "id_vendeur": "02405742400038"
+    },
+    {
+        "nom_societe": "CONSEIL ET AUDIT MAYOTTE OCEAN INDIEN",
+        "adresse_societe": "4 RUE DU COMMERCE, 97680 TSINGONI",
+        "id_vendeur": "02405757200034"
+    },
+    {
+        "nom_societe": "EUROPE SOL",
+        "adresse_societe": "5 CHEMIN BAHEDJA TSONTSO, 97630 MTSAMBORO",
+        "id_vendeur": "02405759800013"
+    },
+    {
+        "nom_societe": "INTERSPORT",
+        "adresse_societe": "25 AVENUE MARTIN LUTHER KING, 97600 MAMOUDZOU",
+        "id_vendeur": "02405765500037"
+    },
+    {
+        "nom_societe": "PLOMBERIE ABDOURAHAMANE",
+        "adresse_societe": "1066 RUE DU SOUVENIR, 97650 BANDRABOUA",
+        "id_vendeur": "02405768900010"
+    },
+    {
+        "nom_societe": "GARAGE BEMRANDRA",
+        "adresse_societe": "9 RUE OUSSENI BARDY, 97600 KOUNGOU",
+        "id_vendeur": "02405777000026"
+    },
+    {
+        "nom_societe": "BET I.A.C.",
+        "adresse_societe": "45 RUE DE LA MAIRIE, 97660 DEMBENI",
+        "id_vendeur": "02405783800021"
+    },
+    {
+        "nom_societe": "PLOMBERIE SANITAIRE 2000",
+        "adresse_societe": "94 DZOUMOGNE, 97650 BANDRABOUA",
+        "id_vendeur": "02405800000019"
+    },
+    {
+        "nom_societe": "TRANSMECA",
+        "adresse_societe": "144 RUE CAVANI, 97600 MAMOUDZOU",
+        "id_vendeur": "02405811700037"
+    },
+    {
+        "nom_societe": "ENTREPRISE MOUSSA MCOLO ABACHIA",
+        "adresse_societe": "340 BOULEVARD ABDALLAH HOUMADI, 97660 BANDRELE",
+        "id_vendeur": "02405814100011"
+    },
+    {
+        "nom_societe": "KOTRI",
+        "adresse_societe": "9 MAJICAVO LAMIR, 97600 KOUNGOU",
+        "id_vendeur": "02405831500029"
+    },
+    {
+        "nom_societe": "FAZM",
+        "adresse_societe": "11 RUE INTERCOMMUNALE, 97615 PAMANDZI",
+        "id_vendeur": "02405832300023"
+    },
+    {
+        "nom_societe": "LA GOUNTOUNE",
+        "adresse_societe": "14 RUE DU LYCEE, 97615 PAMANDZI",
+        "id_vendeur": "02405858800021"
+    },
+    {
+        "nom_societe": "P.A.S.M",
+        "adresse_societe": "1200 AVENUE DU COLLEGE, 97670 CHICONI",
+        "id_vendeur": "02405861200011"
+    },
+    {
+        "nom_societe": "MENUISERIE MZE FILS",
+        "adresse_societe": "27 ROUTE DE COCONI, 97680 TSINGONI",
+        "id_vendeur": "02405867900010"
+    },
+    {
+        "nom_societe": "MOINECHA TRANSPORT",
+        "adresse_societe": "13 RUE CHEHOULILAH, 97600 KOUNGOU",
+        "id_vendeur": "02405873700016"
+    },
+    {
+        "nom_societe": "VRD SOULAIMANA FILS",
+        "adresse_societe": "226 RUE DE L’HOTEL DE VILLE, 97650 BANDRABOUA",
+        "id_vendeur": "02405890100026"
+    },
+    {
+        "nom_societe": "LE CARONI SERVICE TAXI",
+        "adresse_societe": "6 QUARTIER CAVANI LA ROSE, 97625 KANI-KELI",
+        "id_vendeur": "02405891900010"
+    },
+    {
+        "nom_societe": "CARONI TRANSPORT",
+        "adresse_societe": "105 RUE HENRY JEAN-BAPTISTE, 97620 CHIRONGUI",
+        "id_vendeur": "02405894300036"
+    },
+    {
+        "nom_societe": "BANGA DALLAS",
+        "adresse_societe": "24 RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "02405915600026"
+    },
+    {
+        "nom_societe": "MAHAVAVY",
+        "adresse_societe": "43 CHEMIN ROLAND GARROS, 97410 SAINT-PIERRE",
+        "id_vendeur": "02405931300031"
+    },
+    {
+        "nom_societe": "LE SNACK DU CENTRE",
+        "adresse_societe": "12 RUE DE L'HOTEL DE VILLE, 97615 DZAOUDZI",
+        "id_vendeur": "02405964400013"
+    },
+    {
+        "nom_societe": "ENTREPRISE TSARA",
+        "adresse_societe": "515 RTE NATIONALE 1, 97630 MTSAMBORO",
+        "id_vendeur": "02405995800017"
+    },
+    {
+        "nom_societe": "OUVOIMOJA PAPA",
+        "adresse_societe": "RTE NATIONALE KOUTROUZAHARI, 97640 SADA",
+        "id_vendeur": "02406033700029"
+    },
+    {
+        "nom_societe": "ALI ABDALLAH FER",
+        "adresse_societe": "1 RUE RIVIERE, 97600 MAMOUDZOU",
+        "id_vendeur": "02406137600026"
+    },
+    {
+        "nom_societe": "C.B.G.M",
+        "adresse_societe": "2 RLE M'KADARA, 97600 MAMOUDZOU",
+        "id_vendeur": "02406144200026"
+    },
+    {
+        "nom_societe": "LUMIERE DE MAYOTTE",
+        "adresse_societe": "7 RUE ZALIFA VOY, 97625 KANI-KELI",
+        "id_vendeur": "02406159000048"
+    },
+    {
+        "nom_societe": "ZENA BOUTIQUE",
+        "adresse_societe": "7 LOT 21 LES JARDINS CREOLES, 97600 MAMOUDZOU",
+        "id_vendeur": "02406194700040"
+    },
+    {
+        "nom_societe": "TRANSPORT AIDJO CHIRONGUI",
+        "adresse_societe": "250 AVENUE SAID VITTA, 97620 CHIRONGUI",
+        "id_vendeur": "02406196200015"
+    },
+    {
+        "nom_societe": "MAYOTTE HEBDO",
+        "adresse_societe": "7 RUE SALAMANI CAVANI, 97600 MAMOUDZOU",
+        "id_vendeur": "02406197000018"
+    },
+    {
+        "nom_societe": "ALLAOUI TRANSPORT",
+        "adresse_societe": "15 RUE CAROBOINA, 97600 KOUNGOU",
+        "id_vendeur": "02406237400012"
+    },
+    {
+        "nom_societe": "JICO TRANSPORT",
+        "adresse_societe": "92 RUE SAID FATIMA, 97640 SADA",
+        "id_vendeur": "02406238200015"
+    },
+    {
+        "nom_societe": "JBC",
+        "adresse_societe": "12 RUE RAYMOND MONDON, 97419 LA POSSESSION",
+        "id_vendeur": "02406277000045"
+    },
+    {
+        "nom_societe": "PAPILLON D'OR",
+        "adresse_societe": "3 CHEMIN DE L'EMBARCADERE, 97620 BOUENI",
+        "id_vendeur": "02406320800011"
+    },
+    {
+        "nom_societe": "PAPILLON D'OR",
+        "adresse_societe": "65 RUE DE LA POMPE, 97600 MAMOUDZOU",
+        "id_vendeur": "02406320800037"
+    },
+    {
+        "nom_societe": "MAGASIN FANTAISIA",
+        "adresse_societe": "26 RUE DU COMMERCE, 97600 KOUNGOU",
+        "id_vendeur": "02406359600027"
+    },
+    {
+        "nom_societe": "LADA RESTAURANT",
+        "adresse_societe": "84 ROUTE NATIONALE 1, 97600 MAMOUDZOU",
+        "id_vendeur": "02406371100022"
+    },
+    {
+        "nom_societe": "BOULANGERIE MAMIE",
+        "adresse_societe": "86 ROUTE NATIONALE, 97600 MAMOUDZOU",
+        "id_vendeur": "02406371100048"
+    },
+    {
+        "nom_societe": "TSARADIA TAXI ET TRANSPORT",
+        "adresse_societe": "40 CHEMIN ATELIER ADINANI, 97670 CHICONI",
+        "id_vendeur": "02406418000011"
+    },
+    {
+        "nom_societe": "LA PLANETE LA TELEVISION PAR SATELLITE",
+        "adresse_societe": "60 CHE DEPARTEMENTALE N 5, 97640 SADA",
+        "id_vendeur": "02406474300024"
+    },
+    {
+        "nom_societe": "TOY RESTAURANT",
+        "adresse_societe": "17 RUE MZE MATTOIR, 97620 BOUENI",
+        "id_vendeur": "02406482600027"
+    },
+    {
+        "nom_societe": "E.C.P.P.",
+        "adresse_societe": "QUA MTSANGAMTITI, 97640 SADA",
+        "id_vendeur": "02406496600013"
+    },
+    {
+        "nom_societe": "EPICERIE NAFASSI",
+        "adresse_societe": "RUE DE L’ARTISANAT, 97640 SADA",
+        "id_vendeur": "02406496600021"
+    },
+    {
+        "nom_societe": "ROYAL EUROS",
+        "adresse_societe": "4 RUE DU CIMETIERE, 97620 CHIRONGUI",
+        "id_vendeur": "02406500500019"
+    },
+    {
+        "nom_societe": "DOUKA PRO",
+        "adresse_societe": "NUM 5 CENTRE AMATOULA, 97600 MAMOUDZOU",
+        "id_vendeur": "02406528600023"
+    },
+    {
+        "nom_societe": "FOTOKABINE MAYOTTE",
+        "adresse_societe": "21 CENTRE AMATOULA, 97600 MAMOUDZOU",
+        "id_vendeur": "02406528600056"
+    },
+    {
+        "nom_societe": "EURO PNEUMATIQUE",
+        "adresse_societe": "1875 ROUTE NATIONALE 2, 97600 MAMOUDZOU",
+        "id_vendeur": "02406577300012"
+    },
+    {
+        "nom_societe": "OUZOURI ET LOCATION",
+        "adresse_societe": "13 LABATTOIR, 97615 DZAOUDZI",
+        "id_vendeur": "02406628400019"
+    },
+    {
+        "nom_societe": "SNC MCBTP",
+        "adresse_societe": "7 RUE SOWETO CAVANI, 97600 MAMOUDZOU",
+        "id_vendeur": "02406684700013"
+    },
+    {
+        "nom_societe": "DEM.O.I",
+        "adresse_societe": "ZI KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "02406735700012"
+    },
+    {
+        "nom_societe": "ENTREPRISE M.R.C",
+        "adresse_societe": "8 CHEMIN FATIMA BAMZE, 97640 SADA",
+        "id_vendeur": "02406739900014"
+    },
+    {
+        "nom_societe": "100.000 CHAUSSURES",
+        "adresse_societe": "10 RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "02406747200019"
+    },
+    {
+        "nom_societe": "100.000 CHAUSSURES",
+        "adresse_societe": "CENTRE CCIAL LUKIDA, 97600 KOUNGOU",
+        "id_vendeur": "02406747200027"
+    },
+    {
+        "nom_societe": "COOL VOYAGES",
+        "adresse_societe": "17 PL MARIAGE, 97600 MAMOUDZOU",
+        "id_vendeur": "02406785200012"
+    },
+    {
+        "nom_societe": "LOULOU BEAUTE",
+        "adresse_societe": "19 RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "02406830600018"
+    },
+    {
+        "nom_societe": "O'LOLO",
+        "adresse_societe": "PLAGE DE SAKOULI, 97660 BANDRELE",
+        "id_vendeur": "02406846200027"
+    },
+    {
+        "nom_societe": "HODARI SERVICES",
+        "adresse_societe": "RUE M'COBA, 97660 DEMBENI",
+        "id_vendeur": "02406849600025"
+    },
+    {
+        "nom_societe": "MADO PARFUMS",
+        "adresse_societe": "MAJICAVO LAMIR, 97600 KOUNGOU",
+        "id_vendeur": "02406877700010"
+    },
+    {
+        "nom_societe": "MADORA",
+        "adresse_societe": "RUE DU STADE, 97600 MAMOUDZOU",
+        "id_vendeur": "02406877700036"
+    },
+    {
+        "nom_societe": "MADORA",
+        "adresse_societe": "15 LABATTOIR, 97615 DZAOUDZI",
+        "id_vendeur": "02406877700044"
+    },
+    {
+        "nom_societe": "E-VOYAGE COMORES AVIATION INTERNATIONAL",
+        "adresse_societe": "130 BOULEVARD DIDEROT, 75012 PARIS",
+        "id_vendeur": "02406891800028"
+    },
+    {
+        "nom_societe": "MAYOTTE PIECES AUTO",
+        "adresse_societe": "10 ZONE I NEL, 97600 MAMOUDZOU",
+        "id_vendeur": "02406911400023"
+    },
+    {
+        "nom_societe": "B.P",
+        "adresse_societe": "11 CITE ARTISANALE, 97412 BRAS-PANON",
+        "id_vendeur": "02406911400031"
+    },
+    {
+        "nom_societe": "SHANNA",
+        "adresse_societe": "7 RUE DARSALAMA, 97600 MAMOUDZOU",
+        "id_vendeur": "02406916300020"
+    },
+    {
+        "nom_societe": "MSP MAYOTTE SUPER PIECES",
+        "adresse_societe": "QUARTIER MJIHARI, 97630 ACOUA",
+        "id_vendeur": "02406925400027"
+    },
+    {
+        "nom_societe": "MANONGA LAZA",
+        "adresse_societe": "RUE GNAMBOTITI, 97660 BANDRELE",
+        "id_vendeur": "02406934600013"
+    },
+    {
+        "nom_societe": "CENTRE ALIMENTAIRE YOUSSOUF FILS",
+        "adresse_societe": "24 RUE DES REFUGIES, 97615 DZAOUDZI",
+        "id_vendeur": "02406977500013"
+    },
+    {
+        "nom_societe": "DOUKA NAMOHAKO",
+        "adresse_societe": "25 MAJIKAVO KOROPA, 97600 KOUNGOU",
+        "id_vendeur": "02406985800025"
+    },
+    {
+        "nom_societe": "ESPACE MEUBLE",
+        "adresse_societe": "AVENUE DE L'ARCHIPEL ZI KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "02407016100021"
+    },
+    {
+        "nom_societe": "ALIWALA",
+        "adresse_societe": "26 RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "02407016100039"
+    },
+    {
+        "nom_societe": "E.C.E ENTREPRISE CARREAUX ET ENTRETIEN",
+        "adresse_societe": "3 RUE MANENO BANDARSALAMA, 97600 KOUNGOU",
+        "id_vendeur": "02407034400023"
+    },
+    {
+        "nom_societe": "A.CHAMSI",
+        "adresse_societe": "23 RUE DE LA CARRIERE, 97600 MAMOUDZOU",
+        "id_vendeur": "02407044300023"
+    },
+    {
+        "nom_societe": "LE MASSALA",
+        "adresse_societe": "70 ROUTE NATIONALE 2, 97600 MAMOUDZOU",
+        "id_vendeur": "02407085600034"
+    },
+    {
+        "nom_societe": "ENTREPRISE ASSANI ALI",
+        "adresse_societe": "CIMETIERE MANDZARISOA, 97600 MAMOUDZOU",
+        "id_vendeur": "02407098900025"
+    },
+    {
+        "nom_societe": "PLANET'CHAUSS",
+        "adresse_societe": "CENTRE COMMERCIAL LUKIDA BOUT.28, 97600 MAMOUDZOU",
+        "id_vendeur": "02407118500011"
+    },
+    {
+        "nom_societe": "CADRES EN FOLIE",
+        "adresse_societe": "14 RUE MAMAWE, 97600 MAMOUDZOU",
+        "id_vendeur": "02407148200038"
+    },
+    {
+        "nom_societe": "SFR",
+        "adresse_societe": "ZI KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "02407217500029"
+    },
+    {
+        "nom_societe": "SFR",
+        "adresse_societe": "ROUTE DE COCONI, 97680 TSINGONI",
+        "id_vendeur": "02407217500094"
+    },
+    {
+        "nom_societe": "SFR MAYOTTE",
+        "adresse_societe": "175 RUE SAID VITTA, 97620 CHIRONGUI",
+        "id_vendeur": "02407217500110"
+    },
+    {
+        "nom_societe": "SFR",
+        "adresse_societe": "RTE COCONI - VILLAGE DE COMBANI, 97680 TSINGONI",
+        "id_vendeur": "02407217500128"
+    },
+    {
+        "nom_societe": "SALAMA TSARA",
+        "adresse_societe": "39 RUE TSINGO NDRILE, 97625 KANI-KELI",
+        "id_vendeur": "02407223300018"
+    },
+    {
+        "nom_societe": "FITIYAVAGNA",
+        "adresse_societe": "20 ROUTE AMPADZA, 97670 CHICONI",
+        "id_vendeur": "02407250600017"
+    },
+    {
+        "nom_societe": "INVEST OI",
+        "adresse_societe": "5 RUE MARIE CAZE, 97438 SAINTE-MARIE",
+        "id_vendeur": "02407286000034"
+    },
+    {
+        "nom_societe": "ENTREPRISE CASSAN THIERRY",
+        "adresse_societe": "LOT FOURAHANI, 97660 DEMBENI",
+        "id_vendeur": "02407296900025"
+    },
+    {
+        "nom_societe": "QUNCAILLERIE BOURHANI",
+        "adresse_societe": "BOULEVARD HALIDI SELEMANI, 97600 MAMOUDZOU",
+        "id_vendeur": "02407338900025"
+    },
+    {
+        "nom_societe": "YLANG VOYAGES",
+        "adresse_societe": "20 PL DU MARIAGE, 97600 MAMOUDZOU",
+        "id_vendeur": "02407345400027"
+    },
+    {
+        "nom_societe": "MAGAZIN BOILOLO",
+        "adresse_societe": "19 RUE MKIRI WAGUIZI -MTSAPERE, 97600 MAMOUDZOU",
+        "id_vendeur": "02407363700019"
+    },
+    {
+        "nom_societe": "BARAKA DJEMA",
+        "adresse_societe": "10 RUE MASSIMONI, 97600 KOUNGOU",
+        "id_vendeur": "02407389200010"
+    },
+    {
+        "nom_societe": "PHILIBERT",
+        "adresse_societe": "QUARTIER MANGA BE, 97670 CHICONI",
+        "id_vendeur": "02407410600014"
+    },
+    {
+        "nom_societe": "ESPACE ARTISANAL",
+        "adresse_societe": "85 ROUTE NATIONALE 2, 97600 MAMOUDZOU",
+        "id_vendeur": "02407411400026"
+    },
+    {
+        "nom_societe": "CENTRE INTERNATIONALE D'OPPORTUNITES D'AFFAIRES",
+        "adresse_societe": "QUARTIER DOMOELI, 97640 SADA",
+        "id_vendeur": "02407501200039"
+    },
+    {
+        "nom_societe": "ELECTRO PLUS",
+        "adresse_societe": "212 AVENUE FRANCOIS MITTERRAND, 97650 BANDRABOUA",
+        "id_vendeur": "02407505300017"
+    },
+    {
+        "nom_societe": "3A MAYOTTE",
+        "adresse_societe": "BATIMENT ARCHIPEL, 97600 MAMOUDZOU",
+        "id_vendeur": "02407516000028"
+    },
+    {
+        "nom_societe": "FRANCK PC INFORMATIQUE",
+        "adresse_societe": "QUARTIER MSAKOUANI PRES DE HERVE, 97600 MAMOUDZOU",
+        "id_vendeur": "02407520200028"
+    },
+    {
+        "nom_societe": "FRANCK PC EVENEMENTIEL",
+        "adresse_societe": "RES BELLEVUE, 97600 MAMOUDZOU",
+        "id_vendeur": "02407520200051"
+    },
+    {
+        "nom_societe": "MORA MORA",
+        "adresse_societe": "16 RUE MAEVANTANA, 97600 MAMOUDZOU",
+        "id_vendeur": "02407520200069"
+    },
+    {
+        "nom_societe": "ENTREPRISE MOHAMED",
+        "adresse_societe": "18 RUE MANGARETTA, 97600 KOUNGOU",
+        "id_vendeur": "02407532700015"
+    },
+    {
+        "nom_societe": "PIRBAY",
+        "adresse_societe": "4 AVENUE DE CORBERA, 75012 PARIS",
+        "id_vendeur": "02407551700037"
+    },
+    {
+        "nom_societe": "MAYOTTE ULM",
+        "adresse_societe": "AEROPORT DE PAMANDZI, 97615 PAMANDZI",
+        "id_vendeur": "02407554100011"
+    },
+    {
+        "nom_societe": "SOULA FILS",
+        "adresse_societe": "QUA CAVANI BE, 97670 OUANGANI",
+        "id_vendeur": "02407556600018"
+    },
+    {
+        "nom_societe": "LEBTRONIC",
+        "adresse_societe": "ZI KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "02407563200018"
+    },
+    {
+        "nom_societe": "ECAH",
+        "adresse_societe": "RTE NATIONALE 2, 97660 DEMBENI",
+        "id_vendeur": "02407591300020"
+    },
+    {
+        "nom_societe": "E.B.E",
+        "adresse_societe": "MAJICAVO LAMIR, 97600 KOUNGOU",
+        "id_vendeur": "02407597000020"
+    },
+    {
+        "nom_societe": "EQUANS",
+        "adresse_societe": "49 RUE LOUIS BLANC, 92400 COURBEVOIE",
+        "id_vendeur": "02407610100047"
+    },
+    {
+        "nom_societe": "SERVICE RAPIDE",
+        "adresse_societe": "21 RUE MOSQUEE DOUJANI 1, 97600 MAMOUDZOU",
+        "id_vendeur": "02407634100023"
+    },
+    {
+        "nom_societe": "TOLES DE MAYOTTE",
+        "adresse_societe": "VALLEE III, 97600 KOUNGOU",
+        "id_vendeur": "02407645700027"
+    },
+    {
+        "nom_societe": "SAF COIFFURE",
+        "adresse_societe": "19 BOULEVARD SALAMA, 97600 KOUNGOU",
+        "id_vendeur": "02407648100019"
+    },
+    {
+        "nom_societe": "BOUTIQUE MAANCHOUK",
+        "adresse_societe": "PASSAMAINTY, 97600 MAMOUDZOU",
+        "id_vendeur": "02407699400011"
+    },
+    {
+        "nom_societe": "ISMAILA FILS",
+        "adresse_societe": "9 RUE DECASE 4EME TRANCHE, 97615 PAMANDZI",
+        "id_vendeur": "02407740600023"
+    },
+    {
+        "nom_societe": "SUPER-MAEVA",
+        "adresse_societe": "RTE NATIONALE -MRAMADOUDOU, 97620 CHIRONGUI",
+        "id_vendeur": "02407755400012"
+    },
+    {
+        "nom_societe": "DODJI BOIS",
+        "adresse_societe": "36 RUE MAOULI, 97620 BOUENI",
+        "id_vendeur": "02407760400015"
+    },
+    {
+        "nom_societe": "ISIJIVA",
+        "adresse_societe": "13 RUE MANDZARISOA CAVANI, 97600 MAMOUDZOU",
+        "id_vendeur": "02407776000015"
+    },
+    {
+        "nom_societe": "TECHNIC AUTO",
+        "adresse_societe": "1891 ROUTE NATIONALE 2, 97600 MAMOUDZOU",
+        "id_vendeur": "02407821400020"
+    },
+    {
+        "nom_societe": "MAX EXPRESS",
+        "adresse_societe": "30 RUE TERRAIN DE FOOT, 97600 KOUNGOU",
+        "id_vendeur": "02407822200015"
+    },
+    {
+        "nom_societe": "MAYOTTE PNEUS",
+        "adresse_societe": "MAJICAVO LAMIR, 97600 KOUNGOU",
+        "id_vendeur": "02407830500018"
+    },
+    {
+        "nom_societe": "YASSINI DEVELOPPEMENT",
+        "adresse_societe": "5 RUE ESC M'KIRI WA MAGARANDO, 97600 MAMOUDZOU",
+        "id_vendeur": "02407831300020"
+    },
+    {
+        "nom_societe": "A.T.S",
+        "adresse_societe": "85 RUE YOUNOUSSA BAMANA, 97640 SADA",
+        "id_vendeur": "02407839600041"
+    },
+    {
+        "nom_societe": "MCTP LA MAHORAISE DE TRAVAUX PUBLICS ASSAINISSEMENT & EAU POTABLE",
+        "adresse_societe": "COMBANI, 97680 TSINGONI",
+        "id_vendeur": "02407860200026"
+    },
+    {
+        "nom_societe": "EMPC2A(ENTREPRISE MAHORAIS DE PRODUCTION DE CONSTRUCTION D'AMENAGEMENT ET D'ASSAINISSEMENT)",
+        "adresse_societe": "212 DZOUMOGNE, 97650 BANDRABOUA",
+        "id_vendeur": "02407882600013"
+    },
+    {
+        "nom_societe": "RESTO'VITE",
+        "adresse_societe": "43 RUE DU CINEMA, 97600 MAMOUDZOU",
+        "id_vendeur": "02407910500029"
+    },
+    {
+        "nom_societe": "I.E.S.B.G.M",
+        "adresse_societe": "5 RUE BENAZI, 97600 KOUNGOU",
+        "id_vendeur": "02407914700039"
+    },
+    {
+        "nom_societe": "MACONNERIE 2003",
+        "adresse_societe": "4 RUE MECHANT, 97600 KOUNGOU",
+        "id_vendeur": "02407957600021"
+    },
+    {
+        "nom_societe": "HYPERDISCOUNT",
+        "adresse_societe": "BP 70, 97600 MAMOUDZOU",
+        "id_vendeur": "02407969100010"
+    },
+    {
+        "nom_societe": "SUPER MARCHE BAOBAB",
+        "adresse_societe": "RUE DU STADE DE CAVANI, 97600 MAMOUDZOU",
+        "id_vendeur": "02407969100069"
+    },
+    {
+        "nom_societe": "DOUKA BARAKA",
+        "adresse_societe": "4 RUELLE SOUMAILA KANDZOU, 97670 OUANGANI",
+        "id_vendeur": "02408055800018"
+    },
+    {
+        "nom_societe": "DAMANE",
+        "adresse_societe": "KAWLE DEVANT LA RIVIERE, 97600 MAMOUDZOU",
+        "id_vendeur": "02408076400012"
+    },
+    {
+        "nom_societe": "MENUISERIE A LA FRANCAISE",
+        "adresse_societe": "561 AVENUE DU COLLEGE, 97670 CHICONI",
+        "id_vendeur": "02408080600011"
+    },
+    {
+        "nom_societe": "MOURIDI SHOP",
+        "adresse_societe": "27 RUE SALAMANI, 97600 MAMOUDZOU",
+        "id_vendeur": "02408083000011"
+    },
+    {
+        "nom_societe": "MAGASIN MZE",
+        "adresse_societe": "CHEMIN MZE, 97670 CHICONI",
+        "id_vendeur": "02408139000023"
+    },
+    {
+        "nom_societe": "CONSTRUCTION 2003",
+        "adresse_societe": "1 ESCALIER KWALE DZIDZANO, 97600 MAMOUDZOU",
+        "id_vendeur": "02408147300019"
+    },
+    {
+        "nom_societe": "TRANSIT SOUFOU FILS",
+        "adresse_societe": "31 RUE MONTHYON, 97400 SAINT-DENIS",
+        "id_vendeur": "02408171300034"
+    },
+    {
+        "nom_societe": "HAGAWA",
+        "adresse_societe": "13 RUE DE PARADIS, 97630 MTSAMBORO",
+        "id_vendeur": "02408196000056"
+    },
+    {
+        "nom_societe": "TSARA",
+        "adresse_societe": "PL DU MARCHE BOX R 03, 97600 MAMOUDZOU",
+        "id_vendeur": "02408209100018"
+    },
+    {
+        "nom_societe": "KAMA. ELEC.976",
+        "adresse_societe": "97 RUE MOUSSA OILLI, 97660 DEMBENI",
+        "id_vendeur": "02408218200023"
+    },
+    {
+        "nom_societe": "EQUIP'AUTO",
+        "adresse_societe": "ZI KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "02408219000018"
+    },
+    {
+        "nom_societe": "ENTREPRISE MICHEL AHMED",
+        "adresse_societe": "RTE NATIONALE, 97620 BOUENI",
+        "id_vendeur": "02408232300015"
+    },
+    {
+        "nom_societe": "MAORE MOTOS",
+        "adresse_societe": "260 RUE CHEICK AHMED-SOILIHI, 97600 MAMOUDZOU",
+        "id_vendeur": "02408236400027"
+    },
+    {
+        "nom_societe": "APPRENDRE, CONSTRUIRE ENSEMBLE",
+        "adresse_societe": "ESPACE CORALIUM BAT A, 97600 MAMOUDZOU",
+        "id_vendeur": "02408240600034"
+    },
+    {
+        "nom_societe": "PIZZERIA LE DJEMBE",
+        "adresse_societe": "RTE NATIONALE APRES LE PONT, 97660 BANDRELE",
+        "id_vendeur": "02408254700027"
+    },
+    {
+        "nom_societe": "AMENAGEMENTS SUPPER LUX (A.S.L)",
+        "adresse_societe": "15 CHE ANGELINE, 97600 KOUNGOU",
+        "id_vendeur": "02408267900010"
+    },
+    {
+        "nom_societe": "AMENAGEMENTS SUPPER LUX (A.S.L)",
+        "adresse_societe": "3 RUE DU COMMERCE, 97600 KOUNGOU",
+        "id_vendeur": "02408267900028"
+    },
+    {
+        "nom_societe": "MAGASIN SUPPER LUX",
+        "adresse_societe": "19 KANGANI, 97600 KOUNGOU",
+        "id_vendeur": "02408267900044"
+    },
+    {
+        "nom_societe": "E.T.S. MAYOTTE",
+        "adresse_societe": "RUE DE LA CASERNE, 97600 MAMOUDZOU",
+        "id_vendeur": "02408313100011"
+    },
+    {
+        "nom_societe": "L'AUBERGE DU ROND POINT",
+        "adresse_societe": "3 RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "02408332100026"
+    },
+    {
+        "nom_societe": "MARIZIKI MEMA",
+        "adresse_societe": "QUA MBOUYOUJOU, 97680 TSINGONI",
+        "id_vendeur": "02408373500019"
+    },
+    {
+        "nom_societe": "S.E.V FILS",
+        "adresse_societe": "25 RUE DU COMMERCE, 97600 KOUNGOU",
+        "id_vendeur": "02408380000011"
+    },
+    {
+        "nom_societe": "NEMAT MARKET",
+        "adresse_societe": "1 CHEMIN DU SOLEIL, 97600 KOUNGOU",
+        "id_vendeur": "02408395800025"
+    },
+    {
+        "nom_societe": "SANDANI RAMLATI",
+        "adresse_societe": "SOULOU ET BANDRADZIA, 97650 M'TSANGAMOUJI",
+        "id_vendeur": "02408407100034"
+    },
+    {
+        "nom_societe": "EUROPCAR",
+        "adresse_societe": "ZI KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "02408440200015"
+    },
+    {
+        "nom_societe": "T.P.M ALILOIFFA",
+        "adresse_societe": "RUE D'AMBOISE, 97600 MAMOUDZOU",
+        "id_vendeur": "02408452700043"
+    },
+    {
+        "nom_societe": "BOULANGERIE DE COMBANI",
+        "adresse_societe": "25 RUE RETENUE COLINAIRE, 97680 TSINGONI",
+        "id_vendeur": "02408459200021"
+    },
+    {
+        "nom_societe": "SAINDOU SHOP",
+        "adresse_societe": "22 RUE ABDOU MOUSSA, 97620 BOUENI",
+        "id_vendeur": "02408460000022"
+    },
+    {
+        "nom_societe": "AIRE DE REPOS",
+        "adresse_societe": "966 RTE NATIONALE, 97630 MTSAMBORO",
+        "id_vendeur": "02408467500016"
+    },
+    {
+        "nom_societe": "ENTREPRISE OUASSI",
+        "adresse_societe": "QUA NAIROBI, 97650 BANDRABOUA",
+        "id_vendeur": "02408494900023"
+    },
+    {
+        "nom_societe": "PELETEAU",
+        "adresse_societe": "14 RUE ABDOUL ANZIZ, 97630 MTSAMBORO",
+        "id_vendeur": "02408507800012"
+    },
+    {
+        "nom_societe": "BUS' ENTREPRISE",
+        "adresse_societe": "RUE MOSQUEE DE VENDREDI, 97660 DEMBENI",
+        "id_vendeur": "02408512800015"
+    },
+    {
+        "nom_societe": "MIDAS",
+        "adresse_societe": "ZI KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "02408516900019"
+    },
+    {
+        "nom_societe": "LES FILS SORNOM",
+        "adresse_societe": "49 RUE DE LA CITE DOUJANI 2, 97600 MAMOUDZOU",
+        "id_vendeur": "02408551600029"
+    },
+    {
+        "nom_societe": "BOULANGERIE MASSULAHA",
+        "adresse_societe": "43 RUE MAEVANTANA, 97600 MAMOUDZOU",
+        "id_vendeur": "02408566400050"
+    },
+    {
+        "nom_societe": "SALAMA DJEMA",
+        "adresse_societe": "3 RUE ABDOU MOUSSA, 97620 BOUENI",
+        "id_vendeur": "02408583900025"
+    },
+    {
+        "nom_societe": "ABI SHOP",
+        "adresse_societe": "149 RUE LORY LES BAS, 97490 SAINT-DENIS",
+        "id_vendeur": "02408586200035"
+    },
+    {
+        "nom_societe": "ENTREPRISE DE MACONNERIE ET TRAVAUX PUBLICS (EMTP)",
+        "adresse_societe": "2 RUE TAVANDAY, 97600 MAMOUDZOU",
+        "id_vendeur": "02408591200038"
+    },
+    {
+        "nom_societe": "MR.BRICOLAGE",
+        "adresse_societe": "RTE SPPM, 97600 MAMOUDZOU",
+        "id_vendeur": "02408595300016"
+    },
+    {
+        "nom_societe": "MR BRICOLAGE",
+        "adresse_societe": "CENTRE COMMERCIAL YLANG YLANG CC, 97680 TSINGONI",
+        "id_vendeur": "02408595300024"
+    },
+    {
+        "nom_societe": "FROZEN CHIREO",
+        "adresse_societe": "RTE DE LA SPPM, 97600 MAMOUDZOU",
+        "id_vendeur": "02408598700022"
+    },
+    {
+        "nom_societe": "M'K BOUTIQUE",
+        "adresse_societe": "702 RUE DU SOUVENIR, 97650 BANDRABOUA",
+        "id_vendeur": "02408617500015"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "152 AV EMILE ZOLA, 79100 THOUARS",
+        "id_vendeur": "02548040100550"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "269 RUE DE L'ARETIER, 16430 CHAMPNIERS",
+        "id_vendeur": "02548040100576"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "CHEMIN DES GORDINS, 16700 RUFFEC",
+        "id_vendeur": "02548040100584"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "30 AVENUE DE LA LOGE, 86440 MIGNE-AUXANCES",
+        "id_vendeur": "02548040100592"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "15 RUE ANITA CONTI, 85000 LA ROCHE-SUR-YON",
+        "id_vendeur": "02548040100600"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "1 BOULEVARD DE L'EUROPE, 79200 PARTHENAY",
+        "id_vendeur": "02548040100618"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "12 CHEMIN DE LA MASSONNE, 86100 CHATELLERAULT",
+        "id_vendeur": "02548040100626"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "1 AVENUE DE MAGUDAS, 33185 LE HAILLAN",
+        "id_vendeur": "02548040100634"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "154 CRS DU QUATORZE JUILLET, 33210 LANGON",
+        "id_vendeur": "02548040100642"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "ZONE ARTISANALE MIRVILLE, 85600 MONTAIGU-VENDEE",
+        "id_vendeur": "02548040100659"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "AV MARCEL PAUL, 24330 BOULAZAC ISLE MANOIRE",
+        "id_vendeur": "02548040100667"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "CHEMIN DU PLAISIR, 47400 TONNEINS",
+        "id_vendeur": "02548040100675"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "1921 ROUTE NATIONALE 85, 38300 NIVOLAS-VERMELLE",
+        "id_vendeur": "02548040100691"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "RUE PORTE DE LA DORDOGNE, 24100 CREYSSE",
+        "id_vendeur": "02548040100709"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "230 RUE DES DROITS DE L’HOMME, 33240 SAINT-ANDRE-DE-CUBZAC",
+        "id_vendeur": "02548040100717"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "37 RUE LOUIS BREGUET, 38780 PONT-EVEQUE",
+        "id_vendeur": "02548040100725"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "610 RUE LOUIS ARMAND, 73200 ALBERTVILLE",
+        "id_vendeur": "02548040100733"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "AVENUE DU GENERAL DE GAULLE, 72400 LA FERTE-BERNARD",
+        "id_vendeur": "02548040100766"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "15 RUE JEAN PERRIN, 28600 LUISANT",
+        "id_vendeur": "02548040100774"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "41 BOULEVARD PAUL LANGEVIN, 38600 FONTAINE",
+        "id_vendeur": "02548040100782"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "7 RUE AUGUSTE ET LOUIS LUMIERE, 33670 CREON",
+        "id_vendeur": "02548040100790"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "15 RUE DU PRE DROUE, 88150 CHAVELOT",
+        "id_vendeur": "02548040100808"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "11 RUE LOUIS BRAILLE, 33380 BIGANOS",
+        "id_vendeur": "02548040100832"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "9 CHE DE COURREJEAN, 33130 BEGLES",
+        "id_vendeur": "02548040100857"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "12 AVENUE DU POUEY, 65420 IBOS",
+        "id_vendeur": "02548040100865"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "26 RUE DES PLESSES, 85100 LES SABLES D'OLONNE",
+        "id_vendeur": "02548040100873"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "ROUTE DE POITIERS, 17400 SAINT-JULIEN-DE-L'ESCAP",
+        "id_vendeur": "02548040100881"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "165 RUE DU FORT, 01440 VIRIAT",
+        "id_vendeur": "02548040100899"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "4 RUE RENE CASSIN, 37390 NOTRE-DAME-D'OE",
+        "id_vendeur": "02548040100907"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "214 AVENUE LOUIS LEPINE, 83600 FREJUS",
+        "id_vendeur": "02548040100915"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "9067 CHEMIN DE MAISON BRULEE, 73300 SAINT-JEAN-DE-MAURIENNE",
+        "id_vendeur": "02548040100923"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "55 AVENUE DU STADE, 74950 SCIONZIER",
+        "id_vendeur": "02548040100956"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "6 RUE AURELIENNE, 06150 CANNES",
+        "id_vendeur": "02548040100964"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "1 RUE CONDORCET, 83310 COGOLIN",
+        "id_vendeur": "02548040100972"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "72 ROUTE METROPOLITAINE 820, 31790 SAINT-JORY",
+        "id_vendeur": "02548040100980"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "RUE CHARLES MESSIER, 49300 CHOLET",
+        "id_vendeur": "02548040100998"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "200 AVENUE DES PINS, 26210 SAINT-SORLIN-EN-VALLOIRE",
+        "id_vendeur": "02548040101020"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "467 AVENUE FREDERIC MISTRAL, 04100 MANOSQUE",
+        "id_vendeur": "02548040101038"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "1062 ROUTE DE MOISSAC, 82100 CASTELSARRASIN",
+        "id_vendeur": "02548040101046"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "2 AVENUE DU PIN, 49070 BEAUCOUZE",
+        "id_vendeur": "02548040101061"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "18 RUE FERDINAND DE LESSEPS, 60000 BEAUVAIS",
+        "id_vendeur": "02548040101087"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "RUE DE BERLIN, 59640 DUNKERQUE",
+        "id_vendeur": "02548040101095"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "169 RUE DE LORIENT, 35000 RENNES",
+        "id_vendeur": "02548040101103"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "610 RUE ETIENNE LENOIR, 59494 PETITE-FORET",
+        "id_vendeur": "02548040101129"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "7 RUE DU CHAT NOIR, 62230 OUTREAU",
+        "id_vendeur": "02548040101137"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "9003 RUE LESPINASSE, 47000 AGEN",
+        "id_vendeur": "02548040101152"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "2 RUE RABELAIS, 72200 LA FLECHE",
+        "id_vendeur": "02548040101160"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "249 RUE DE L'INDUSTRIE, 59113 SECLIN",
+        "id_vendeur": "02548040101186"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "240 AVENUE GUSTAVE EIFFEL, 33260 LA TESTE-DE-BUCH",
+        "id_vendeur": "02548040101194"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "71 RUE DE CALAIS, 62500 SAINT-MARTIN-LEZ-TATINGHEM",
+        "id_vendeur": "02548040101202"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "ALLEE MARC SEGUIN, 69200 VENISSIEUX",
+        "id_vendeur": "02548040101210"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "26 RUE D'EPINAL, 88150 CHAVELOT",
+        "id_vendeur": "02548040101244"
+    },
+    {
+        "nom_societe": "BARRAULT",
+        "adresse_societe": "37 ROUTE DE RAON, 88100 SAINT-DIE-DES-VOSGES",
+        "id_vendeur": "02548040101251"
+    },
+    {
+        "nom_societe": "LES NOUVEAUX BIJOUTIERS",
+        "adresse_societe": "5 PASSAGE DU COMMERCE, 79000 NIORT",
+        "id_vendeur": "02578048700036"
+    },
+    {
+        "nom_societe": "PROCIVIS POITOU-CHARENTES",
+        "adresse_societe": "123 RUE CONDORCET, 86000 POITIERS",
+        "id_vendeur": "02578078400127"
+    },
+    {
+        "nom_societe": "PROMOCASH",
+        "adresse_societe": "IMP BOIS BELMONT, 17600 MEDIS",
+        "id_vendeur": "02578080000089"
+    },
+    {
+        "nom_societe": "PROMOCASH",
+        "adresse_societe": "PARC D ACTILONNE, 85100 LES SABLES D'OLONNE",
+        "id_vendeur": "02578080000097"
+    },
+    {
+        "nom_societe": "GROUPE GMD",
+        "adresse_societe": "3 ALLEE DE GASCOGNE, 47000 AGEN",
+        "id_vendeur": "02582014300045"
+    },
+    {
+        "nom_societe": "GROUPE GMD",
+        "adresse_societe": "AVENUE DU MEDOC, 33114 LE BARP",
+        "id_vendeur": "02582014300060"
+    },
+    {
+        "nom_societe": "GROUPE GMD",
+        "adresse_societe": "10 RUE DENIS PAPIN, 24100 BERGERAC",
+        "id_vendeur": "02582014300078"
+    },
+    {
+        "nom_societe": "MARBRERIE FRERE ALAIN",
+        "adresse_societe": "29 RUE CARNOT, 22100 DINAN",
+        "id_vendeur": "02584320200026"
+    },
+    {
+        "nom_societe": "COSSET ET FILS",
+        "adresse_societe": "9 RUE CHAMP GROLLEAU, 79160 SAINT-POMPAIN",
+        "id_vendeur": "02588048500039"
+    },
+    {
+        "nom_societe": "COMPTOIR COOP",
+        "adresse_societe": "83 QUAI GAMBETTA, 35260 CANCALE",
+        "id_vendeur": "02605007000049"
+    },
+    {
+        "nom_societe": "CUNY DUBACQUI",
+        "adresse_societe": "4 RUE DE PITOYS, 64600 ANGLET",
+        "id_vendeur": "02612006300115"
+    },
+    {
+        "nom_societe": "ETS CUNY",
+        "adresse_societe": "1116 ALLEE DE LA SEYNES, 47310 SAINTE-COLOMBE-EN-BRUILHOIS",
+        "id_vendeur": "02612006300149"
+    },
+    {
+        "nom_societe": "MARTIN DELBERT",
+        "adresse_societe": "85 BOULEVARD DE LA REPUBLIQUE, 47000 AGEN",
+        "id_vendeur": "02622007900011"
+    },
+    {
+        "nom_societe": "MANGA MANGA",
+        "adresse_societe": "76 BOULEVARD DE LA REPUBLIQUE, 47000 AGEN",
+        "id_vendeur": "02622007900029"
+    },
+    {
+        "nom_societe": "PRESSING C'CLEAN",
+        "adresse_societe": "275 AVENUE DE PARIS, 79000 NIORT",
+        "id_vendeur": "02627497700128"
+    },
+    {
+        "nom_societe": "LES SECHOIRS DU POITOU",
+        "adresse_societe": "LA PLAINE DE LIMAGE, 79190 SAUZE-VAUSSAIS",
+        "id_vendeur": "02628020600025"
+    },
+    {
+        "nom_societe": "ETS KIRPY",
+        "adresse_societe": "67 AVENUE DE LA GARE, 47390 LAYRAC",
+        "id_vendeur": "02632002800017"
+    },
+    {
+        "nom_societe": "SOLIGNAC",
+        "adresse_societe": "1046 CHEMIN DES ETANGS, 84810 AUBIGNAN",
+        "id_vendeur": "02638021200139"
+    },
+    {
+        "nom_societe": "XMLS",
+        "adresse_societe": "16 RUE DU BOIS DIDAIS, 22100 TADEN",
+        "id_vendeur": "02655010300035"
+    },
+    {
+        "nom_societe": "COZIGOU COTE D'EMERAUDE",
+        "adresse_societe": "BOULEVARD DE PREVAL, 22100 QUEVERT",
+        "id_vendeur": "02695021200097"
+    },
+    {
+        "nom_societe": "CITYA LA POSTE",
+        "adresse_societe": "5 RUE ERNEST PEROCHON, 79000 NIORT",
+        "id_vendeur": "02698039100010"
+    },
+    {
+        "nom_societe": "RESIDENCE JOSEPHINE BAKER",
+        "adresse_societe": "1 RUE SUZANNE LACORE, 79000 NIORT",
+        "id_vendeur": "02708007600071"
+    },
+    {
+        "nom_societe": "SOVB",
+        "adresse_societe": "22 RUE DE LA BROSSERIE, 79500 MELLE",
+        "id_vendeur": "02708022500017"
+    },
+    {
+        "nom_societe": "LA VOIX DE LA TERRE",
+        "adresse_societe": "1227 RUE DE LA BIRADE, 47550 BOE",
+        "id_vendeur": "02712009600048"
+    },
+    {
+        "nom_societe": "ENTREPOTS FRIGORIFIQUES DE BECHE",
+        "adresse_societe": "GUERIN, 35190 BECHEREL",
+        "id_vendeur": "02715009300022"
+    },
+    {
+        "nom_societe": "SARL MOINEAU INSTRUMENTS",
+        "adresse_societe": "8 ALL DES ERABLES, 79110 CHEF-BOUTONNE",
+        "id_vendeur": "02718020700048"
+    },
+    {
+        "nom_societe": "ETS DUSCIO",
+        "adresse_societe": "1790 AVENUE GEORGES GUIGNARD, 47550 BOE",
+        "id_vendeur": "02722017700029"
+    },
+    {
+        "nom_societe": "ETS TOVO",
+        "adresse_societe": "331 ROUTE DU CHATEAU D’ALLOT, 47550 BOE",
+        "id_vendeur": "02722018500014"
+    },
+    {
+        "nom_societe": "CENTRAVET",
+        "adresse_societe": "ZONE DES PETITES HAIES, 94700 MAISONS ALFORT",
+        "id_vendeur": "02725002600104"
+    },
+    {
+        "nom_societe": "CENTRAVET SA",
+        "adresse_societe": "286 AVENUE FREDERIC PASSY, 11400 CASTELNAUDARY",
+        "id_vendeur": "02725002600112"
+    },
+    {
+        "nom_societe": "CENTRAVET",
+        "adresse_societe": "ZAC DE NICOPOLIS, 83170 BRIGNOLES",
+        "id_vendeur": "02725002600120"
+    },
+    {
+        "nom_societe": "CENTRAVET",
+        "adresse_societe": "230 RUE DESIRE MARTIN, 49070 SAINT-LEGER-DE-LINIERES",
+        "id_vendeur": "02725002600153"
+    },
+    {
+        "nom_societe": "CENTRAVET",
+        "adresse_societe": "RUE DES ACACIAS, 33210 MAZERES",
+        "id_vendeur": "02725002600161"
+    },
+    {
+        "nom_societe": "CENTRAVET",
+        "adresse_societe": "430 RUE HENRI FARMAN, 34430 SAINT-JEAN-DE-VEDAS",
+        "id_vendeur": "02725002600179"
+    },
+    {
+        "nom_societe": "GOLF CLUB DE FREHEL SABLES-D'OR-LES-PINS",
+        "adresse_societe": "PAVILLON DU GOLF, 22240 FREHEL",
+        "id_vendeur": "02725019000017"
+    },
+    {
+        "nom_societe": "E.LECLERC",
+        "adresse_societe": "2 RUE DU GENERAL DE GAULLE, 22100 LANVALLAY",
+        "id_vendeur": "02725032300071"
+    },
+    {
+        "nom_societe": "OPTIC ARMOR",
+        "adresse_societe": "1 RUE DE LA TRINITE, 22250 BROONS",
+        "id_vendeur": "02735027100055"
+    },
+    {
+        "nom_societe": "OPENHEALTH COMPANY",
+        "adresse_societe": "3 ALLEE NICOLAS LE BLANC, 56000 VANNES",
+        "id_vendeur": "02735032100058"
+    },
+    {
+        "nom_societe": "ETS DRUJON SA",
+        "adresse_societe": "8 RUE D’ARSONVAL, 17200 ROYAN",
+        "id_vendeur": "02738010400060"
+    },
+    {
+        "nom_societe": "INTERMARCHE",
+        "adresse_societe": "11 RUE JULES-FERRY, 79000 NIORT",
+        "id_vendeur": "02738015300018"
+    },
+    {
+        "nom_societe": "COP RES IENA",
+        "adresse_societe": "1 RUE DU SACRE COEUR, 33000 BORDEAUX",
+        "id_vendeur": "03250078700018"
+    },
+    {
+        "nom_societe": "PARNALLAND, LE CARTONNIER DU VIN",
+        "adresse_societe": "5 RUE PAUL PAQUERIAUD, 21700 NUITS-SAINT-GEORGES",
+        "id_vendeur": "03548005200014"
+    },
+    {
+        "nom_societe": "BLANCHISSERIE TEINTURERIE PROVENCAL",
+        "adresse_societe": "64 AVENUE PHILIPPE ROCHAT, 06600 ANTIBES",
+        "id_vendeur": "03552085700026"
+    },
+    {
+        "nom_societe": "SE.RA.HU",
+        "adresse_societe": "LE PAVILLON DE ST ANDRIEUX, 83340 LE LUC",
+        "id_vendeur": "03552140000057"
+    },
+    {
+        "nom_societe": "SE.RA.HU 3",
+        "adresse_societe": "SAINT ANDRIEU, 83340 LE LUC",
+        "id_vendeur": "03552140000065"
+    },
+    {
+        "nom_societe": "SYMPHORIEN DUFOULEUR",
+        "adresse_societe": "1 RUE DE DIJON, 21700 NUITS-SAINT-GEORGES",
+        "id_vendeur": "03558003400029"
+    },
+    {
+        "nom_societe": "CINEAZUR",
+        "adresse_societe": "RUE DU HUIT MAI 1945, 83170 BRIGNOLES",
+        "id_vendeur": "03562013700030"
+    },
+    {
+        "nom_societe": "AUX OUVRIERS REUNIS",
+        "adresse_societe": "17 RUE DU VIEUX MARCHE AUX GRAINS, 67000 STRASBOURG",
+        "id_vendeur": "03562038400020"
+    },
+    {
+        "nom_societe": "WISKY A GOGO / SOVIET",
+        "adresse_societe": "5 RUE JACQUES LEONETTI, 06160 ANTIBES",
+        "id_vendeur": "03562071500033"
+    },
+    {
+        "nom_societe": "CHATEAU DE CHAVANES",
+        "adresse_societe": "RUE SAINT LAURENT, 39600 MONTIGNY-LES-ARSURES",
+        "id_vendeur": "03562118400031"
+    },
+    {
+        "nom_societe": "CINEMA CASINO",
+        "adresse_societe": "7 RUE DE L INDUSTRIE, 39400 HAUTS DE BIENNE",
+        "id_vendeur": "03565024100066"
+    },
+    {
+        "nom_societe": "AUX ARTS MENAGERS",
+        "adresse_societe": "12 BOULEVARD PRESIDENT WILSON, 06600 ANTIBES",
+        "id_vendeur": "03572008500048"
+    },
+    {
+        "nom_societe": "JEAN GAZIGNAIRE",
+        "adresse_societe": "147 ROUTE DE LA FENERIE, 06580 PEGOMAS",
+        "id_vendeur": "03572045700031"
+    },
+    {
+        "nom_societe": "SNACK DE LA PINEDE",
+        "adresse_societe": "21 AVENUE GEORGES GALLICE, 06160 ANTIBES",
+        "id_vendeur": "03572073900040"
+    },
+    {
+        "nom_societe": "IMPRIMERIE ANTIBOISE FANTINO",
+        "adresse_societe": "6 IMPASSE MAURICE FANTINO, 06600 ANTIBES",
+        "id_vendeur": "03572080400026"
+    },
+    {
+        "nom_societe": "PARFUMERIE CHARRIER",
+        "adresse_societe": "101 CHEMIN DE NOTRE DAME, 06220 VALLAURIS",
+        "id_vendeur": "03572109100011"
+    },
+    {
+        "nom_societe": "LABEL'F",
+        "adresse_societe": "22 AVENUE DE CHAMBOLAND, 21700 NUITS-SAINT-GEORGES",
+        "id_vendeur": "03578024600027"
+    },
+    {
+        "nom_societe": "S.E.C.",
+        "adresse_societe": "25 RUE DOCTEUR LOUIS LEGRAND, 21700 NUITS-SAINT-GEORGES",
+        "id_vendeur": "03578025300015"
+    },
+    {
+        "nom_societe": "THOMAS ET DOMINIQUE JAVOUHEY - JAVO",
+        "adresse_societe": "16 PLACE DE LA HALLE, 21200 BEAUNE",
+        "id_vendeur": "03578036000042"
+    },
+    {
+        "nom_societe": "FCC-FRANCE",
+        "adresse_societe": "17 RUE AUDEMAR GUYON, 39100 DOLE",
+        "id_vendeur": "03585054400053"
+    },
+    {
+        "nom_societe": "LA BODEGA - LE MILK",
+        "adresse_societe": "5 AVENUE GEORGES GALLICE, 06160 ANTIBES",
+        "id_vendeur": "03592023000014"
+    },
+    {
+        "nom_societe": "HOTEL JUANA",
+        "adresse_societe": "AVENUE GEORGES GALLICE, 06160 ANTIBES",
+        "id_vendeur": "03592081800016"
+    },
+    {
+        "nom_societe": "S.I.M.",
+        "adresse_societe": "96 BOULEVARD BEAU RIVAGE PROLONGE, 06600 ANTIBES",
+        "id_vendeur": "03612029300026"
+    },
+    {
+        "nom_societe": "POLE ANTIBES SAINT JEAN",
+        "adresse_societe": "2160 AVENUE JEAN MICHARD PELISSIER, 06600 ANTIBES",
+        "id_vendeur": "03622015000027"
+    },
+    {
+        "nom_societe": "FLEURIMPEX",
+        "adresse_societe": "10 RUE DE PENTHIEVRE, 75008 PARIS",
+        "id_vendeur": "03632025700045"
+    },
+    {
+        "nom_societe": "SOCIETE D'EXTRACTION ET DE TRANSFORMATION DE LA PIERRE/CMC - CARRIERES MARBRERIES DE COMBLANCHIEN",
+        "adresse_societe": "ROUTE DE VILLERS LA FAYE, 21700 COMBLANCHIEN",
+        "id_vendeur": "03638006100048"
+    },
+    {
+        "nom_societe": "TOUT FAIRE MATERIAUX",
+        "adresse_societe": "AVENUE PIERRE ET MARIE CURIE, 06700 SAINT-LAURENT-DU-VAR",
+        "id_vendeur": "03642116200029"
+    },
+    {
+        "nom_societe": "TOUT FAIRE MATERIAUX",
+        "adresse_societe": "QUA BAUX ROUX, 06670 LA ROQUETTE-SUR-VAR",
+        "id_vendeur": "03642116200052"
+    },
+    {
+        "nom_societe": "TOUT FAIRE MATERIAUX",
+        "adresse_societe": "RASCLAOU, 06670 SAINT-MARTIN-DU-VAR",
+        "id_vendeur": "03642116200060"
+    },
+    {
+        "nom_societe": "TOUT FAIRE MATERIAUX",
+        "adresse_societe": "11 AVENUE DU CHEIRON, 06800 CAGNES-SUR-MER",
+        "id_vendeur": "03642116200078"
+    },
+    {
+        "nom_societe": "DENIE LA STAFFERIE",
+        "adresse_societe": "CHEMIN DU DEFOUSSAT, 06480 LA COLLE-SUR-LOUP",
+        "id_vendeur": "03652081500030"
+    },
+    {
+        "nom_societe": "ALLO FRANCIS DECORATION",
+        "adresse_societe": "716 CHEMIN DE SAINT ETIENNE, 06570 SAINT-PAUL-DE-VENCE",
+        "id_vendeur": "03671394900042"
+    },
+    {
+        "nom_societe": "LDS",
+        "adresse_societe": "11 RUE DES CHAUCHEUX, 39100 FOUCHERANS",
+        "id_vendeur": "03675015600055"
+    },
+    {
+        "nom_societe": "CAMPING CARAVANING DES EMBRUNS",
+        "adresse_societe": "63 ROUTE DE BIOT, 06600 ANTIBES",
+        "id_vendeur": "03681057000014"
+    },
+    {
+        "nom_societe": "SARL PHILAN",
+        "adresse_societe": "20 CHEMIN DE POUDEIRAC, 06650 OPIO",
+        "id_vendeur": "03682073600035"
+    },
+    {
+        "nom_societe": "LA SIESTA",
+        "adresse_societe": "IMPASSE DE LA BRAGUE, 06600 ANTIBES",
+        "id_vendeur": "03692020500014"
+    },
+    {
+        "nom_societe": "LE PIN PARASOL",
+        "adresse_societe": "343 AVENUE DE VERDUN, 06700 SAINT-LAURENT-DU-VAR",
+        "id_vendeur": "03692141900010"
+    },
+    {
+        "nom_societe": "CGCA AUTO CHOC",
+        "adresse_societe": "55 CHEMIN DE LA CAMPANETTE, 06800 CAGNES-SUR-MER",
+        "id_vendeur": "03702063300014"
+    },
+    {
+        "nom_societe": "BIOT ORTHOPEDIE",
+        "adresse_societe": "1 ROUTE DE VALBONNE, 06410 BIOT",
+        "id_vendeur": "03702078100037"
+    },
+    {
+        "nom_societe": "ARCHIDECO",
+        "adresse_societe": "14 RUE SICARD, 06220 VALLAURIS",
+        "id_vendeur": "03711435200042"
+    },
+    {
+        "nom_societe": "BAR DE LA VERRERIE",
+        "adresse_societe": "177 CHEMIN DES COMBES, 06410 BIOT",
+        "id_vendeur": "03712028400049"
+    },
+    {
+        "nom_societe": "CLUB PLAYER'S CPL",
+        "adresse_societe": "1 PLACE MAGENTA, 06000 NICE",
+        "id_vendeur": "03712042500030"
+    },
+    {
+        "nom_societe": "GIEPS",
+        "adresse_societe": "3157 ROUTE DE LA FENERIE, 06580 PEGOMAS",
+        "id_vendeur": "03713001000053"
+    },
+    {
+        "nom_societe": "GIEPS",
+        "adresse_societe": "1ERE AVENUE, 06510 CARROS",
+        "id_vendeur": "03713001000061"
+    },
+    {
+        "nom_societe": "GIEPS",
+        "adresse_societe": "511 RUE HENRI LAUGIER, 06600 ANTIBES",
+        "id_vendeur": "03713001000079"
+    },
+    {
+        "nom_societe": "GIEPS",
+        "adresse_societe": "BOULEVARD DE L'INDUSTRIE, 83480 PUGET-SUR-ARGENS",
+        "id_vendeur": "03713001000087"
+    },
+    {
+        "nom_societe": "CARROSSERIE  PERNET-PRALON",
+        "adresse_societe": "86 RUE BOUDIER, 39500 TAVAUX",
+        "id_vendeur": "03725010700010"
+    },
+    {
+        "nom_societe": "ROYAL BEACH",
+        "adresse_societe": "BOULEVARD MARECHAL LECLERC, 06600 ANTIBES",
+        "id_vendeur": "03732045400020"
+    },
+    {
+        "nom_societe": "SAVONNERIE DU MIDI",
+        "adresse_societe": "72 RUE AUGUSTIN ROUX, 13015 MARSEILLE",
+        "id_vendeur": "03732059500038"
+    },
+    {
+        "nom_societe": "BOUTIQUE LA CORVETTE SAVONNERIE DU MIDI",
+        "adresse_societe": "28 PLACE AUX HUILES, 13001 MARSEILLE",
+        "id_vendeur": "03732059500087"
+    },
+    {
+        "nom_societe": "LE CUIR DU JURA",
+        "adresse_societe": "53 IMPASSE DE LA CONFISE, 39130 THOIRIA",
+        "id_vendeur": "03734018900069"
+    },
+    {
+        "nom_societe": "RFC / ANDRE LE GROUPE",
+        "adresse_societe": "103 AV EISENHOWER, 39100 DOLE",
+        "id_vendeur": "03735001400025"
+    },
+    {
+        "nom_societe": "ELIUS COLLECTIONS DE VIN-J.BACHELIER-MAISON CLAVELIER-JEAN LECELIER -JEAN LUC ET PAUL AEGERTER-WINE",
+        "adresse_societe": "49 RUE HENRI CHALLAND, 21700 NUITS-SAINT-GEORGES",
+        "id_vendeur": "03738007800024"
+    },
+    {
+        "nom_societe": "BPGA",
+        "adresse_societe": "3 RUE JULES VERNE, 21700 NUITS-SAINT-GEORGES",
+        "id_vendeur": "03738007800065"
+    },
+    {
+        "nom_societe": "SYNDICAT LES OURSONS",
+        "adresse_societe": "BELLE HUTTE, 88250 LA BRESSE",
+        "id_vendeur": "03865463800022"
+    },
+    {
+        "nom_societe": "CO CABINET GRAND SYNDIC 10 RUE JEAN LANTIER 75001",
+        "adresse_societe": "41 RUE DES FRANCS BOURGEOIS, 75004 PARIS",
+        "id_vendeur": "03869114300010"
+    },
+    {
+        "nom_societe": "SYNDICAT DES COPROPRIETAIRES",
+        "adresse_societe": "129 BOULEVARD BRUNE, 75014 PARIS",
+        "id_vendeur": "03872504000018"
+    },
+    {
+        "nom_societe": "SDC",
+        "adresse_societe": "216 BOULEVARD RASPAIL, 75014 PARIS",
+        "id_vendeur": "03872590900014"
+    },
+    {
+        "nom_societe": "ASL CITE DES FLEURS",
+        "adresse_societe": "1 CITE DES FLEURS, 75017 PARIS",
+        "id_vendeur": "03874281300017"
+    },
+    {
+        "nom_societe": "SDC LE MOZART",
+        "adresse_societe": "101 AVENUE DU 18 AVRIL, 91200 ATHIS-MONS",
+        "id_vendeur": "03877572200010"
+    },
+    {
+        "nom_societe": "SYND COPRO DU 51-53 RUE EDMOND BONT",
+        "adresse_societe": "53 RUE EDMOND BONTE, 91130 RIS-ORANGIS",
+        "id_vendeur": "03877950000016"
+    },
+    {
+        "nom_societe": "SYNDICAT DE NEUILLY",
+        "adresse_societe": "52 RUE DE NEUILLY, 92110 CLICHY",
+        "id_vendeur": "03878906100017"
+    },
+    {
+        "nom_societe": "SYND COPR 47 RUE G PERI",
+        "adresse_societe": "47 RUE GABRIEL PERI, 92300 LEVALLOIS-PERRET",
+        "id_vendeur": "03879354300018"
+    },
+    {
+        "nom_societe": "SYND COPR 26 RUE M CHAZOTTE 95170 DEUIL LA BARRE",
+        "adresse_societe": "73 RUE LOUIS ROUQUIER, 92300 LEVALLOIS-PERRET",
+        "id_vendeur": "03885830400017"
+    },
+    {
+        "nom_societe": "SDC 63 RUE SADI CARNOT 92800 PUTEAUX",
+        "adresse_societe": "63 RUE SADI CARNOT, 92800 PUTEAUX",
+        "id_vendeur": "03888857400019"
+    },
+    {
+        "nom_societe": "SDC 45 AVENUE DU BEL AIR 94100 SAINT MAUR",
+        "adresse_societe": "45 AVENUE DU BEL AIR, 94100 SAINT-MAUR-DES-FOSSES",
+        "id_vendeur": "03892269600018"
+    },
+    {
+        "nom_societe": "SDC 76 78 RUE MAGENTA",
+        "adresse_societe": "76 RUE MAGENTA, 92600 ASNIERES-SUR-SEINE",
+        "id_vendeur": "03893092100010"
+    },
+    {
+        "nom_societe": "COPR 108/112 RUE DES GRANDS CHAMPS 75020 PARIS",
+        "adresse_societe": "108 RUE DES GRANDS CHAMPS, 75020 PARIS",
+        "id_vendeur": "03895610800013"
+    },
+    {
+        "nom_societe": "SYND. COPR. 3 RUE DE LYON",
+        "adresse_societe": "15 AVENUE DE L'OPERA, 75001 PARIS",
+        "id_vendeur": "03896601600016"
+    },
+    {
+        "nom_societe": "SYND COPR 92 BD DE PORT ROYAL",
+        "adresse_societe": "92 BOULEVARD DE PORT-ROYAL, 75005 PARIS",
+        "id_vendeur": "03897567800012"
+    },
+    {
+        "nom_societe": "COPR 17 QUAI BOURBON 75004 PARIS",
+        "adresse_societe": "17 QUAI DE BOURBON, 75004 PARIS",
+        "id_vendeur": "03897589200019"
+    },
+    {
+        "nom_societe": "SDC 12 RUE VAUVENARGUES",
+        "adresse_societe": "38 RUE NOTRE-DAME DE NAZARETH, 75003 PARIS",
+        "id_vendeur": "03897755900012"
+    },
+    {
+        "nom_societe": "31 B RUE DU FAUBOURG MONTMARTRE",
+        "adresse_societe": "13 PASSAGE VERDEAU, 75009 PARIS",
+        "id_vendeur": "03898360700011"
+    },
+    {
+        "nom_societe": "COPR 24 R ST LOUIS ISLE 75004 PARIS",
+        "adresse_societe": "24 PONT ST LOUIS, 75004 PARIS 4",
+        "id_vendeur": "03898551100013"
+    },
+    {
+        "nom_societe": "SDC 34 - 34 BIS AVENUE DE L'OBSERVATOIRE 75014 PAR",
+        "adresse_societe": "34 AVENUE DE L'OBSERVATOIRE, 75014 PARIS",
+        "id_vendeur": "03898835800016"
+    },
+    {
+        "nom_societe": "SDC 30 RUE LA FONTAINE",
+        "adresse_societe": "30 RUE JEAN DE LA FONTAINE, 75016 PARIS",
+        "id_vendeur": "03899079200012"
+    },
+    {
+        "nom_societe": "COPR 15 RUE TESSON PARIS 75010",
+        "adresse_societe": "15 RUE TESSON, 75010 PARIS",
+        "id_vendeur": "03899155000013"
+    },
+    {
+        "nom_societe": "SYND COPR",
+        "adresse_societe": "47 RUE SAINT-FERDINAND, 75017 PARIS",
+        "id_vendeur": "03900436100018"
+    },
+    {
+        "nom_societe": "COPR 2 SQUARE DE LA BRUYERE 75009 PARIS",
+        "adresse_societe": "2 SQUARE LA BRUYERE, 75009 PARIS",
+        "id_vendeur": "03902114200011"
+    },
+    {
+        "nom_societe": "COPR 5 RUE SAULNIER 75009 PARIS",
+        "adresse_societe": "5 RUE SAULNIER, 75009 PARIS",
+        "id_vendeur": "03902945900011"
+    },
+    {
+        "nom_societe": "STARES FRANCE",
+        "adresse_societe": "1 RUE MEYNADIER, 75019 PARIS",
+        "id_vendeur": "03903493900015"
+    },
+    {
+        "nom_societe": "COPR BOIS MAILLOT",
+        "adresse_societe": "1 RUE D'ARMENONVILLE, 75017 PARIS",
+        "id_vendeur": "03904330200015"
+    },
+    {
+        "nom_societe": "SYND. COPR. DU 2 RUE GASTON COUTE",
+        "adresse_societe": "2 RUE GASTON COUTE, 75018 PARIS",
+        "id_vendeur": "03905092700019"
+    },
+    {
+        "nom_societe": "SDC 1 CITE TREVISE 75009 PARIS",
+        "adresse_societe": "1 CITE DE TREVISE, 75009 PARIS",
+        "id_vendeur": "03906355700019"
+    },
+    {
+        "nom_societe": "INDIVISION LAMIRAND RIVAILLE BOITEL",
+        "adresse_societe": "49 RUE DE LANCRY, 75010 PARIS",
+        "id_vendeur": "03907556900010"
+    },
+    {
+        "nom_societe": "CCAMA",
+        "adresse_societe": "40 RUE D'AUBIGNY, 69003 LYON",
+        "id_vendeur": "03907851400039"
+    },
+    {
+        "nom_societe": "COPR 10 RUE DE PANAMA 75018 PARIS",
+        "adresse_societe": "10 RUE DE PANAMA, 75018 PARIS",
+        "id_vendeur": "03909490900015"
+    },
+    {
+        "nom_societe": "DUMENIL",
+        "adresse_societe": "45 RUE DE LYON, 75012 PARIS",
+        "id_vendeur": "03912326000018"
+    },
+    {
+        "nom_societe": "SYND.COPR.4 RUE CHAPTAL PARIS 9 REP PAR",
+        "adresse_societe": "4 RUE CHAPTAL, 75009 PARIS",
+        "id_vendeur": "03913307900010"
+    },
+    {
+        "nom_societe": "ASL DU DOMAINE DU CHATEAU",
+        "adresse_societe": "14 DOMAINE DU CHATEAU, 91380 CHILLY-MAZARIN",
+        "id_vendeur": "03914646900018"
+    },
+    {
+        "nom_societe": "SYND.COPR. 130 RUE DU GENERAL DE GAULLE",
+        "adresse_societe": "130 AVENUE DU GENERAL DE GAULLE, 94160 SAINT-MANDE",
+        "id_vendeur": "03915719300010"
+    },
+    {
+        "nom_societe": "SYND.COPR. 6 RUE EMILE VERHAEREN 92 SAIN",
+        "adresse_societe": "6 RUE EMILE VERHAEREN, 92210 SAINT-CLOUD",
+        "id_vendeur": "03918110200011"
+    },
+    {
+        "nom_societe": "SDC 23 RUE DE LA CROIX DU VAL 92190 MEUDON",
+        "adresse_societe": "23 RUE DE LA CROIX DU VAL, 92190 MEUDON",
+        "id_vendeur": "03918345400014"
+    },
+    {
+        "nom_societe": "COPR 67 RUE DE PROVENCE 75009 PARIS",
+        "adresse_societe": "67 RUE DE PROVENCE, 75009 PARIS",
+        "id_vendeur": "03921659300010"
+    },
+    {
+        "nom_societe": "SDC 94 RUE MIROMESNIL",
+        "adresse_societe": "94 RUE DE MIROMESNIL, 75008 PARIS",
+        "id_vendeur": "03921918300017"
+    },
+    {
+        "nom_societe": "SYNDIC COPRO DU 2 RUE MIGNET",
+        "adresse_societe": "2 RUE MIGNET, 75016 PARIS",
+        "id_vendeur": "03922370600019"
+    },
+    {
+        "nom_societe": "SDC DU 15 BIS RUE ALEXANDRE PARODI 75010 PARIS",
+        "adresse_societe": "15 RUE ALEXANDRE PARODI, 75010 PARIS",
+        "id_vendeur": "03926838800012"
+    },
+    {
+        "nom_societe": "SDC 8 RUE LYAUTEY",
+        "adresse_societe": "8 RUE LYAUTEY, 75016 PARIS",
+        "id_vendeur": "03927777700015"
+    },
+    {
+        "nom_societe": "SDC 74 RUE D HAUTEVILLE",
+        "adresse_societe": "74 RUE D'HAUTEVILLE, 75010 PARIS",
+        "id_vendeur": "03931469500014"
+    },
+    {
+        "nom_societe": "SYND COPR 39 AV RENE COTY 75014",
+        "adresse_societe": "39 AVENUE RENE COTY, 75014 PARIS",
+        "id_vendeur": "03931987600023"
+    },
+    {
+        "nom_societe": "IMB PLEIN SOLEIL DIVONNE",
+        "adresse_societe": "285 RUE DU JURA, 01220 DIVONNE-LES-BAINS",
+        "id_vendeur": "04047359700017"
+    },
+    {
+        "nom_societe": "SWISS LIFE PREVOYANCE ET SANTE",
+        "adresse_societe": "86 BOULEVARD HAUSSMANN, 75008 PARIS",
+        "id_vendeur": "04380212300026"
+    },
+    {
+        "nom_societe": "REP PAR CRAUNOT S.A",
+        "adresse_societe": "17 BOULEVARD DE BONNE NOUVELLE, 75002 PARIS",
+        "id_vendeur": "04380649600014"
+    },
+    {
+        "nom_societe": "SYND. COPR. 12 BD BASTILLE",
+        "adresse_societe": "12 BOULEVARD DE LA BASTILLE, 75012 PARIS",
+        "id_vendeur": "04381942400011"
+    },
+    {
+        "nom_societe": "COPR 8/12 RUE DU CHEVALERET 75013 PARIS",
+        "adresse_societe": "8 RUE DU CHEVALERET, 75013 PARIS",
+        "id_vendeur": "04384931400018"
+    },
+    {
+        "nom_societe": "SIA HABITAT",
+        "adresse_societe": "111 RUE VICTOR HUGO, 59500 DOUAI",
+        "id_vendeur": "04555025800136"
+    },
+    {
+        "nom_societe": "SIA HABITAT",
+        "adresse_societe": "46 RUE EMILE ZOLA, 62590 OIGNIES",
+        "id_vendeur": "04555025800185"
+    },
+    {
+        "nom_societe": "SIA HABITAT",
+        "adresse_societe": "30 AVENUE PIERRE MAUROY, 59120 LOOS",
+        "id_vendeur": "04555025800201"
+    },
+    {
+        "nom_societe": "SIA HABITAT",
+        "adresse_societe": "52 RUE JEAN LETIENNE, 62300 LENS",
+        "id_vendeur": "04555025800227"
+    },
+    {
+        "nom_societe": "SIA HABITAT",
+        "adresse_societe": "612 RUE DE LA CHAUDE RIVIERE, 59800 LILLE",
+        "id_vendeur": "04555025800235"
+    },
+    {
+        "nom_societe": "JM AUTO",
+        "adresse_societe": "92 ROUTE DE BETHUNE, 62750 LOOS-EN-GOHELLE",
+        "id_vendeur": "04555029000063"
+    },
+    {
+        "nom_societe": "ERISPORT",
+        "adresse_societe": "24 AVENUE DU CANADA, 62580 VIMY",
+        "id_vendeur": "04565019900115"
+    },
+    {
+        "nom_societe": "BOUCHONNERIE ET CAPS",
+        "adresse_societe": "901 RUE LEONARD DE VINCI, 59490 SOMAIN",
+        "id_vendeur": "04565053800031"
+    },
+    {
+        "nom_societe": "AU CONFORTABLE",
+        "adresse_societe": "AVENUE JEAN JAURES, 59174 LA SENTINELLE",
+        "id_vendeur": "04565081900043"
+    },
+    {
+        "nom_societe": "LA MAISON DU FUMEUR",
+        "adresse_societe": "2 RUE JEAN JAURES, 20137 PORTO-VECCHIO",
+        "id_vendeur": "04571245200015"
+    },
+    {
+        "nom_societe": "VITRANT BOUTIQUE",
+        "adresse_societe": "27 RUE ERNESTALE, 62000 ARRAS",
+        "id_vendeur": "04575095700040"
+    },
+    {
+        "nom_societe": "GENETTI",
+        "adresse_societe": "67 RUE DE BELLAIN, 59500 DOUAI",
+        "id_vendeur": "04575095700065"
+    },
+    {
+        "nom_societe": "CHAUSPORT",
+        "adresse_societe": "62 RUE LEON GAMBETTA, 62000 ARRAS",
+        "id_vendeur": "04575095700081"
+    },
+    {
+        "nom_societe": "CERES",
+        "adresse_societe": "139 RUE DU FAUBOURG DE PARIS, 59500 DOUAI",
+        "id_vendeur": "04575098100073"
+    },
+    {
+        "nom_societe": "CAU AVAL ENERGIE",
+        "adresse_societe": "64260 ARUDY",
+        "id_vendeur": "04578021000014"
+    },
+    {
+        "nom_societe": "ODISSY",
+        "adresse_societe": "USINE DE LAGARDE, 82130 VILLEMADE",
+        "id_vendeur": "04578047500070"
+    },
+    {
+        "nom_societe": "ODISSY",
+        "adresse_societe": "64560 LICQ-ATHEREY",
+        "id_vendeur": "04578047500088"
+    },
+    {
+        "nom_societe": "ODISSY",
+        "adresse_societe": "MOULIN DATTO, 64560 LICQ-ATHEREY",
+        "id_vendeur": "04578047500096"
+    },
+    {
+        "nom_societe": "ODISSY",
+        "adresse_societe": "2 CHEMIN DE LA MINOTERIE, 64800 NAY",
+        "id_vendeur": "04578047500104"
+    },
+    {
+        "nom_societe": "ODISSY",
+        "adresse_societe": "MARCENAC 2, 12300 LIVINHAC-LE-HAUT",
+        "id_vendeur": "04578047500112"
+    },
+    {
+        "nom_societe": "ODISSY",
+        "adresse_societe": "MARCENAC 1, 12300 LIVINHAC-LE-HAUT",
+        "id_vendeur": "04578047500120"
+    },
+    {
+        "nom_societe": "ODISSY",
+        "adresse_societe": "PASTURAT, 46090 ARCAMBAL",
+        "id_vendeur": "04578047500146"
+    },
+    {
+        "nom_societe": "ODISSY",
+        "adresse_societe": "LE BOURG, 46160 MONTBRUN",
+        "id_vendeur": "04578047500153"
+    },
+    {
+        "nom_societe": "ODISSY",
+        "adresse_societe": "65370 MAULEON-BAROUSSE",
+        "id_vendeur": "04578047500187"
+    },
+    {
+        "nom_societe": "I SANGUINARI",
+        "adresse_societe": "56 ROUTE DES SANGUINAIRES, 20000 AJACCIO",
+        "id_vendeur": "04592007100037"
+    },
+    {
+        "nom_societe": "AU POKER D'AS",
+        "adresse_societe": "38 RUE LOUIS PASTEUR, 62710 COURRIERES",
+        "id_vendeur": "04624014900172"
+    },
+    {
+        "nom_societe": "CAFE DU STOP",
+        "adresse_societe": "48 ROUTE NATIONALE, 62490 VITRY-EN-ARTOIS",
+        "id_vendeur": "04624014900362"
+    },
+    {
+        "nom_societe": "CAFE DE L'HIRONDELLE",
+        "adresse_societe": "2 RUE DE PALLUEL, 62860 ECOURT-SAINT-QUENTIN",
+        "id_vendeur": "04624014900453"
+    },
+    {
+        "nom_societe": "CAFE DE PARIS",
+        "adresse_societe": "5 PLACE DU GENERAL DESAILLY, 62860 OISY-LE-VERGER",
+        "id_vendeur": "04624014900503"
+    },
+    {
+        "nom_societe": "ORGANIGRAM",
+        "adresse_societe": "27 BOULEVARD FRED SCAMARONI, 20000 AJACCIO",
+        "id_vendeur": "04632020600017"
+    },
+    {
+        "nom_societe": "A.J.COM",
+        "adresse_societe": "5 RUE EUGENE MACCHINI, 20090 AJACCIO",
+        "id_vendeur": "04632020600058"
+    },
+    {
+        "nom_societe": "ENCO",
+        "adresse_societe": "CHINCHINE, 20600 FURIANI",
+        "id_vendeur": "04642021200055"
+    },
+    {
+        "nom_societe": "EUROTO",
+        "adresse_societe": "38 AVENUE DE VALENCIENNES, 59400 CAMBRAI",
+        "id_vendeur": "04655020800105"
+    },
+    {
+        "nom_societe": "GITE ETAPE MAISON PAROIX",
+        "adresse_societe": "151 CHEMIN DES SOURCES, 64260 SEVIGNACQ-MEYRACQ",
+        "id_vendeur": "04657003200022"
+    },
+    {
+        "nom_societe": "AVIS",
+        "adresse_societe": "AEROPORT, 20114 FIGARI",
+        "id_vendeur": "04662026600083"
+    },
+    {
+        "nom_societe": "AVIS",
+        "adresse_societe": "CAMPO DELL ORO, 20090 AJACCIO",
+        "id_vendeur": "04662026600091"
+    },
+    {
+        "nom_societe": "OLLANDINI LOCATION VOITURES AVIS",
+        "adresse_societe": "SAINTE CATHERINE, 20260 CALVI",
+        "id_vendeur": "04662026600109"
+    },
+    {
+        "nom_societe": "AVIS LOCATION DE VOITURES",
+        "adresse_societe": "PORETTA, 20290 LUCCIANA",
+        "id_vendeur": "04662026600117"
+    },
+    {
+        "nom_societe": "AVIS LOCATION DE VOITURES",
+        "adresse_societe": "CAVONE, 20090 AJACCIO",
+        "id_vendeur": "04662026600133"
+    },
+    {
+        "nom_societe": "AGENCE WEEK END",
+        "adresse_societe": "8 PLACE DE VERDUN, 59650 VILLENEUVE-D'ASCQ",
+        "id_vendeur": "04664227800025"
+    },
+    {
+        "nom_societe": "GARAGE",
+        "adresse_societe": "QUA PORETTA, 20137 PORTO-VECCHIO",
+        "id_vendeur": "04672008200034"
+    },
+    {
+        "nom_societe": "A STALLA",
+        "adresse_societe": "LD TROVA, 20167 ALATA",
+        "id_vendeur": "04681221000030"
+    },
+    {
+        "nom_societe": "STATION SERVICE",
+        "adresse_societe": "LD TARAVELLA, 20137 PORTO-VECCHIO",
+        "id_vendeur": "04692001300060"
+    },
+    {
+        "nom_societe": "U PAESOLU",
+        "adresse_societe": "STE LUCIE DE PORTO VECCHIO, 20124 ZONZA",
+        "id_vendeur": "04692048400022"
+    },
+    {
+        "nom_societe": "LES REGALIA",
+        "adresse_societe": "2667 STRADA DI PINAREDDU, 20124 ZONZA",
+        "id_vendeur": "04692048400030"
+    },
+    {
+        "nom_societe": "CALA D'ASCIAGJU",
+        "adresse_societe": "PADULE D'ASCIAJO, 20137 PORTO-VECCHIO",
+        "id_vendeur": "04701043400026"
+    },
+    {
+        "nom_societe": "TRANSACTIONS APPIETTO",
+        "adresse_societe": "ROUTE DES SANGUINAIRES, 20000 AJACCIO",
+        "id_vendeur": "04701084800084"
+    },
+    {
+        "nom_societe": "DESPINOY",
+        "adresse_societe": "19 PLACE D’ARMES, 59500 DOUAI",
+        "id_vendeur": "04705019000017"
+    },
+    {
+        "nom_societe": "LES ARCADES",
+        "adresse_societe": "9 RUE DE LA PORTA, 20000 AJACCIO",
+        "id_vendeur": "04711052300041"
+    },
+    {
+        "nom_societe": "BAR JOE",
+        "adresse_societe": "6 RUE DE LA PORTA, 20000 AJACCIO",
+        "id_vendeur": "04711052300066"
+    },
+    {
+        "nom_societe": "USTARIA DI A RODA",
+        "adresse_societe": "LD ALZETA, 20141 MARIGNANA",
+        "id_vendeur": "04711072100025"
+    },
+    {
+        "nom_societe": "E LECLERC",
+        "adresse_societe": "LD LDT MATONARA, 20137 PORTO-VECCHIO",
+        "id_vendeur": "04712001900022"
+    },
+    {
+        "nom_societe": "JSE",
+        "adresse_societe": "21 ROUTE NATIONALE, 64680 OGEU-LES-BAINS",
+        "id_vendeur": "04718006200011"
+    },
+    {
+        "nom_societe": "INTER SPORT",
+        "adresse_societe": "RESIDENCE LE VALENTIN, 64440 EAUX-BONNES",
+        "id_vendeur": "04718008800065"
+    },
+    {
+        "nom_societe": "ANNIE FLEURS",
+        "adresse_societe": "LES QUATRE CHEMINS, 20137 PORTO VECCHIO",
+        "id_vendeur": "04721260000028"
+    },
+    {
+        "nom_societe": "STATION BP",
+        "adresse_societe": "QUAI ST JOSEPH, 20110 PROPRIANO",
+        "id_vendeur": "04722061100025"
+    },
+    {
+        "nom_societe": "MARBRERIE DIRSON",
+        "adresse_societe": "68 RUE DELFORGE, 59580 ANICHE",
+        "id_vendeur": "04725044400073"
+    },
+    {
+        "nom_societe": "HOTEL VICTOR HUGO PARIS KLEBER",
+        "adresse_societe": "19 RUE COPERNIC, 75016 PARIS",
+        "id_vendeur": "04725056800020"
+    },
+    {
+        "nom_societe": "HOTEL ALBERT 1ER",
+        "adresse_societe": "162 RUE LA FAYETTE, 75010 PARIS",
+        "id_vendeur": "04725056800053"
+    },
+    {
+        "nom_societe": "PATISSERIE ARTIGARREDE",
+        "adresse_societe": "6 LOTISSEMENT ZA DES PYRENEES, 64400 AGNOS",
+        "id_vendeur": "04728011000082"
+    },
+    {
+        "nom_societe": "EUROSKI",
+        "adresse_societe": "8 PLACE DE LA MAIRIE, 64440 LARUNS",
+        "id_vendeur": "04728022700068"
+    },
+    {
+        "nom_societe": "DEMECORSE",
+        "adresse_societe": "7 RUE LUCE DE CASABIANCA, 20200 BASTIA",
+        "id_vendeur": "04732008000030"
+    },
+    {
+        "nom_societe": "CORSEPUBLITOUR",
+        "adresse_societe": "RTE DE SAGONE, 20167 ALATA",
+        "id_vendeur": "04732018900039"
+    },
+    {
+        "nom_societe": "CARROSERIE DAUCHY",
+        "adresse_societe": "549 RUE D’ORCHIES, 59310 LANDAS",
+        "id_vendeur": "04735031900035"
+    },
+    {
+        "nom_societe": "HOTEL D'OSSAU",
+        "adresse_societe": "6 PLACE DE LA MAIRIE, 64440 LARUNS",
+        "id_vendeur": "04738011800027"
+    },
+    {
+        "nom_societe": "LE PAMPLONA",
+        "adresse_societe": "PLACE DE LA MAIRIE, 64440 LARUNS",
+        "id_vendeur": "04738011800050"
+    },
+    {
+        "nom_societe": "HOTEL D'OSSAU",
+        "adresse_societe": "15 RUE DU BOURGUET, 64440 LARUNS",
+        "id_vendeur": "04738011800068"
+    },
+    {
+        "nom_societe": "GIFFARD",
+        "adresse_societe": "RUE YVES CHAUVIN, 49070 SAINT-LEGER-DE-LINIERES",
+        "id_vendeur": "05420021700039"
+    },
+    {
+        "nom_societe": "DUSOLIER CALBERSON INTERNATIONAL DU",
+        "adresse_societe": "18 AV DES CARREAUX, 49112 VERRIERES-EN-ANJOU",
+        "id_vendeur": "05420041500161"
+    },
+    {
+        "nom_societe": "DUSOLIER 79 EXPRESS FRANCE EXPRESS",
+        "adresse_societe": "5 ALLEE DE LA COMMUNAUTE, 79260 LA CRECHE",
+        "id_vendeur": "05420041500229"
+    },
+    {
+        "nom_societe": "GEODIS - FRANCE EXPRESS",
+        "adresse_societe": "310 RUE MORANE SAULNIER, 37210 PARCAY-MESLAY",
+        "id_vendeur": "05420041500278"
+    },
+    {
+        "nom_societe": "GEODIS",
+        "adresse_societe": "20 RUE CROIX FAUCHET, 45000 ORLEANS",
+        "id_vendeur": "05420041500344"
+    },
+    {
+        "nom_societe": "BARAKATI",
+        "adresse_societe": "40 RUE MASSIMONI, 97600 KOUNGOU",
+        "id_vendeur": "05438860800041"
+    },
+    {
+        "nom_societe": "SMSPP",
+        "adresse_societe": "AEROPORT DE MAYOTTE, 97615 PAMANDZI",
+        "id_vendeur": "05438896200034"
+    },
+    {
+        "nom_societe": "SMSPP",
+        "adresse_societe": "LONGONI, 97600 KOUNGOU",
+        "id_vendeur": "05438896200042"
+    },
+    {
+        "nom_societe": "SMSPP",
+        "adresse_societe": "ROUTE DES BADAMIERS, 97615 DZAOUDZI",
+        "id_vendeur": "05438896200059"
+    },
+    {
+        "nom_societe": "SAFARI VOYAGE",
+        "adresse_societe": "3 RUELLE DE L’AVIATION CIVILE, 97615 PAMANDZI",
+        "id_vendeur": "05438898800021"
+    },
+    {
+        "nom_societe": "SAFARI VOYAGE",
+        "adresse_societe": "19 BOULEVARD COTRY, 97600 KOUNGOU",
+        "id_vendeur": "05438898800047"
+    },
+    {
+        "nom_societe": "STATION CHIRONGUI",
+        "adresse_societe": "15 RTE NATIONALE, 97620 CHIRONGUI",
+        "id_vendeur": "05438900200038"
+    },
+    {
+        "nom_societe": "STATION PASSAMAINTY",
+        "adresse_societe": "TZOUNDZOU 1 T9692, 97600 MAMOUDZOU",
+        "id_vendeur": "05438900200046"
+    },
+    {
+        "nom_societe": "STATION MARINE",
+        "adresse_societe": "QUAI BALLOU, 97615 DZAOUDZI",
+        "id_vendeur": "05438900200053"
+    },
+    {
+        "nom_societe": "TOTAL",
+        "adresse_societe": "247 DZOUMOGNE, 97650 BANDRABOUA",
+        "id_vendeur": "05438900200061"
+    },
+    {
+        "nom_societe": "STATION LONGONI",
+        "adresse_societe": "17 ROUTE NATIONALE, 97600 KOUNGOU",
+        "id_vendeur": "05438900200079"
+    },
+    {
+        "nom_societe": "STATION KAWENI",
+        "adresse_societe": "184 RUE DES ATELIERS, 97600 MAMOUDZOU",
+        "id_vendeur": "05438900200087"
+    },
+    {
+        "nom_societe": "STATION PAMANDZI",
+        "adresse_societe": "STATION SERVICE PAMANDZI, 97615 PAMANDZI",
+        "id_vendeur": "05438900200095"
+    },
+    {
+        "nom_societe": "STATION MAJICAVO",
+        "adresse_societe": "NEL CENTRE IV, 97600 MAMOUDZOU",
+        "id_vendeur": "05438900200103"
+    },
+    {
+        "nom_societe": "TOTAL",
+        "adresse_societe": "LONGONI, 97600 KOUNGOU",
+        "id_vendeur": "05438900200111"
+    },
+    {
+        "nom_societe": "TOTAL",
+        "adresse_societe": "LONGONI, 97600 KOUNGOU",
+        "id_vendeur": "05438900200129"
+    },
+    {
+        "nom_societe": "STATION COMBANI",
+        "adresse_societe": "COMBANI, 97680 TSINGONI",
+        "id_vendeur": "05438900200137"
+    },
+    {
+        "nom_societe": "PETIT MARCHE DU NORD",
+        "adresse_societe": "QUARTIER MITSENI RTE NATIONALE 1, 97650 BANDRABOUA",
+        "id_vendeur": "05438913500044"
+    },
+    {
+        "nom_societe": "HAYRATI DE HOUNOU",
+        "adresse_societe": "4 RUE CARREFOUR BANDRAJOU, 97600 KOUNGOU",
+        "id_vendeur": "05438918400034"
+    },
+    {
+        "nom_societe": "CHAMBRE BACHA CHA",
+        "adresse_societe": "16 RUE GASTON PLAISIR, 97615 DZAOUDZI",
+        "id_vendeur": "05438924200022"
+    },
+    {
+        "nom_societe": "SOCIETE TRANSPORT FAMILLE JUNIOR",
+        "adresse_societe": "15 BOULEVARD DE L'HOTEL DE VILLE, 97670 OUANGANI",
+        "id_vendeur": "05438937400015"
+    },
+    {
+        "nom_societe": "AGRI-JUNIOR",
+        "adresse_societe": "LD BOUDRAGUELA, 97670 OUANGANI",
+        "id_vendeur": "05438937400031"
+    },
+    {
+        "nom_societe": "NIDHOIM CONSTRUCTION",
+        "adresse_societe": "41 RUE DU DISPENSAIRE LABATTOIR, 97615 DZAOUDZI",
+        "id_vendeur": "05438945700026"
+    },
+    {
+        "nom_societe": "QUINCAILLERIE DE L'EST",
+        "adresse_societe": "11 RUE MANGA FOUTE, 97615 PAMANDZI",
+        "id_vendeur": "05438945700034"
+    },
+    {
+        "nom_societe": "CENTRE EQUESTRE SAINTE ARMELLE",
+        "adresse_societe": "HANJAGOUA, 97660 DEMBENI",
+        "id_vendeur": "05438956400011"
+    },
+    {
+        "nom_societe": "MIKIMARQ MH CREATIONS",
+        "adresse_societe": "37 RUE POTELEA, 97660 BANDRELE",
+        "id_vendeur": "05438966300011"
+    },
+    {
+        "nom_societe": "MAYOTTE GLOBAL BATI-SERVICES",
+        "adresse_societe": "RUE MALANA, 97660 BANDRELE",
+        "id_vendeur": "05438966300029"
+    },
+    {
+        "nom_societe": "HOUWALIYA MODE",
+        "adresse_societe": "44 RUE MARINDRINI, 97600 MAMOUDZOU",
+        "id_vendeur": "05438988700016"
+    },
+    {
+        "nom_societe": "SGTM",
+        "adresse_societe": "GARE MARITIME INTERNATIONALE, 97615 DZAOUDZI",
+        "id_vendeur": "05439047100024"
+    },
+    {
+        "nom_societe": "BOLE CONSULTANCE",
+        "adresse_societe": "74 RUE PAUL CURIEN, 78130 LES MUREAUX",
+        "id_vendeur": "05439050500037"
+    },
+    {
+        "nom_societe": "MATRASSI",
+        "adresse_societe": "RUE DU STADE CHAUFELI, 97600 MAMOUDZOU",
+        "id_vendeur": "05439084400022"
+    },
+    {
+        "nom_societe": "ATTOUMANI TRANSPORT",
+        "adresse_societe": "5 RUE MTSANGA YLANG YLANG, 97600 KOUNGOU",
+        "id_vendeur": "05439113100015"
+    },
+    {
+        "nom_societe": "M.T BOUTIQUE",
+        "adresse_societe": "2 CHEMIN HAMASSANI, 97600 KOUNGOU",
+        "id_vendeur": "05439149500022"
+    },
+    {
+        "nom_societe": "SENSUALITY",
+        "adresse_societe": "RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439154500024"
+    },
+    {
+        "nom_societe": "LOOK BEAUTE ACCESSOIRES",
+        "adresse_societe": "63 RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439160200015"
+    },
+    {
+        "nom_societe": "PELE MELE",
+        "adresse_societe": "43 PL MARIAGE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439160200049"
+    },
+    {
+        "nom_societe": "SELECT ETOILE",
+        "adresse_societe": "ROUTE NATIONALE 2, 97600 MAMOUDZOU",
+        "id_vendeur": "05439160200072"
+    },
+    {
+        "nom_societe": "LOOK BEAUTE",
+        "adresse_societe": "PLAGE MARIAGE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439160200080"
+    },
+    {
+        "nom_societe": "LOOK BEAUTE VETEMENTS",
+        "adresse_societe": "63 RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439160200106"
+    },
+    {
+        "nom_societe": "TECHNOL CONSTRUCTION",
+        "adresse_societe": "QUARTIER MKAFENI, 97680 TSINGONI",
+        "id_vendeur": "05439169300022"
+    },
+    {
+        "nom_societe": "CHIC EVENTS",
+        "adresse_societe": "132 RUE RAMA TSOUNTSOU, 97670 CHICONI",
+        "id_vendeur": "05439177600025"
+    },
+    {
+        "nom_societe": "MAY DECO",
+        "adresse_societe": "45 D DE LA NOUVELLE BRIQUETTERIE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439213900025"
+    },
+    {
+        "nom_societe": "MAGASIN HALIFA",
+        "adresse_societe": "12 BARAKANI, 97670 OUANGANI",
+        "id_vendeur": "05439238600022"
+    },
+    {
+        "nom_societe": "ENTREPRISE GELEMA",
+        "adresse_societe": "3D IMMEUBLE BAOBAB 1, 97600 MAMOUDZOU",
+        "id_vendeur": "05439282400022"
+    },
+    {
+        "nom_societe": "E.M.B.P",
+        "adresse_societe": "8 RUE DE LA VIGIE, 97615 DZAOUDZI",
+        "id_vendeur": "05439283200017"
+    },
+    {
+        "nom_societe": "LE TERROIR DE LA VIGIE",
+        "adresse_societe": "VILLAGE DE DZAOUDZI, 97615 DZAOUDZI",
+        "id_vendeur": "05439283200025"
+    },
+    {
+        "nom_societe": "LA BONNE PECHE",
+        "adresse_societe": "8 RUE DE LA VIGIE, 97615 DZAOUDZI",
+        "id_vendeur": "05439283200033"
+    },
+    {
+        "nom_societe": "MAWA HAROUSSY",
+        "adresse_societe": "3 RUE MADI MZE, 97660 BANDRELE",
+        "id_vendeur": "05439302000018"
+    },
+    {
+        "nom_societe": "HIPPOCAMPE AUTO SERVICES",
+        "adresse_societe": "RUE DE LA MOSQUEE INDIENNE ZI KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "05439306100012"
+    },
+    {
+        "nom_societe": "MAYOTTE BUREAU SERVICES",
+        "adresse_societe": "58 RUE DE COMMERCE, 97615 DZAOUDZI",
+        "id_vendeur": "05439315200035"
+    },
+    {
+        "nom_societe": "JV AUTO ECOLE SARL",
+        "adresse_societe": "CAR CHICONI, 97670 CHICONI",
+        "id_vendeur": "05439328500025"
+    },
+    {
+        "nom_societe": "SOURA COUTURE",
+        "adresse_societe": "800 BOULEVARD MZE MIHAMI, 97620 CHIRONGUI",
+        "id_vendeur": "05439348300018"
+    },
+    {
+        "nom_societe": "HBA BROCHETTE",
+        "adresse_societe": "RUE DE COMMERCE COCOTIER, 97640 SADA",
+        "id_vendeur": "05439367300022"
+    },
+    {
+        "nom_societe": "MENUISERIE DU NORD",
+        "adresse_societe": "46 RUE DE LA CARRIERE, 97650 M'TSANGAMOUJI",
+        "id_vendeur": "05439369900019"
+    },
+    {
+        "nom_societe": "SARL TRANSPORT PREVOT ROBERT",
+        "adresse_societe": "2061 CHEMIN GIBELIN, 97351 MATOURY",
+        "id_vendeur": "05439370700069"
+    },
+    {
+        "nom_societe": "CHONGO PINDRI",
+        "adresse_societe": "9 RUE MANGA MAGARI, 97615 DZAOUDZI",
+        "id_vendeur": "05439374900020"
+    },
+    {
+        "nom_societe": "CHEZ EMILIE",
+        "adresse_societe": "QUARTIER CAVANI, 97660 BANDRELE",
+        "id_vendeur": "05439394700020"
+    },
+    {
+        "nom_societe": "BARAKA N'DJEMA",
+        "adresse_societe": "PL DU MARCHE COUVERT BOX NUM 03, 97600 MAMOUDZOU",
+        "id_vendeur": "05439422600010"
+    },
+    {
+        "nom_societe": "MAGASIN CHOC' CHOC",
+        "adresse_societe": "2 RUE DE L’ECOLE PRIMAIRE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439457200025"
+    },
+    {
+        "nom_societe": "L'ESCALE AUX PALMIERS",
+        "adresse_societe": "24 RTE GENERAL DE GAULLE, 97615 PAMANDZI",
+        "id_vendeur": "05439487900024"
+    },
+    {
+        "nom_societe": "BANGA- BAT",
+        "adresse_societe": "9 ROUTE DE MOYA, 97615 DZAOUDZI",
+        "id_vendeur": "05439487900040"
+    },
+    {
+        "nom_societe": "ENTREPRISE ADIGUE",
+        "adresse_societe": "648 RUE MALANA, 97660 BANDRELE",
+        "id_vendeur": "05439566000043"
+    },
+    {
+        "nom_societe": "ADIGUE BOUTIQUE",
+        "adresse_societe": "11 RUE DU COMMERCE, 97600 KOUNGOU",
+        "id_vendeur": "05439566000050"
+    },
+    {
+        "nom_societe": "ADIGUE BOUTIQUE",
+        "adresse_societe": "1058 BOULEVARD MARCEL HENRY, 97660 BANDRELE",
+        "id_vendeur": "05439566000092"
+    },
+    {
+        "nom_societe": "LA BOUQUINERIE DE PASSAMAINTY",
+        "adresse_societe": "15 RTE DE VAHIBE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439571000038"
+    },
+    {
+        "nom_societe": "OCEANIE PISCINE",
+        "adresse_societe": "30 ZI KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "05439574400037"
+    },
+    {
+        "nom_societe": "ILOT K'DO",
+        "adresse_societe": "29 RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439592600014"
+    },
+    {
+        "nom_societe": "TAXI SAID ALI FILS",
+        "adresse_societe": "405 CHEMIN GROS PIMENT, 97660 DEMBENI",
+        "id_vendeur": "05439595900031"
+    },
+    {
+        "nom_societe": "LA BOITE A POOL",
+        "adresse_societe": "38 RTE NATIONALE, 97615 PAMANDZI",
+        "id_vendeur": "05439605600019"
+    },
+    {
+        "nom_societe": "ENTREPRISE MAINA",
+        "adresse_societe": "18 RUE BONOVO, 97600 MAMOUDZOU",
+        "id_vendeur": "05439622100027"
+    },
+    {
+        "nom_societe": "ENTREPRISE MANDELA",
+        "adresse_societe": "48 RUE PETIT MOSQUEE KAROBOINA, 97600 KOUNGOU",
+        "id_vendeur": "05439647800015"
+    },
+    {
+        "nom_societe": "MOURIDI TRANSPORT",
+        "adresse_societe": "87 RUELLE BIDJONI, 97650 BANDRABOUA",
+        "id_vendeur": "05439675900026"
+    },
+    {
+        "nom_societe": "PRESTIGE LABO PHOTO-FOCICOM",
+        "adresse_societe": "RPT DE KAWENI, 97600 MAMOUDZOU",
+        "id_vendeur": "05439706200016"
+    },
+    {
+        "nom_societe": "BB MAY",
+        "adresse_societe": "RES LOCAL NUM 1 LE TERRE PLEIN, 97600 MAMOUDZOU",
+        "id_vendeur": "05439706200024"
+    },
+    {
+        "nom_societe": "MAHORAISE BATIMENT",
+        "adresse_societe": "145 DZOUMOGNE, 97650 BANDRABOUA",
+        "id_vendeur": "05439716100016"
+    },
+    {
+        "nom_societe": "K.T.BTP",
+        "adresse_societe": "10 RUE DE PENTHIEVRE, 75008 PARIS",
+        "id_vendeur": "05439740100024"
+    },
+    {
+        "nom_societe": "ENT. BOINAELEC",
+        "adresse_societe": "32 RUE ASSOUMANI ABDALLAH, 97650 M'TSANGAMOUJI",
+        "id_vendeur": "05439741900018"
+    },
+    {
+        "nom_societe": "INDALOU MULTI SERVICES",
+        "adresse_societe": "1 RTE DE MAJIMBINI CONVALESCENCE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439749200015"
+    },
+    {
+        "nom_societe": "OCEANE BAMBO",
+        "adresse_societe": "17 RUE DE FRONT DE MER, 97660 BANDRELE",
+        "id_vendeur": "05439754200017"
+    },
+    {
+        "nom_societe": "MAORE'CONSTRUCTION",
+        "adresse_societe": "26 BOULEVARD BAMANA ABDOU, 97620 CHIRONGUI",
+        "id_vendeur": "05439759100022"
+    },
+    {
+        "nom_societe": "EMG AUTO MAYOTTE",
+        "adresse_societe": "RTE DE MOSQUEE INDIENNE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439774000025"
+    },
+    {
+        "nom_societe": "AROM'YLANG DISTRIBUTION",
+        "adresse_societe": "1 RUE CHARLEMAGNE, 32150 CAZAUBON",
+        "id_vendeur": "05439791400026"
+    },
+    {
+        "nom_societe": "IN LOVE",
+        "adresse_societe": "59 RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439795500011"
+    },
+    {
+        "nom_societe": "LONGONI METAL",
+        "adresse_societe": "56 RUE SIDI COCO, 97600 KOUNGOU",
+        "id_vendeur": "05439808600014"
+    },
+    {
+        "nom_societe": "IBS-PREFA-BLOCS SAS",
+        "adresse_societe": "142 RUE KARMADAME, 97600 KOUNGOU",
+        "id_vendeur": "05439826800026"
+    },
+    {
+        "nom_societe": "VISION 2000",
+        "adresse_societe": "4 BOULEVARD MARCEL HENRY, 97600 MAMOUDZOU",
+        "id_vendeur": "05439840900018"
+    },
+    {
+        "nom_societe": "VISION 2000",
+        "adresse_societe": "MAJICAVO, 97600 KOUNGOU",
+        "id_vendeur": "05439840900026"
+    },
+    {
+        "nom_societe": "VISION 2000",
+        "adresse_societe": "17 ROUTE DES BADAMIERS, 97615 DZAOUDZI",
+        "id_vendeur": "05439840900034"
+    },
+    {
+        "nom_societe": "SARL TROPTICAL",
+        "adresse_societe": "58 BOULEVARD HALIDI SELEMANI, 97600 MAMOUDZOU",
+        "id_vendeur": "05439840900067"
+    },
+    {
+        "nom_societe": "CAPT'AIN ALANDOR",
+        "adresse_societe": "MAJICAVO LAMIR, 97600 KOUNGOU",
+        "id_vendeur": "05439858100048"
+    },
+    {
+        "nom_societe": "MULTI-RESEAUX SERVICES",
+        "adresse_societe": "27 RUE MANGA KAKASI, 97600 MAMOUDZOU",
+        "id_vendeur": "05439882100014"
+    },
+    {
+        "nom_societe": "PAKA AFRICA",
+        "adresse_societe": "MARCHE COUVERT DE MAMOUDZOU, 97600 MAMOUDZOU",
+        "id_vendeur": "05439882100022"
+    },
+    {
+        "nom_societe": "LA MEDINA DU MAROC",
+        "adresse_societe": "MAJICAVO LAMIR, 97600 KOUNGOU",
+        "id_vendeur": "05439917500022"
+    },
+    {
+        "nom_societe": "BAHIA BOUTIQUE",
+        "adresse_societe": "6 CENTRE COMMERCIAL LUKIDA, 97600 KOUNGOU",
+        "id_vendeur": "05439948000018"
+    },
+    {
+        "nom_societe": "LA MOANA",
+        "adresse_societe": "1 RUE DU COMMERCE, 97600 MAMOUDZOU",
+        "id_vendeur": "05439978700016"
+    },
+    {
+        "nom_societe": "BATI CONSTRUCTION",
+        "adresse_societe": "14 BARAKANI, 97670 OUANGANI",
+        "id_vendeur": "05439987800021"
+    },
+    {
+        "nom_societe": "KIGANE",
+        "adresse_societe": "RUE MNADZI MOJA QUA BAITIL MALI, 97600 MAMOUDZOU",
+        "id_vendeur": "05439999300028"
+    },
+    {
+        "nom_societe": "ENTREPRISE MALOC",
+        "adresse_societe": "3 RUE M RO WAHANDRA, 97600 MAMOUDZOU",
+        "id_vendeur": "05440002300021"
+    },
+    {
+        "nom_societe": "VEYRIMMO (NOM COMMERCIAL ATTACHE A L'ETABLISSEMENT PRINCIPAL)",
+        "adresse_societe": "580 ROUTE DU BOIS DU FOUR, 38430 MOIRANS",
+        "id_vendeur": "05450105100038"
+    },
+    {
+        "nom_societe": "PLOMBIER ET ASSOCIES",
+        "adresse_societe": "20 RUE GUYNEMER, 38000 GRENOBLE",
+        "id_vendeur": "05450129100030"
+    },
+    {
+        "nom_societe": "BY MY CAR",
+        "adresse_societe": "43 BOULEVARD PAUL LANGEVIN, 38600 FONTAINE",
+        "id_vendeur": "05450210900082"
+    },
+    {
+        "nom_societe": "BY MY CAR",
+        "adresse_societe": "94 AV D AIX LES BAINS, 74000 ANNECY",
+        "id_vendeur": "05450210900090"
+    },
+    {
+        "nom_societe": "BY MY CAR",
+        "adresse_societe": "2 RUE LUCIEN SAMPAIX, 38600 FONTAINE",
+        "id_vendeur": "05450210900124"
+    },
+    {
+        "nom_societe": "SA RICHARDSON FR",
+        "adresse_societe": "RUE DE L' AVELAN, 83600 FREJUS",
+        "id_vendeur": "05480095800487"
+    },
+    {
+        "nom_societe": "RICHARDSON FRERES",
+        "adresse_societe": "1715 AVENUE ANDRE LASQUIN, 74700 SALLANCHES",
+        "id_vendeur": "05480095853650"
+    },
+    {
+        "nom_societe": "RICHARDSON",
+        "adresse_societe": "11 RUE DES ESSERTS, 74100 ANNEMASSE",
+        "id_vendeur": "05480095854047"
+    },
+    {
+        "nom_societe": "RICHARDSON",
+        "adresse_societe": "5 RUE LOUIS BRAILLE, 38300 BOURGOIN-JALLIEU",
+        "id_vendeur": "05480095854070"
+    },
+    {
+        "nom_societe": "AIREO",
+        "adresse_societe": "21 RUE DE BROTTERODE, 38950 SAINT-MARTIN-LE-VINOUX",
+        "id_vendeur": "05480095854617"
+    },
+    {
+        "nom_societe": "R&V",
+        "adresse_societe": "78 BOULEVARD MALESHERBES, 75008 PARIS",
+        "id_vendeur": "05480095854625"
+    },
+    {
+        "nom_societe": "AIREO",
+        "adresse_societe": "929 ROUTE DE CHAMBERY, 73800 PORTE-DE-SAVOIE",
+        "id_vendeur": "05480095854666"
+    },
+    {
+        "nom_societe": "AIREO",
+        "adresse_societe": "11 CHEMIN DE L'INDUSTRIE, 69570 DARDILLY",
+        "id_vendeur": "05480095854682"
+    },
+    {
+        "nom_societe": "R&V",
+        "adresse_societe": "181 BOULEVARD SAINT-GERMAIN, 75007 PARIS",
+        "id_vendeur": "05480095854716"
+    },
+    {
+        "nom_societe": "AIREO",
+        "adresse_societe": "100 ALLEE JEAN MERMOZ, 30320 MARGUERITTES",
+        "id_vendeur": "05480095854724"
+    },
+    {
+        "nom_societe": "AIREO",
+        "adresse_societe": "14 AVENUE DES FRERES MONTGOLFIER, 64140 LONS",
+        "id_vendeur": "05480095854740"
+    },
+    {
+        "nom_societe": "AIREO",
+        "adresse_societe": "103 RUE DE STALINGRAD, 93100 MONTREUIL",
+        "id_vendeur": "05480095854757"
+    },
+    {
+        "nom_societe": "AIREO",
+        "adresse_societe": "55 RUE EMILE ZOLA, 69150 DECINES-CHARPIEU",
+        "id_vendeur": "05480095854815"
+    },
+    {
+        "nom_societe": "AIREO",
+        "adresse_societe": "49 AVENUE BENJAMIN DELESSERT, 13010 MARSEILLE",
+        "id_vendeur": "05480095854831"
+    },
+    {
+        "nom_societe": "AIREO",
+        "adresse_societe": "153 AVENUE DE LA CAPELADO, 34160 CASTRIES",
+        "id_vendeur": "05480095854898"
+    },
+    {
+        "nom_societe": "R&V",
+        "adresse_societe": "35 AVENUE MOZART, 75016 PARIS",
+        "id_vendeur": "05480095854955"
+    },
+    {
+        "nom_societe": "RICHARDSON",
+        "adresse_societe": "100 ALLEE JEAN MERMOZ, 30320 MARGUERITTES",
+        "id_vendeur": "05480095854989"
+    },
+    {
+        "nom_societe": "RICHARDSON PHOTOVOLTAIQUE",
+        "adresse_societe": "805 AVENUE MARECHAL DE LATTRE DE TASSIGNY, 83130 LA GARDE",
+        "id_vendeur": "05480095855010"
+    },
+    {
+        "nom_societe": "MARIEVA",
+        "adresse_societe": "14 AVENUE JACQUES BAINVILLE, 13009 MARSEILLE",
+        "id_vendeur": "05480309300035"
+    },
+    {
+        "nom_societe": "CITOIT SYSTEME",
+        "adresse_societe": "3950 ROUTE DE PERTUIS, 84120 MIRABEAU",
+        "id_vendeur": "05480333300027"
+    },
+    {
+        "nom_societe": "CORDERIE DOR",
+        "adresse_societe": "5 IMPASSE DES AMANDIERS, 31120 PORTET-SUR-GARONNE",
+        "id_vendeur": "05480362200106"
+    },
+    {
+        "nom_societe": "CORDERIE DOR",
+        "adresse_societe": "139 RUE DE L’INDUSTRIE, 38170 SEYSSINET-PARISET",
+        "id_vendeur": "05480362200239"
+    },
+    {
+        "nom_societe": "CORDERIE DOR",
+        "adresse_societe": "31 RUE DES IMPRIMEURS, 44220 COUERON",
+        "id_vendeur": "05480362200247"
+    },
+    {
+        "nom_societe": "GORIN",
+        "adresse_societe": "80 RUE ROBERT MOINON, 95190 GOUSSAINVILLE",
+        "id_vendeur": "05480362200262"
+    },
+    {
+        "nom_societe": "SOGIMA",
+        "adresse_societe": "6 PLACE DU QUATRE SEPTEMBRE, 13007 MARSEILLE",
+        "id_vendeur": "05480377000020"
+    },
+    {
+        "nom_societe": "CIPA",
+        "adresse_societe": "19 RUE DES CORDELIERS, 13100 AIX-EN-PROVENCE",
+        "id_vendeur": "05480416600079"
+    },
+    {
+        "nom_societe": "AGENCE ETOILE",
+        "adresse_societe": "31 BOULEVARD SAINT-MARTIN, 75003 PARIS",
+        "id_vendeur": "05480416600145"
+    },
+    {
+        "nom_societe": "AGENCE ETOILE",
+        "adresse_societe": "24 RUE DES CORDELIERS, 13100 AIX-EN-PROVENCE",
+        "id_vendeur": "05480416600186"
+    },
+    {
+        "nom_societe": "SALON DE COIFFURE JULIETTE BREMOND",
+        "adresse_societe": "81 BOULEVARD MALESHERBES, 75008 PARIS",
+        "id_vendeur": "05480501500036"
+    },
+    {
+        "nom_societe": "COMPAGNIE DAHER",
+        "adresse_societe": "7 AVENUE DE L’UNION, 94310 ORLY",
+        "id_vendeur": "05480728400069"
+    },
+    {
+        "nom_societe": "CHUTES LAVIE AUTOMOBILES",
+        "adresse_societe": "125 BOULEVARD CAMILLE FLAMMARION, 13004 MARSEILLE",
+        "id_vendeur": "05480789600029"
+    },
+    {
+        "nom_societe": "CHUTES LAVIE AUTOMOBILES",
+        "adresse_societe": "7 RUE ANDRE ISAIA, 13013 MARSEILLE",
+        "id_vendeur": "05480789600037"
+    },
+    {
+        "nom_societe": "ANGERS TOITURE",
+        "adresse_societe": "BOULEVARD D'ESTIENNE D'ORVES, 49000 ANGERS",
+        "id_vendeur": "05520098400122"
+    },
+    {
+        "nom_societe": "LARIVIERE LE PAYS DE LA TOITURE",
+        "adresse_societe": "LA MOTTE, 37700 SAINT-PIERRE-DES-CORPS",
+        "id_vendeur": "05520098400379"
+    },
+    {
+        "nom_societe": "FAIT CHA",
+        "adresse_societe": "LE MOURILLON, 56530 QUEVEN",
+        "id_vendeur": "05520098400569"
+    },
+    {
+        "nom_societe": "LARIVIERE SA",
+        "adresse_societe": "67 AVENUE DU GENERAL LECLERC, 93500 PANTIN",
+        "id_vendeur": "05520098400676"
+    },
+    {
+        "nom_societe": "LARIVIERE-PIERRETON",
+        "adresse_societe": "RTE NATIONALE 75, 38490 LES ABRETS-EN-DAUPHINE",
+        "id_vendeur": "05520098400866"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERTS DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "14 RUE DENIS PAPIN, 17810 SAINT-GEORGES-DES-COTEAUX",
+        "id_vendeur": "05520098401799"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERTS DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "2 ALLEE DU RUISSEAU DE GIRONDE, 78190 TRAPPES",
+        "id_vendeur": "05520098401815"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERT DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "4 CHEMIN DE MAZURIE, 31140 AUCAMVILLE",
+        "id_vendeur": "05520098401823"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERT DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "33 RUE JAMES WATT, 62000 DAINVILLE",
+        "id_vendeur": "05520098401849"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERT DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "1 RUE DU ROCHER, 49800 TRELAZE",
+        "id_vendeur": "05520098401856"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERT DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "3 IMPASSE HENRI BARBUSSE, 38120 SAINT-EGREVE",
+        "id_vendeur": "05520098401864"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERT DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "7 RUE DU PORT, 38120 SAINT-EGREVE",
+        "id_vendeur": "05520098401872"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERT DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "5 IMPASSE DE LA PRISE DE LA LANDE, 85170 DOMPIERRE-SUR-YON",
+        "id_vendeur": "05520098401880"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERT DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "7 RUE STEPHANIE KWOLEK, 33185 LE HAILLAN",
+        "id_vendeur": "05520098401898"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERT DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "12 RUE ROSE VALLAND, 44600 SAINT-NAZAIRE",
+        "id_vendeur": "05520098401906"
+    },
+    {
+        "nom_societe": "LARIVIERE EXPERT DE L'ENVELOPPE DU BATIMENT",
+        "adresse_societe": "1 CHEMIN DES ESPRATS, 26200 MONTELIMAR",
+        "id_vendeur": "05520098401914"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "83 AVENUE DE LA REPUBLIQUE, 56700 HENNEBONT",
+        "id_vendeur": "05520112300043"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "RUE BERNARD PALISSY, 42160 ANDREZIEUX-BOUTHEON",
+        "id_vendeur": "05520112300092"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "A POUNOT, 19000 TULLE",
+        "id_vendeur": "05520112300100"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "31 RUE LEON SERPOLLET, 87280 LIMOGES",
+        "id_vendeur": "05520112300118"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "16 RUE LOUIS BLERIOT, 63000 CLERMONT-FERRAND",
+        "id_vendeur": "05520112300126"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "1 RUE CLEMENT ADER, 85100 LES SABLES D'OLONNE",
+        "id_vendeur": "05520112300134"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "27 RUE DES ARTISANS, 85300 CHALLANS",
+        "id_vendeur": "05520112300142"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "16 RUE WATT, 85000 LA ROCHE-SUR-YON",
+        "id_vendeur": "05520112300159"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "35 AVENUE DE LA REPENTIE, 17000 LA ROCHELLE",
+        "id_vendeur": "05520112300167"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "ROUTE DE BELLEVUE, 16710 SAINT-YRIEIX-SUR-CHARENTE",
+        "id_vendeur": "05520112300175"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "15 CHEMIN DES GROITIERS, 03000 AVERMES",
+        "id_vendeur": "05520112300191"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "16 RUE LOUIS BLERIOT, 63000 CLERMONT-FERRAND",
+        "id_vendeur": "05520112300217"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "10 AVENUE AMIRAL MELCHIOR, 56100 LORIENT",
+        "id_vendeur": "05520112300233"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "ROUTE DE TOURS, 72230 MULSANNE",
+        "id_vendeur": "05520112300241"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "LE TAILLIS DE MALEFFRE, 72610 SAINT-PATERNE - LE CHEVAIN",
+        "id_vendeur": "05520112300258"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "11 RUE DES PLEINS CHAMPS, 49430 DURTAL",
+        "id_vendeur": "05520112300274"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "13 RUE DES PLEINS CHAMPS, 49430 DURTAL",
+        "id_vendeur": "05520112300282"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "RTE DE TOURS KM 5.5, 72230 MULSANNE",
+        "id_vendeur": "05520112300332"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "83 AVENUE DE LA REPUBLIQUE, 56700 HENNEBONT",
+        "id_vendeur": "05520112300340"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "4 ALLEE PERE DANIEL BROTTIER, 29000 QUIMPER",
+        "id_vendeur": "05520112300357"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "15 AVENUE AMIRAL MELCHIOR, 56100 LORIENT",
+        "id_vendeur": "05520112300365"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "22 RUE DE PARIS, 22000 SAINT-BRIEUC",
+        "id_vendeur": "05520112300373"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "RUE MARCEL QUERCIA, 35600 REDON",
+        "id_vendeur": "05520112300381"
+    },
+    {
+        "nom_societe": "PARTEDIS",
+        "adresse_societe": "1 RUE DE MAHOMAT, 35650 LE RHEU",
+        "id_vendeur": "05520112300399"
+    },
+    {
+        "nom_societe": "POUR ELLE",
+        "adresse_societe": "24 COURS BERRIAT, 38000 GRENOBLE",
+        "id_vendeur": "05550272800045"
+    },
+    {
+        "nom_societe": "GAMA",
+        "adresse_societe": "66 RUE GRIGNAN, 13001 MARSEILLE",
+        "id_vendeur": "05580024700011"
+    },
+    {
+        "nom_societe": "VICTOR GIRAL ET CIE",
+        "adresse_societe": "36 RUE FRANCIS DAVSO, 13001 MARSEILLE",
+        "id_vendeur": "05580081700052"
+    },
+    {
+        "nom_societe": "NEW HOTEL SAINT CHARLES",
+        "adresse_societe": "4 ALLEE LEON GAMBETTA, 13001 MARSEILLE",
+        "id_vendeur": "05580197100015"
+    },
+    {
+        "nom_societe": "JEAN CLAUDE BIGUINE",
+        "adresse_societe": "37 BOULEVARD PHILIPPON, 13004 MARSEILLE",
+        "id_vendeur": "05580205200039"
+    },
+    {
+        "nom_societe": "SOUDECOUP",
+        "adresse_societe": "324 AVENUE DES CHASSEENS, 13120 GARDANNE",
+        "id_vendeur": "05580299500062"
+    },
+    {
+        "nom_societe": "PRODUITS NEYJA",
+        "adresse_societe": "57 MONTEE DE SAINT MENET, 13011 MARSEILLE",
+        "id_vendeur": "05580371200037"
+    },
+    {
+        "nom_societe": "BOLLORE MEDIA",
+        "adresse_societe": "12 AVENUE PAUL DOUMER, 75016 PARIS",
+        "id_vendeur": "05580412400174"
+    },
+    {
+        "nom_societe": "SPECIES EVERFAST",
+        "adresse_societe": "113 AVENUE DU DOUARD, 13400 AUBAGNE",
+        "id_vendeur": "05580451200048"
+    },
+    {
+        "nom_societe": "SAPVIN",
+        "adresse_societe": "163 CHEMIN DE SAINT-MARTIN, 84210 VENASQUE",
+        "id_vendeur": "05580531100077"
+    },
+    {
+        "nom_societe": "IMPRIMERIE NOUVELLE BBG",
+        "adresse_societe": "2 RUE DU MONASTERE, 13004 MARSEILLE",
+        "id_vendeur": "05580957800028"
+    },
+    {
+        "nom_societe": "BELLON SA",
+        "adresse_societe": "17 PLACE DE LA RESISTANCE, 92130 ISSY-LES-MOULINEAUX",
+        "id_vendeur": "05581244000059"
+    },
+    {
+        "nom_societe": "CHEVILLARD FRERES",
+        "adresse_societe": "5 RUE RENE DESCARTES, 49240 AVRILLE",
+        "id_vendeur": "05620026400036"
+    },
+    {
+        "nom_societe": "MANUFACTURE DAUPHINOISE D'APPAREILLAGE E",
+        "adresse_societe": "RN532, 38210 LA RIVIERE",
+        "id_vendeur": "05650038200058"
+    },
+    {
+        "nom_societe": "MANUFACTURE DAUPHI",
+        "adresse_societe": "11 CHEMIN DE LA DHUY, 38240 MEYLAN",
+        "id_vendeur": "05650038200066"
+    },
+    {
+        "nom_societe": "ATELIERS ROUX ET GALLOIS",
+        "adresse_societe": "73 BOULEVARD FRANKLIN ROOSEVELT, 38500 VOIRON",
+        "id_vendeur": "05650050700027"
+    },
+    {
+        "nom_societe": "IMPRIMERIE DES EAUX CLAIRES IMPRIMERIE DANZI VOIRON",
+        "adresse_societe": "CHE VAUCANSON, 38330 MONTBONNOT-SAINT-MARTIN",
+        "id_vendeur": "05650161200024"
+    },
+    {
+        "nom_societe": "SAMSE MATERIAUX",
+        "adresse_societe": "92 ROUTE DE GAP, 04200 SISTERON",
+        "id_vendeur": "05650224800158"
+    },
+    {
+        "nom_societe": "SAMSE",
+        "adresse_societe": "L EGALA, 38430 MOIRANS",
+        "id_vendeur": "05650224800463"
+    },
+    {
+        "nom_societe": "SAMSE",
+        "adresse_societe": "1 AVENUE MAL DE LATTRE DE TASSIGNY  (BELLEGARDE-SUR-VALSERINE), 01200 VALSERHONE",
+        "id_vendeur": "05650224800471"
+    },
+    {
+        "nom_societe": "SAMSE",
+        "adresse_societe": "49 AVENUE DU COLONEL NOEL, 04000 DIGNE-LES-BAINS",
+        "id_vendeur": "05650224800489"
+    },
+    {
+        "nom_societe": "MENEO",
+        "adresse_societe": "36 RUE DE MALACOMBE, 38070 SAINT-QUENTIN-FALLAVIER",
+        "id_vendeur": "05650224800521"
+    },
+    {
+        "nom_societe": "SAMSE",
+        "adresse_societe": "586 RUE DES BECASSES, 38920 CROLLES",
+        "id_vendeur": "05650224800588"
+    },
+    {
+        "nom_societe": "SAMSE",
+        "adresse_societe": "109 AV JACQUELINE AURIOL, 38590 BREZINS",
+        "id_vendeur": "05650224800802"
+    },
+    {
+        "nom_societe": "ROCH MATERIAUX - SAMSE",
+        "adresse_societe": "117 ROUTE DU CHAMP COURBE, 74200 MARGENCEL",
+        "id_vendeur": "05650224800869"
+    },
+    {
+        "nom_societe": "SAMSE",
+        "adresse_societe": "64 LES TERRES NEUVES, 04400 SAINT-PONS",
+        "id_vendeur": "05650224800935"
+    },
+    {
+        "nom_societe": "CAREO",
+        "adresse_societe": "91 AVENUE D'EMBRUN, 05000 GAP",
+        "id_vendeur": "05650224801115"
+    },
+    {
+        "nom_societe": "CAREO",
+        "adresse_societe": "2 RUE CLAUDE CHAPPE, 04000 DIGNE-LES-BAINS",
+        "id_vendeur": "05650224801297"
+    },
+    {
+        "nom_societe": "CAREO",
+        "adresse_societe": "26 RUE DE COMBOIRE, 38130 ECHIROLLES",
+        "id_vendeur": "05650224801305"
+    },
+    {
+        "nom_societe": "MPPI - SAMSE",
+        "adresse_societe": "31 RUE CHAMP DOLIN, 69800 SAINT-PRIEST",
+        "id_vendeur": "05650224801313"
+    },
+    {
+        "nom_societe": "SAMSE - FOREZ MAT",
+        "adresse_societe": "ZI CHAVANON, 43120 MONISTROL-SUR-LOIRE",
+        "id_vendeur": "05650224801438"
+    },
+    {
+        "nom_societe": "SAMSE - FOREZ MAT",
+        "adresse_societe": "10 RUE DES ROCHETTES, 42100 SAINT-ETIENNE",
+        "id_vendeur": "05650224801453"
+    },
+    {
+        "nom_societe": "SAMSE - FOREZ MAT",
+        "adresse_societe": "LA PLAINE, 42450 SURY-LE-COMTAL",
+        "id_vendeur": "05650224801461"
+    },
+    {
+        "nom_societe": "MPPI - SAMSE",
+        "adresse_societe": "137 RUE EMILE ROMANET, 73000 CHAMBERY",
+        "id_vendeur": "05650224801487"
+    },
+    {
+        "nom_societe": "CAREO LEADER CARRELAGES",
+        "adresse_societe": "1 RUE LEON REY GRANGE, 74000 ANNECY",
+        "id_vendeur": "05650224801503"
+    },
+    {
+        "nom_societe": "SAMSE - MPPI",
+        "adresse_societe": "IMPASSE DU PONT DE L'ANE, 42000 SAINT-ETIENNE",
+        "id_vendeur": "05650224801545"
+    },
+    {
+        "nom_societe": "SAMSE",
+        "adresse_societe": "16 RUE IRENE JOLIOT CURIE, 38320 EYBENS",
+        "id_vendeur": "05650224801552"
+    },
+    {
+        "nom_societe": "CAREO",
+        "adresse_societe": "2 RUE DE LA CORNE D'ABONDANCE, 74100 VILLE-LA-GRAND",
+        "id_vendeur": "05650224801560"
+    },
+    {
+        "nom_societe": "SAMSE - MENEO",
+        "adresse_societe": "64 AVENUE FRANKLIN ROOSEVELT, 69120 VAULX-EN-VELIN",
+        "id_vendeur": "05650224801586"
+    },
+    {
+        "nom_societe": "SAMSE",
+        "adresse_societe": "LA SAUSSE, 43130 RETOURNAC",
+        "id_vendeur": "05650224801610"
+    },
+    {
+        "nom_societe": "SAMSE / MENEO",
+        "adresse_societe": "7 RUE DESCARTES, 42000 SAINT-ETIENNE",
+        "id_vendeur": "05650224801628"
+    },
+    {
+        "nom_societe": "SAMSE - MENEO - CAREO",
+        "adresse_societe": "464 RUE ADAMAS, 42210 MONTROND-LES-BAINS",
+        "id_vendeur": "05650224801636"
+    }
+]

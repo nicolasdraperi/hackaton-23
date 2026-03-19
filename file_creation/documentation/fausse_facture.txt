@@ -1,0 +1,6 @@
+Le numero de Siret a plus ou moins que 14 chiffre (entre 12 et 16)
+Le numero de TVA n'a pas "FR" au debut ou fais plus de 13 caractere (entre 11 et 15)
+Les dates sont incoherentes entre elle (exemple : paiment 10 ans avant l'emission de la facture)
+Numero de Sirene pas present dans le numero de TVA
+Prix total negatif
+Nom entreprise/ adresse entreprise fausse par rapport au numero de Siret

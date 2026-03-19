@@ -1,0 +1,59 @@
+Informations sur les variables de nos factures
+Les infos ont été trouvé ici : https://www.economie.gouv.fr/entreprises/gerer-sa-comptabilite-et-ses-demarches/devis-obligatoire-comment-ca-marche
+
+
+la date du devis
+    --> date_devis
+
+le nom et l’adresse de la société
+    --> nom_societe
+    --> adresse_societe
+
+le nom du client
+    --> nom_client
+
+la date de début et la durée de la prestation, dans le cas de travaux
+    --> date_prestation
+    --> duree_prestation    (optionnel)
+
+le décompte détaillé de chaque prestation et produit, en quantité et en prix unitaire
+    --> decompte_produits
+    --> decompte_quantite
+    --> decompte_unitaire
+
+le prix de la main d’œuvre, le cas échéant
+    --> prix_main_oeuvre    (optionnel)
+
+les frais de déplacement, le cas échéant
+    --> frais_deplacement   (optionnel)
+
+la somme globale à payer hors taxe (HT) et toutes taxes comprises (TTC).
+    --> somme_ht
+    --> somme_ttc
+
+
+{
+  "date_devis": "",
+
+  "nom_societe": "",
+  "adresse_societe": "",
+
+  "nom_client": "",
+
+  "date_prestation": "",
+  "duree_prestation": "",
+
+  "produits": [
+    {
+      "decompte_produit": "",
+      "decompte_quantite": 0,
+      "decompte_unitaire": 0.0
+    }
+  ],
+
+  "prix_main_oeuvre": 0.0,
+  "frais_deplacement": 0.0,
+
+  "somme_ht": 0.0,
+  "somme_ttc": 0.0
+}

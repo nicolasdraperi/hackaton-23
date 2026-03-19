@@ -1,0 +1,92 @@
+Informations sur les variables de nos factures
+Les infos ont été trouvé ici : https://www.economie.gouv.fr/entreprises/gerer-son-entreprise-au-quotidien/gerer-sa-comptabilite-et-ses-demarches/mentions-obligatoires-dune-facture-tout-savoir#
+
+
+Le cadre général :
+
+La date d'émission de la facture
+    --> date_emission
+
+Le numéro unique de la facture
+    --> id_facture
+
+La date de la vente ou de la prestation de services
+    --> date_facture
+
+L'identité du vendeur ou du prestataire de services
+    --> nom_vendeur
+    --> adresse_vendeur
+    --> id_vendeur
+
+L'identité de l'acheteur ou du client
+    --> nom_client
+    --> adresse_client
+    --> id_client
+
+Le numéro du bon de commande
+    --> id_commande
+
+Le numéro individuel d'identification à la TVA
+    --> id_tva
+
+La désignation et le décompte des produits et services rendus
+    --> quantité_produit
+    --> nom_produit
+    --> prix_produit
+    --> taux_tva_produit
+
+Les mentions sur le prix et le paiement : 
+
+La somme totale à payer hors taxes (HT) et toutes taxes comprises (TTC)
+    --> somme_ht
+    --> somme_ttc
+
+La réduction de prix
+    --> reduction_prix
+
+L'adresse de facturation
+    --adresse_fac
+
+Les informations sur le paiement
+    --> date_paiement
+    --> conditions_escompte (optionnel)
+    --> taux_penalites (optionnel)
+    --> indemnite_forfaitaire (optionnel)
+
+
+    {
+    "date_emission": "",
+    "id_facture": "",
+    "date_facture": "",
+
+    "nom_vendeur": "",
+    "adresse_vendeur": "",
+    "id_vendeur": "",
+
+    "nom_client": "",
+    "adresse_client": "",
+    "id_client": "",
+
+    "id_commande": "",
+    "id_tva": "",
+
+    "produits": [
+        {
+        "quantite_produit": 0,
+        "nom_produit": "",
+        "prix_produit": 0.0,
+        "taux_tva_produit": 0.0
+        }
+    ],
+
+    "somme_ht": 0.0,
+    "somme_ttc": 0.0,
+    "reduction_prix": 0.0,
+
+    "adresse_fac": "",
+
+    "date_paiement": "",
+    "conditions_escompte": "",
+    "taux_penalites": "",
+    "indemnite_forfaitaire": ""
+    }
