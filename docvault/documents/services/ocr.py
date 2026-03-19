@@ -99,6 +99,7 @@ for file_path in file_paths:
     # definition du type de document
     score_facture = 0
     score_devis = 0
+    score_attestation = 0
 
     if re.search(r"facture", text):
         score_facture += 3
@@ -108,8 +109,13 @@ for file_path in file_paths:
     if re.search(r"d[eé]v[i1l]s", text):
         score_devis += 3
 
-    if score_devis > score_facture:
-        document_type ="devis"
+    if re.search(r"attestation", text, re.IGNORECASE):
+        score_attestation += 3
+
+    if score_attestation > score_facture and score_attestation > score_devis:
+        document_type = "attestation"
+    elif score_devis > score_facture:
+        document_type = "devis"
     elif score_facture > 0:
         document_type = "facture"
     else:
@@ -123,9 +129,17 @@ for file_path in file_paths:
     # correction des nombres
     def clean_digits(text):
         """
-        Modifie les mauvaises interprétations courantes dans les chiffres (O->0, I->1).
+        Nettoyage des chiffres :
+        - corrige les erreurs courantes (O→0, I→1)
+        - supprime tout sauf les chiffres
         """
-        return text.replace("O", "0").replace("I", "1")
+        text = text.replace("O", "0").replace("o", "0")
+        text = text.replace("I", "1").replace("l", "1")
+
+        # enlever tout sauf les chiffres
+        text = re.sub(r"\D", "", text)
+
+        return text
 
 
     # EXTRACTION DES INFORMATIONS
@@ -280,29 +294,29 @@ for file_path in file_paths:
     # NUMERO DE FACTURE
 
     if document_type == "facture":
-      facture_number = re.search(r"\b[A-Z]{2,5}-\d+(?:-\d+)?\b", text, re.IGNORECASE)
+        facture_number = re.search(r"\b[A-Z]{2,5}-\d+(?:-\d+)?\b", text, re.IGNORECASE)
 
-      if facture_number:
-          facture_value = facture_number.group()
-          facture_conf = None
+        if facture_number:
+            facture_value = facture_number.group()
+            facture_conf = None
 
-          for item in ocr_data:
-              if item["text"] == facture_value:
-                  facture_conf = item["confidence"]
+            for item in ocr_data:
+                if item["text"] == facture_value:
+                    facture_conf = item["confidence"]
 
-          extracted_data["numero_facture"] = {
-              "value": facture_value,
-              "confidence": facture_conf,
-              "missing": False,
-              "valid": True
-          }
-      else:
-          extracted_data["numero_facture"] = {
-              "value": None,
-              "confidence": None,
-              "missing": True,
-              "valid": False
-          }
+            extracted_data["numero_facture"] = {
+                "value": facture_value,
+                "confidence": facture_conf,
+                "missing": False,
+                "valid": True
+            }
+        else:
+            extracted_data["numero_facture"] = {
+                "value": None,
+                "confidence": None,
+                "missing": True,
+                "valid": False
+            }
 
 
     #  SIRET
@@ -339,45 +353,64 @@ for file_path in file_paths:
 
 
     #  SIREN
-    if document_type == "attestation":
-        siren_value = None
-        siren_conf = None
-        is_valid_siren = False
+   
+    siren_value = None
+    siren_conf = None
+    is_valid_siren = False
+    missing = True
+    siren_in_siret_match = None
 
-        siren_match = re.search(r"siren[^0-9]*(\d{6-11})", text, re.IGNORECASE)
+    # recherche SIREN
+    siren_match = re.search(r"siren[^0-9]*(\d{7,15})", text, re.IGNORECASE)
 
-        if siren_match:
-            siren_raw = siren_match.group(1)
-            siren_value = clean_digits(siren_raw)
-            is_valid_siren = len(siren_value) == 9
+    # si pas trouvé recherche SIRET
+    siret_match = re.search(r"siret[^0-9]*(\d{12,20})", text, re.IGNORECASE)
+
+    if siren_match:
+        siren_raw = siren_match.group(1)
+        siren_value = clean_digits(siren_raw)
+        missing = False
+    # extraction du SIREN via le SIRET
+    elif siret_match:
+        siret_raw = siret_match.group(1)
+        siret_value = clean_digits(siret_raw)
+        siren_value = siret_value[:9]
+        missing = False
+
+    if not siren_value:
+        fallback_match = re.search(r"\b\d{9}\b", text)
+        if fallback_match:
+            siren_value = clean_digits(fallback_match.group())
             missing = False
-        else:
-            siren_value = None
-            is_valid_siren= False
-            missing = True
-            confidence = None
 
-        if siren_value:
+    # validation
+    if siren_value:
+        is_valid_siren = len(siren_value) == 9
 
-            scores = []
+    if siren_value and siret_value and len(siret_value) >= 9:
+        siren_in_siret_match = (siren_value == siret_value[:9])
 
-            for item in ocr_data:
-                if siren_value in item["text"]:
-                    scores.append(item["confidence"])
+    # confiance
+    scores = []
 
-            siren_conf = sum(scores) / len(scores) if scores else None
+    for item in ocr_data:
+        cleaned_text = clean_digits(item["text"])
+        if siren_value and siren_value in cleaned_text:
+                scores.append(item["confidence"])
+    siren_conf = sum(scores) / len(scores) if scores else None
 
-            extracted_data["siren"] = {
-                "value": siren_value,
-                "valid": is_valid_siren,
-                "confidence": siren_conf,
-                "missing": missing
-            }
+    # stockage
+    extracted_data["siren"] = {
+        "value": siren_value,
+        "valid": is_valid_siren,
+        "confidence": siren_conf,
+        "missing": missing,
+        "siren_in_siret_match": siren_in_siret_match
+    }
 
 
 
     #  TVA
-
     if document_type == "facture":
         tva = re.search(r"\bFR\s?\d{2}\s?\d{9}\b", text, re.IGNORECASE)
 
@@ -449,10 +482,19 @@ for file_path in file_paths:
     ADDRESS_KEYWORDS = [
     "rue", "avenue", "av", "boulevard", "bd",
     "route", "chemin", "impasse",
-    "place", "allée", "piste"
+    "place", "allée", "piste", "esp"
     ]
     
     for i, line in enumerate(lines):
+
+        if re.search(r"n[o0]m$", line.strip(), re.IGNORECASE):
+            if i + 1 < len(lines):
+                next_line = lines[i + 1].strip()
+
+            if next_line:
+                company_value = next_line
+                break
+
         if "société" in line.lower() or "vendeur" in line.lower():
 
             company_parts = []
@@ -532,57 +574,56 @@ for file_path in file_paths:
         }
 
     # MONTANTS (HT / TTC)
-
-    text = text.replace("hi", "ht")  # OCR lit mal HT
-    text = re.sub(r"\s*\.\s*", ".", text)  # corrige les espaces entre les .
-    text = text.replace("O", "0").replace("o", "0")  # OCR chiffres
-
-
-    def clean_amount(text):
-        text = text.replace("O", "0").replace("o", "0")
-        text = text.replace(",", ".")
-        text = text.replace(" ", "")
-        text = text.replace("€", "").replace("EUR", "")
-        return text
-
-    def extract_amount(pattern, label):
-
-        match = re.search(pattern, text, re.IGNORECASE)
-
-        if match:
-            raw_value = match.group(1)
-
-            value = clean_amount(raw_value)
-
-            # vérifier si le montant est positif
-            try:
-                numeric_value = float(value)
-                is_valid_amount = numeric_value >= 0
-            except:
-                is_valid_amount = False
+    if document_type == "facture" or document_type == "devis":
+        text = text.replace("hi", "ht")  # OCR lit mal HT
+        text = re.sub(r"\s*\.\s*", ".", text)  # corrige les espaces entre les .
+        text = text.replace("O", "0").replace("o", "0")  # OCR chiffres
 
 
-            # confidence
-            scores = []
-            for item in ocr_data:
-                if any(part in item["text"] for part in [raw_value]):
-                    scores.append(item["confidence"])
+        def clean_amount(text):
+            text = text.replace("O", "0").replace("o", "0")
+            text = text.replace(",", ".")
+            text = text.replace(" ", "")
+            text = text.replace("€", "").replace("EUR", "")
+            return text
 
-            conf = sum(scores) / len(scores) if scores else None
+        def extract_amount(pattern, label):
 
-            extracted_data[label.lower().replace(" ", "_")] = {
-                "value": value,
-                "valid": is_valid_amount,
-                "confidence": conf,
-                "missing": False
-            }
-        else:
-            extracted_data[label.lower().replace(" ", "_")] = {
-                "value": None,
-                "valid": False,
-                "confidence": None,
-                "missing": True
-            }
+            match = re.search(pattern, text, re.IGNORECASE)
+
+            if match:
+                raw_value = match.group(1)
+
+                value = clean_amount(raw_value)
+
+                # vérifier si le montant est positif
+                try:
+                    numeric_value = float(value)
+                    is_valid_amount = numeric_value >= 0
+                except:
+                    is_valid_amount = False
+
+                # confidence
+                scores = []
+                for item in ocr_data:
+                    if any(part in item["text"] for part in [raw_value]):
+                        scores.append(item["confidence"])
+
+                conf = sum(scores) / len(scores) if scores else None
+
+                extracted_data[label.lower().replace(" ", "_")] = {
+                    "value": value,
+                    "valid": is_valid_amount,
+                    "confidence": conf,
+                    "missing": False
+                }
+            else:
+                extracted_data[label.lower().replace(" ", "_")] = {
+                    "value": None,
+                    "valid": False,
+                    "confidence": None,
+                    "missing": True
+                }
 
 
     # TOTAL HT 
