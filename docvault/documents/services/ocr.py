@@ -23,14 +23,14 @@ from .validation import validate_document
 # file_paths = ["devis/propres/vrais/devis_vrai_002.pdf"]
 reader = easyocr.Reader(['fr'], gpu=False)
 
-all_results = []
-def run_ocr(file):
-    # updated to handle file upload in Django
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
-        for chunk in file.chunks():
-            tmp.write(chunk)
-        file_path = tmp.name
 
+def run_ocr(file_path):
+    # updated to handle file upload in Django
+    # with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
+    #     for chunk in file.chunks():
+    #         tmp.write(chunk)
+    #     file_path = tmp.name
+    all_results = []
     file_paths = [file_path]
 
     for file_path in file_paths:
@@ -42,7 +42,7 @@ def run_ocr(file):
         # PDF
         if ext == ".pdf":
             
-            pages = convert_from_path(file_path, dpi=300, poppler_path="/opt/homebrew/bin")
+            pages = convert_from_path(file_path, dpi=300)
 
             for page in pages:
                 image = np.array(page)
