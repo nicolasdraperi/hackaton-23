@@ -8,13 +8,18 @@ services:
       - "8000:8000"
     volumes:
       - ./docvault:/app
-    environment:
-      - DEBUG=1
+    env_file:
+      - .env
 
   frontend:
     build: ./docvault-react
     container_name: docvault_frontend
     ports:
       - "5173:5173"
+    volumes:
+      - ./docvault-react:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=http://localhost:8000/api
     depends_on:
       - backend

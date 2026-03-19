@@ -1,13 +1,15 @@
-# image Python
 FROM python:3.12
 
 WORKDIR /app
 
-COPY . .
-
-RUN pip install --upgrade pip
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-EXPOSE 8000
+RUN apt-get update && apt-get install -y \
+    poppler-utils \
+    libgl1 \
+    libglib2.0-0
+
+COPY . .
 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
