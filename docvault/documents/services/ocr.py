@@ -16,20 +16,21 @@ import os
 import tempfile
 
 from datetime import datetime
+from datetime import timedelta
 from .validation import validate_document
 
 # chemin du document à analyser
 # file_paths = ["devis/propres/vrais/devis_vrai_002.pdf"]
 reader = easyocr.Reader(['fr'], gpu=False)
 
-all_results = []
-def run_ocr(file):
-    # updated to handle file upload in Django
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
-        for chunk in file.chunks():
-            tmp.write(chunk)
-        file_path = tmp.name
 
+def run_ocr(file_path):
+    # updated to handle file upload in Django
+    # with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
+    #     for chunk in file.chunks():
+    #         tmp.write(chunk)
+    #     file_path = tmp.name
+    all_results = []
     file_paths = [file_path]
 
     for file_path in file_paths:
@@ -41,7 +42,7 @@ def run_ocr(file):
         # PDF
         if ext == ".pdf":
             
-            pages = convert_from_path(file_path, dpi=300, poppler_path="/opt/homebrew/bin")
+            pages = convert_from_path(file_path, dpi=300)
 
             for page in pages:
                 image = np.array(page)
@@ -53,219 +54,254 @@ def run_ocr(file):
             # lecture de l'image
             image = cv2.imread(file_path)
 
-            if image is None:
-                print("Erreur : impossible de lire le fichier")
+        images_to_process.append(image)
+
+    # préparation des images
+    for i, image in enumerate(images_to_process):
+
+        # agrandir l'image pour améliorer la précision OCR
+        image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+
+        # convertir l'image en niveaux de gris
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+        # suppression du bruit
+        gray = cv2.GaussianBlur(gray, (5,5), 0)
+
+        # binarisation (texte noir / fond blanc)
+        _, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
+
+        # exécuter l'OCR
+        results = reader.readtext(thresh)
+
+
+        texts = []
+        ocr_data = []
+        # stockage des résultats
+        for bbox, text, confidence in results:
+            """
+            bbox -> position dans l'image
+            text -> texte reconnu
+            confidence -> score de confiance (entre 0 et 1)
+            """
+
+            # stocker le texte pour reconstruire le document
+            texts.append(text)
+
+            # stocker texte + confiance dans une structure
+            ocr_data.append({
+                "text": text,
+                "confidence": confidence
+            })
+
+    # reconstruire un texte unique pour faciliter l'utilisation des regex
+    full_text = " ".join(texts)
+
+    # extraction des données
+    extracted_data = {}
+    text = full_text.lower()
+    print(text)
+
+    # definition du type de document
+    score_facture = 0
+    score_devis = 0
+    score_attestation = 0
+
+    if re.search(r"facture", text):
+        score_facture += 3
+    if re.search(r"total\s*ttc", text):
+        score_facture += 2
+
+    if re.search(r"d[eé]v[i1l]s", text):
+        score_devis += 3
+
+    if re.search(r"attestation", text, re.IGNORECASE):
+        score_attestation += 3
+
+    if score_attestation > score_facture and score_attestation > score_devis:
+        document_type = "attestation"
+    elif score_devis > score_facture:
+        document_type = "devis"
+    elif score_facture > 0:
+        document_type = "facture"
+    else:
+        document_type = "inconnu"
+
+
+    # stockage
+    extracted_data["document_type"] = document_type
+
+
+    # correction des nombres
+    def clean_digits(text):
+        """
+        Nettoyage des chiffres :
+        - corrige les erreurs courantes (O→0, I→1)
+        - supprime tout sauf les chiffres
+        """
+        text = text.replace("O", "0").replace("o", "0")
+        text = text.replace("I", "1").replace("l", "1")
+
+        # enlever tout sauf les chiffres
+        text = re.sub(r"\D", "", text)
+
+        return text
+
+
+    # EXTRACTION DES INFORMATIONS
+
+    # DATES
+
+    def parse_date(date_str):
+        """
+        Convertit une chaîne en date en testant plusieurs formats et retourne la date si valide.
+        """
+        formats = [
+            "%d/%m/%Y",
+            "%d-%m-%Y",
+            "%Y-%m-%d"
+            ]
+
+        for format in formats:
+            try:
+                return datetime.strptime(date_str, format)
+            except:
                 continue
 
-            images_to_process.append(image)
-
-        # préparation des images
-        for i, image in enumerate(images_to_process):
-
-            # agrandir l'image pour améliorer la précision OCR
-            image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
-
-            # convertir l'image en niveaux de gris
-            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-            # suppression du bruit
-            gray = cv2.GaussianBlur(gray, (5,5), 0)
-
-            # binarisation (texte noir / fond blanc)
-            _, thresh = cv2.threshold(gray, 150, 255, cv2.THRESH_BINARY)
-
-            # exécuter l'OCR
-            results = reader.readtext(thresh)
+        return None
 
 
-            texts = []
-            ocr_data = []
-            # stockage des résultats
-            for bbox, text, confidence in results:
-                """
-                bbox -> position dans l'image
-                text -> texte reconnu
-                confidence -> score de confiance (entre 0 et 1)
-                """
+    # accepter plusieurs formats de dates valides
+    date_patterns = [
+        r"\b\d{2}[/-]\d{2}[/-]\d{4}\b",
+        r"\b\d{4}-\d{2}-\d{2}\b",
+        r"\b\d{1,2}\s+(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\s+\d{4}\b"
+    ]
+    
+    def extract_date(context_pattern, label):
+        """
+        Extrait une date du texte OCR en fonction d’un contexte (ex : "date facture").
 
-                # stocker le texte pour reconstruire le document
-                texts.append(text)
+        Teste plusieurs formats de dates, valide le résultat, calcule un score de confiance
+        à partir des données OCR, puis stocke le résultat dans `extracted_data`.
 
-                # stocker texte + confiance dans une structure
-                ocr_data.append({
-                    "text": text,
+        Retourne un objet structuré avec : value, valid, missing, confidence.
+        """
+
+        for date_pattern in date_patterns:
+
+            full_pattern = context_pattern + r"[^0-9]*(" + date_pattern + ")"
+
+            match = re.search(full_pattern, full_text, re.IGNORECASE)
+
+            if match:
+                value = match.group(1)
+
+                parsed = parse_date(value)
+                is_valid = parsed is not None
+
+                # calcul confidence
+                scores = []
+                for item in ocr_data:
+                    if item["text"] in value:
+                        scores.append(item["confidence"])
+
+                confidence = sum(scores) / len(scores) if scores else None
+
+                # stockage
+                extracted_data[label] = {
+                    "value": value,
+                    "valid": is_valid,
+                    "missing": False,
                     "confidence": confidence
-                })
+                }
 
-        # reconstruire un texte unique pour faciliter l'utilisation des regex
-        full_text = " ".join(texts)
+                return 
+        # si aucune date n'est trouvée
+        extracted_data[label] = {
+            "value": None,
+            "valid": False,
+            "missing": True,
+            "confidence": None
+        }
 
-        # extraction des données
-        extracted_data = {}
-        text = full_text.lower()
-        print(text)
+    # documents détériorés peuvent entrainer une inversion dans les élements du titre, les regex accepte des élements inversés. ex : date paiement/date de paiement/paiement date/paiement date de/paiement
+    if document_type == "facture":
+        extract_date(
+            r"(?:date\s*d['’]?\s*émission|émission\s*date)",
+            "date_emission"
+        )
 
-        # definition du type de document
-        score_facture = 0
-        score_devis = 0
+        extract_date(
+            r"(?:date\s*(?:de\s*)?(?:la\s*)?facture|facture\s*date)",
+            "date_facture"
+        )
 
-        if re.search(r"facture", text):
-            score_facture += 3
-        if re.search(r"total\s*ttc", text):
-            score_facture += 2
+        extract_date(
+            r"(?:date\s*(?:de\s*)?paiement|paiement\s*date\s*(?:de\s*)?|paiement)",
+            "date_paiement"
+        )
 
-        if re.search(r"d[eé]v[i1l]s", text):
-            score_devis += 3
+    if document_type == "devis":
+        extract_date(
+        r"(?:date\s*(?:du\s*)?d[eé]v[i1l]s|d[eé]v[i1l]s\s*date)",
+        "date_devis"
+        )
 
-        if score_devis > score_facture:
-            document_type ="devis"
-        elif score_facture > 0:
-            document_type = "facture"
-        else:
-            document_type = "inconnu"
-
-
-        # stockage
-        extracted_data["document_type"] = document_type
-
-
-        # correction des nombres
-        def clean_digits(text):
-            """
-            Modifie les mauvaises interprétations courantes dans les chiffres (O->0, I->1).
-            """
-            return text.replace("O", "0").replace("I", "1")
+        extract_date(
+        r"(?:date\s*(?:de\s*)?presta[t7][i1]on|presta[t7][i1]on\s*date)",
+        "date_prestation"
+        )
 
 
-        # EXTRACTION DES INFORMATIONS
+    # Vérification incohérence de dates
+    date_issues = []
 
-        # DATES
+    def get_date(field):
+        if field in extracted_data:
+            return parse_date(extracted_data[field]["value"])
+        return None
 
-        def parse_date(date_str):
-            """
-            Convertit une chaîne en date en testant plusieurs formats et retourne la date si valide.
-            """
-            formats = [
-                "%d/%m/%Y",
-                "%d-%m-%Y",
-                "%Y-%m-%d"
-                ]
+    date_facture = get_date("date_facture")
+    date_paiement = get_date("date_paiement")
+    date_devis = get_date("date_devis")
+    date_prestation = get_date("date_prestation")
 
-            for format in formats:
-                try:
-                    return datetime.strptime(date_str, format)
-                except:
-                    continue
+    if date_facture and date_paiement:
+        if date_paiement <= date_facture:
+            date_issues.append("date paiement antérieure à la date facture")
 
-            return None
-        
-        # accepter plusieurs formats de dates valides
-        date_patterns = [
-            r"\b\d{2}[/-]\d{2}[/-]\d{4}\b",
-            r"\b\d{4}-\d{2}-\d{2}\b",
-            r"\b\d{1,2}\s+(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\s+\d{4}\b"
-        ]
-        
-        def extract_date(context_pattern, label):
-            """
-            Extrait une date du texte OCR en fonction d’un contexte (ex : "date facture").
+    if date_prestation and date_devis:
+        if date_prestation < date_devis:
+            date_issues.append("date prestation antérieure à la date devis")
 
-            Teste plusieurs formats de dates, valide le résultat, calcule un score de confiance
-            à partir des données OCR, puis stocke le résultat dans `extracted_data`.
+    def validate_dates(date_devis, date_prestation):
+        if not date_devis or not date_prestation:
+            return None 
 
-            Retourne un objet structuré avec : value, valid, missing, confidence.
-            """
+        # différence en jours
+        delta = date_prestation - date_devis
 
-            for date_pattern in date_patterns:
+        # 7 ans ≈ 2555 jours
+        max_delta = timedelta(days=365 * 7)
 
-                full_pattern = context_pattern + r"[^0-9]*(" + date_pattern + ")"
+        return timedelta(days=0) <= delta <= max_delta
 
-                match = re.search(full_pattern, full_text, re.IGNORECASE)
+    # vérifie que le delta entre date prestation et date devis inférieur à 7 ans
+    is_valid = validate_dates(date_devis, date_prestation)
 
-                if match:
-                    value = match.group(1)
+    if is_valid is False:
+        date_issues.append("date prestation dépasse de plus de 7 ans la date du devis")
 
-                    parsed = parse_date(value)
-                    is_valid = parsed is not None
-
-                    # calcul confidence
-                    scores = []
-                    for item in ocr_data:
-                        if item["text"] in value:
-                            scores.append(item["confidence"])
-
-                    confidence = sum(scores) / len(scores) if scores else None
-
-                    # stockage
-                    extracted_data[label] = {
-                        "value": value,
-                        "valid": is_valid,
-                        "missing": False,
-                        "confidence": confidence
-                    }
-
-                    return 
-            # si aucune date n'est trouvée
-            extracted_data[label] = {
-                "value": None,
-                "valid": False,
-                "missing": True,
-                "confidence": None
-            }
-
-        # documents détériorés peuvent entrainer une inversion dans les élements du titre, les regex accepte des élements inversés. ex : date paiement/date de paiement/paiement date/paiement date de/paiement
-        if document_type == "facture":
-            extract_date(
-                r"(?:date\s*d['’]?\s*émission|émission\s*date)",
-                "date_emission"
-            )
-
-            extract_date(
-                r"(?:date\s*(?:de\s*)?(?:la\s*)?facture|facture\s*date)",
-                "date_facture"
-            )
-
-            extract_date(
-                r"(?:date\s*(?:de\s*)?paiement|paiement\s*date\s*(?:de\s*)?|paiement)",
-                "date_paiement"
-            )
-
-        if document_type == "devis":
-            extract_date(
-            r"(?:date\s*(?:du\s*)?d[eé]v[i1l]s|d[eé]v[i1l]s\s*date)",
-            "date_devis"
-            )
-
-            extract_date(
-            r"(?:date\s*(?:de\s*)?presta[t7][i1]on|presta[t7][i1]on\s*date)",
-            "date_prestation"
-            )
+    # stockage de l'erreur de date
+    if date_issues:
+        extracted_data["date_inconsistencies"] = date_issues
 
 
-        # Vérification date de paiement >= date facture
-        date_issues = []
+    # NUMERO DE FACTURE
 
-        def get_date(field):
-            if field in extracted_data:
-                return parse_date(extracted_data[field]["value"])
-            return None
-
-        date_facture = get_date("date_facture")
-        date_paiement = get_date("date_paiement")
-
-        if date_facture and date_paiement:
-            if date_paiement <= date_facture:
-                date_issues.append("date paiement antérieure à la date facture")
-
-        # stockage de l'erreur de date
-        if date_issues:
-            extracted_data["date_inconsistencies"] = date_issues
-
-
-        # NUMERO DE FACTURE
-
-        if document_type == "facture":
-            facture_number = re.search(r"\b[A-Z]{2,5}-\d+(?:-\d+)?\b", text, re.IGNORECASE)
+    if document_type == "facture":
+        facture_number = re.search(r"\b[A-Z]{2,5}-\d+(?:-\d+)?\b", text, re.IGNORECASE)
 
         if facture_number:
             facture_value = facture_number.group()
@@ -290,81 +326,99 @@ def run_ocr(file):
             }
 
 
-        #  SIRET
+    #  SIRET
 
-        # recherche un numéro lié au nom siret
-        siret_match = re.search(r"siret[^0-9]*(\d{9,16})", text, re.IGNORECASE)
+    # recherche un numéro lié au nom siret
+    siret_match = re.search(r"siret[^0-9]*(\d{9,16})", text, re.IGNORECASE)
 
-        if siret_match:
-            siret_raw = siret_match.group(1)
+    if siret_match:
+        siret_raw = siret_match.group(1)
 
-            siret_value = clean_digits(siret_raw)
-        
-            # validation du nombre de caractères
-            is_valid_siret = len(siret_value) == 14
+        siret_value = clean_digits(siret_raw)
+    
+        # validation du nombre de caractères
+        is_valid_siret = len(siret_value) == 14
 
-            siret_conf = None
-            for item in ocr_data:
-                if siret_value in item["text"]:
-                    siret_conf = item["confidence"]
+        siret_conf = None
+        for item in ocr_data:
+            if siret_value in item["text"]:
+                siret_conf = item["confidence"]
 
-            extracted_data["siret"] = {
-                "value": siret_value,
-                "valid": is_valid_siret,
-                "confidence": siret_conf,
-                "missing": False
-            }
-        else:
-            extracted_data["siret"] = {
-                "value": None,
-                "confidence": None,
-                "missing": True,
-                "valid": False
-            }
-
-
-        #  SIREN
-        if document_type == "attestation":
-            siren_value = None
-            siren_conf = None
-            is_valid_siren = False
-
-            siren_match = re.search(r"siren[^0-9]*(\d{6-11})", text, re.IGNORECASE)
-
-            if siren_match:
-                siren_raw = siren_match.group(1)
-                siren_value = clean_digits(siren_raw)
-                is_valid_siren = len(siren_value) == 9
-                missing = False
-            else:
-                siren_value = None
-                is_valid_siren= False
-                missing = True
-                confidence = None
-
-            if siren_value:
-
-                scores = []
-
-                for item in ocr_data:
-                    if siren_value in item["text"]:
-                        scores.append(item["confidence"])
-
-                siren_conf = sum(scores) / len(scores) if scores else None
-
-                extracted_data["siren"] = {
-                    "value": siren_value,
-                    "valid": is_valid_siren,
-                    "confidence": siren_conf,
-                    "missing": missing
-                }
+        extracted_data["siret"] = {
+            "value": siret_value,
+            "valid": is_valid_siret,
+            "confidence": siret_conf,
+            "missing": False
+        }
+    else:
+        extracted_data["siret"] = {
+            "value": None,
+            "confidence": None,
+            "missing": True,
+            "valid": False
+        }
 
 
+    #  SIREN
 
-        #  TVA
+    siren_value = None
+    siren_conf = None
+    is_valid_siren = False
+    missing = True
+    siren_in_siret_match = None
 
-        if document_type == "facture":
-            tva = re.search(r"\bFR\s?\d{2}\s?\d{9}\b", text, re.IGNORECASE)
+    # recherche SIREN
+    siren_match = re.search(r"siren[^0-9]*(\d{7,15})", text, re.IGNORECASE)
+
+    # si pas trouvé recherche SIRET
+    siret_match = re.search(r"siret[^0-9]*(\d{12,20})", text, re.IGNORECASE)
+
+    if siren_match:
+        siren_raw = siren_match.group(1)
+        siren_value = clean_digits(siren_raw)
+        missing = False
+    # extraction du SIREN via le SIRET
+    elif siret_match:
+        siret_raw = siret_match.group(1)
+        siret_value = clean_digits(siret_raw)
+        siren_value = siret_value[:9]
+        missing = False
+
+    if not siren_value:
+        fallback_match = re.search(r"\b\d{9}\b", text)
+        if fallback_match:
+            siren_value = clean_digits(fallback_match.group())
+            missing = False
+
+    # validation
+    if siren_value:
+        is_valid_siren = len(siren_value) == 9
+
+    if siren_value and siret_value and len(siret_value) >= 9:
+        siren_in_siret_match = (siren_value == siret_value[:9])
+
+    # confiance
+    scores = []
+
+    for item in ocr_data:
+        cleaned_text = clean_digits(item["text"])
+        if siren_value and siren_value in cleaned_text:
+                scores.append(item["confidence"])
+    siren_conf = sum(scores) / len(scores) if scores else None
+
+    # stockage
+    extracted_data["siren"] = {
+        "value": siren_value,
+        "valid": is_valid_siren,
+        "confidence": siren_conf,
+        "missing": missing,
+        "siren_in_siret_match": siren_in_siret_match
+    }
+
+
+    #  TVA
+    if document_type == "facture":
+        tva = re.search(r"\bFR\s?\d{2}\s?\d{9}\b", text, re.IGNORECASE)
 
         tva_value = None
         tva_conf = None
@@ -376,6 +430,8 @@ def run_ocr(file):
         if tva:
             missing = False
             tva_value = tva.group().replace(" ", "")
+            tva_value = tva_value.upper().replace(" ", "")
+            tva_value = tva_value.replace("O", "0")
 
             scores = []
 
@@ -421,39 +477,120 @@ def run_ocr(file):
         }
 
 
-        # NOM ENTREPRISE
+    # NOM ENTREPRISE
 
-        company = re.search(r"vendeur\s+([A-Z][A-Z\s]+)", text, re.IGNORECASE)
+    # extraction du texte
+    lines = [item["text"] for item in ocr_data]
 
-        if company:
+    company_value = None
 
-            company_value = company.group(1).strip()
-            company_conf = None
+    # récupérer l'élément suivant société ou vendeur
+    ADDRESS_KEYWORDS = [
+    "rue", "avenue", "av", "boulevard", "bd",
+    "route", "chemin", "impasse",
+    "place", "allée", "piste", "esp"
+    ]
+    
+    for i, line in enumerate(lines):
 
-            for item in ocr_data:
-                if item["text"] in company_value:
-                    company_conf = item["confidence"]
+        if re.search(r"n[o0]m$", line.strip(), re.IGNORECASE):
+            if i + 1 < len(lines):
+                next_line = lines[i + 1].strip()
 
-            extracted_data["entreprise"] = {
-                "value": company_value,
-                "confidence": company_conf,
-                "valid": True,
-                "missing": False
-            }
-        else:
-            extracted_data["entreprise"] = {
-                "value": None,
-                "confidence": None,
-                "valid": False,
-                "missing": True
-            }
+            if next_line:
+                company_value = next_line
+                break
+
+        if "société" in line.lower() or "vendeur" in line.lower():
+
+            company_parts = []
+            for j in range(1, 4):
+                if i + j < len(lines):
+
+                    next_line = lines[i + j].strip()
+
+                    # stop si uniquement chiffres
+                    if re.match(r"^\d+$", next_line):
+                        break
+
+                    # couper si code postal présent
+                    if re.search(r"\b\d{5}\b", next_line):
+                        next_line = re.split(r"\b\d{5}\b", next_line)[0]
+
+                    # stop si mots parasites
+                    if next_line.lower() in ["siret", "tva", "rcs"]:
+                        break
+                    
+                    # nettoyage 
+                    next_line = re.split(r"\b(SIRET|TVA|RCS)\b", next_line, flags=re.IGNORECASE)[0]
 
 
-        # MONTANTS (HT / TTC)
+                    # STOP si adresse détectée
+                    if any(word in next_line.lower() for word in ADDRESS_KEYWORDS):
+                        break
+
+                    # nettoyer
+                    next_line = next_line.strip(" ,;")
+
+                    # stop si ligne vide 
+                    if not next_line:
+                        break
+
+                    company_parts.append(next_line)
+
+            if company_parts:
+                company_value = " ".join(company_parts)
+
+            break
+
+    # fallback regex
+    if not company_value:
+        match = re.search(
+            r"(?:vendeur|soc[i1]e[t7][eé])\s+([a-zA-Z][a-zA-Z\s\-]+)",
+            full_text,
+            re.IGNORECASE
+        )
+        if match:
+            company_value = match.group(1).strip()
+
+    # confiance
+    if company_value:
+
+        scores = []
+
+        for item in ocr_data:
+            if item["text"].lower() in company_value.lower():
+                scores.append(item["confidence"])
+
+        company_conf = sum(scores) / len(scores) if scores else None
+
+    # extraction des données
+        extracted_data["entreprise"] = {
+            "value": company_value,
+            "confidence": company_conf,
+            "valid": True,
+            "missing": False
+        }
+    else:
+        extracted_data["entreprise"] = {
+            "value": None,
+            "confidence": None,
+            "valid": False,
+            "missing": True
+        }
+
+    # MONTANTS (HT / TTC)
+    if document_type == "facture" or document_type == "devis":
+        text = text.replace("hi", "ht")  # OCR lit mal HT
+        text = re.sub(r"\s*\.\s*", ".", text)  # corrige les espaces entre les .
+        text = text.replace("O", "0").replace("o", "0")  # OCR chiffres
+
 
         def clean_amount(text):
-            text = text.replace("O", "0").replace("S", "5")
+            text = text.replace("O", "0").replace("o", "0")
+            text = text.replace(",", ".")
             text = text.replace(" ", "")
+            text = text.replace("€", "").replace("EUR", "")
             return text
 
         def extract_amount(pattern, label):
@@ -464,8 +601,13 @@ def run_ocr(file):
                 raw_value = match.group(1)
 
                 value = clean_amount(raw_value)
-                is_valid_amount = not value.startswith("-")
 
+                # vérifier si le montant est positif
+                try:
+                    numeric_value = float(value)
+                    is_valid_amount = numeric_value >= 0
+                except:
+                    is_valid_amount = False
 
                 # confidence
                 scores = []
@@ -489,10 +631,9 @@ def run_ocr(file):
                     "missing": True
                 }
 
-
         # TOTAL HT 
         extract_amount(
-            r"(?:total\s*)?h[\.\s]*t[^0-9-]*(-?\d+[.,]\d{2})",
+            r"(?:total\s*)?h[i1t][\.\s]*t?[^0-9-]*(-?\d+[.,]\d{2})",
             "Total HT"
         )
 
@@ -502,18 +643,6 @@ def run_ocr(file):
             "Total TTC"
         )
 
-    # Liste des champs obligatoires
-
-        required_fields = [
-        "date_facture",
-        "numero_facture",
-        "siret",
-        "tva",
-        "siren",
-        "total_ht",
-        "total_ttc",
-        "date_paiement"
-    ]
     # Affichage des champs manquants
     missing_fields = validate_document(extracted_data)
 
@@ -536,7 +665,7 @@ def run_ocr(file):
     extracted_data["confidence_fields"] = extracted_confidence
 
 
-        # RÉSULTAT 
+    # RÉSULTAT 
     all_results.append({
         "file": file_path,
         "data": extracted_data

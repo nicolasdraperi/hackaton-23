@@ -6,6 +6,7 @@ def validate_document(doc):
         "date_paiement",
         "numero_facture",
         "siret",
+        "siren",
         "tva",
         "entreprise",
         "total_ht",
@@ -17,13 +18,17 @@ def validate_document(doc):
         "date_prestation",
         "entreprise",
         "siret",
+        "siren",
         "total_ht",
         "total_ttc"
     ]
 
     required_fields_attestations = [
-        "siren"
+        "siren",
+        "entreprise",
+        "siret",
     ]
+
 
     missing_fields = []
 
