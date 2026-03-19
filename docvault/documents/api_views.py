@@ -14,6 +14,7 @@ from datetime import datetime
 import os
 from django.conf import settings
 from .services.ocr import run_ocr
+import tempfile
 
 
 def _mime(doc):
@@ -28,6 +29,7 @@ def _mime(doc):
 class BatchListView(APIView):
     parser_classes = [MultiPartParser, FormParser, JSONParser]
 
+
     def get(self, request):
         query = {"user_id": request.user.id}
         s = request.query_params.get('status', '')
@@ -38,6 +40,9 @@ class BatchListView(APIView):
 
         for b in batches:
             b["_id"] = str(b["_id"])
+            for doc in b.get("documents", []):
+                if "file_id" in doc and not isinstance(doc["file_id"], str):
+                    doc["file_id"] = str(doc["file_id"])
 
         return Response(batches)
 
@@ -59,13 +64,17 @@ class BatchListView(APIView):
             with open(full_path, 'wb+') as dest:
                 for chunk in f.chunks():
                     dest.write(chunk)
+                 # Appel OCR
+
+            ocr_result = run_ocr(full_path)
 
             documents_data.append({
                 "original_name": f.name,
                 "file_path": path,
                 "uploaded_at": datetime.now(),
                 "extension": os.path.splitext(f.name)[1].lower(),
-                "size_kb": round(f.size / 1024, 1)
+                "size_kb": round(f.size / 1024, 1),
+                "ocr_data": ocr_result
             })
 
         batch = {
@@ -238,5 +247,11 @@ class OCRView(APIView):
         file = request.FILES.get('file')
         if not file:
             return Response({'detail': 'Aucun fichier fourni.'}, status=400)
-        result = run_ocr(file)
+        # Sauvegarde temporaire
+        with tempfile.NamedTemporaryFile(delete=False, suffix=os.path.splitext(file.name)[1]) as tmp:
+            for chunk in file.chunks():
+                tmp.write(chunk)
+            tmp_path = tmp.name
+        result = run_ocr(tmp_path)
+        os.remove(tmp_path)
         return Response(result)
