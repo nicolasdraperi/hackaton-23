@@ -13,40 +13,46 @@ from pdf2image import convert_from_path
 import numpy as np
 
 import os
+import tempfile
 
 from datetime import datetime
 from datetime import timedelta
-from validation import validate_document
+from .validation import validate_document
 
 # chemin du document à analyser
-file_paths = ["devis/propres/vrais/devis_vrai_002.pdf"]
+# file_paths = ["devis/propres/vrais/devis_vrai_002.pdf"]
 reader = easyocr.Reader(['fr'], gpu=False)
 
 all_results = []
+def run_ocr(file):
+    # updated to handle file upload in Django
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
+        for chunk in file.chunks():
+            tmp.write(chunk)
+        file_path = tmp.name
 
-for file_path in file_paths:
-    images_to_process = []
+    file_paths = [file_path]
 
-    ext = os.path.splitext(file_path)[1].lower()
+    for file_path in file_paths:
+        images_to_process = []
 
-    # prétraitement du/des fichiers
-    # PDF
-    if ext == ".pdf":
-        pages = convert_from_path(file_path, dpi=300)
+        ext = os.path.splitext(file_path)[1].lower()
 
-        for page in pages:
-            image = np.array(page)
-            image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-            images_to_process.append(image)
+        # prétraitement du/des fichiers
+        # PDF
+        if ext == ".pdf":
+            
+            pages = convert_from_path(file_path, dpi=300, poppler_path="/opt/homebrew/bin")
 
-    # IMAGE
-    else:
-        # lecture de l'image
-        image = cv2.imread(file_path)
+            for page in pages:
+                image = np.array(page)
+                image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+                images_to_process.append(image)
 
-        if image is None:
-            print("Erreur : impossible de lire le fichier")
-            continue
+        # IMAGE
+        else:
+            # lecture de l'image
+            image = cv2.imread(file_path)
 
         images_to_process.append(image)
 
@@ -163,7 +169,8 @@ for file_path in file_paths:
                 continue
 
         return None
-    
+
+
     # accepter plusieurs formats de dates valides
     date_patterns = [
         r"\b\d{2}[/-]\d{2}[/-]\d{4}\b",
@@ -353,7 +360,7 @@ for file_path in file_paths:
 
 
     #  SIREN
-   
+
     siren_value = None
     siren_conf = None
     is_valid_siren = False
@@ -407,7 +414,6 @@ for file_path in file_paths:
         "missing": missing,
         "siren_in_siret_match": siren_in_siret_match
     }
-
 
 
     #  TVA
@@ -625,62 +631,50 @@ for file_path in file_paths:
                     "missing": True
                 }
 
+        # TOTAL HT 
+        extract_amount(
+            r"(?:total\s*)?h[i1t][\.\s]*t?[^0-9-]*(-?\d+[.,]\d{2})",
+            "Total HT"
+        )
 
-    # TOTAL HT 
-    extract_amount(
-        r"(?:total\s*)?h[\.\s]*t[^0-9-]*(-?\d+[.,]\d{2})",
-        "Total HT"
-    )
+        # TOTAL TTC
+        extract_amount(
+            r"(?:total\s*)?t[\.\s]*t[\.\s]*c[^0-9-]*(-?\d+[.,]\d{2})",
+            "Total TTC"
+        )
 
-    # TOTAL TTC
-    extract_amount(
-        r"(?:total\s*)?t[\.\s]*t[\.\s]*c[^0-9-]*(-?\d+[.,]\d{2})",
-        "Total TTC"
-    )
+    # Affichage des champs manquants
+    missing_fields = validate_document(extracted_data)
 
-# Liste des champs obligatoires
+    extracted_data["missing_fields"] = missing_fields
 
-    required_fields = [
-    "date_facture",
-    "numero_facture",
-    "siret",
-    "tva",
-    "siren",
-    "total_ht",
-    "total_ttc",
-    "date_paiement"
-]
-# Affichage des champs manquants
-missing_fields = validate_document(extracted_data)
+    # CALCUL CONFIANCE DES CHAMPS EXTRAITS
 
-extracted_data["missing_fields"] = missing_fields
+    field_confidences = []
 
-# CALCUL CONFIANCE DES CHAMPS EXTRAITS
+    for field in extracted_data.values():
 
-field_confidences = []
+        if isinstance(field, dict) and field.get("confidence") is not None:
+            field_confidences.append(field["confidence"])
 
-for field in extracted_data.values():
+    if field_confidences:
+        extracted_confidence = sum(field_confidences) / len(field_confidences)
+    else:
+        extracted_confidence = None
 
-    if isinstance(field, dict) and field.get("confidence") is not None:
-        field_confidences.append(field["confidence"])
-
-if field_confidences:
-    extracted_confidence = sum(field_confidences) / len(field_confidences)
-else:
-    extracted_confidence = None
-
-extracted_data["confidence_fields"] = extracted_confidence
+    extracted_data["confidence_fields"] = extracted_confidence
 
 
     # RÉSULTAT 
-all_results.append({
-    "file": file_path,
-    "data": extracted_data
-})
+    all_results.append({
+        "file": file_path,
+        "data": extracted_data
+    })
 
 
-#  RÉSULTAT JSON
+    #  RÉSULTAT JSON
 
-json_data = json.dumps(all_results, indent=2, ensure_ascii=False)
+    json_data = json.dumps(all_results, indent=2, ensure_ascii=False)
 
-print(json_data)
+    print(json_data)
+    return all_results[0]["data"] 
